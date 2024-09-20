@@ -1,5 +1,6 @@
 import re
-import PyPDF2
+import PyPDF
+
 
 def nettoyer_texte(texte):
     # Suppression des caractères spéciaux et des espaces en trop
@@ -28,8 +29,8 @@ def nettoyer_pdf(pdf_path, output_path):
         fichier_sortie.write(texte_propre)
 
 # Exemple d'utilisation
-pdf_file = r'C:\Users\user\Desktop\AmsProjet3\Corpus_ASIMOV\Seconde_Fondation_sample.pdf'
-output_file = r'C:\Users\user\Desktop\AmsProjet3\cleanTextSecondeFondation.txt'
+pdf_file = r'C:\Users\ADMIN\Desktop\AMS_PROJET\corpus\Fondation_sample.pdf'
+output_file = r'C:\Users\ADMIN\Desktop\AMS_PROJET\tp3_reseau\generationPersonnage\cleanTextSecondeFondation.txt'
 
 
 nettoyer_pdf(pdf_file, output_file)
