@@ -26,8 +26,9 @@ def pos_tagging(input_file, output_file):
             # Écrire la phrase analysée dans le fichier de sortie
             f.write(' '.join(words_pos) + '\n')
 
-input_file = r'C:\Users\user\Desktop\AmsProjet3\clearTextFonadionSample.txt'
-output_file = r'C:\Users\user\Desktop\AmsProjet3\output.txt'
+input_file = r'C:\Users\user\Desktop\AmsProjet3\prelude_a_fondation\chapter_15.txt.preprocessed'
+
+output_file = r'C:\Users\user\Desktop\AmsProjet3\output2.txt'
 
 
 # Appel de la fonction pour traiter le fichier
