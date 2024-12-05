@@ -54,8 +54,8 @@ def extract_character_mentions(input_file, output_file):
             summary_file.write(f"{character}: {count} occurrences\n")
 
 # Paths to your input and output files
-input_file = r'C:\Users\user\Desktop\AmsProjet3\clearTextFonadionSample.txt'
-output_file = r'C:\Users\user\Desktop\AmsProjet3\output.txt'
+input_file = r'C:\Users\user\Desktop\M1ILSEN\AmsProjet3\chapter_1.txt'
+output_file = r'C:\Users\user\Desktop\M1ILSEN\AmsProjet3\output2.txt'
 
 # Call the function
 extract_character_mentions(input_file, output_file)
