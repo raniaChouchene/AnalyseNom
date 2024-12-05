@@ -1,0 +1,38 @@
+
+--- Interactions entre personnages ---
+R. Daneel et Pauvre Julius: 1 interactions
+R. Daneel et R. Sammy: 1 interactions
+R. Daneel et Cacher l’: 1 interactions
+R. Daneel et s’écria Gerrigel: 1 interactions
+R. Sammy et Cacher l’: 1 interactions
+s’écria Gerrigel et R. Sammy: 1 interactions
+s’écria Gerrigel et Cacher l’: 1 interactions
+R. Daneel et Norris n’: 1 interactions
+R. Daneel et Voyons Jessie: 1 interactions
+Dieu du Ciel et R. Sammy: 1 interactions
+R. Daneel et saint Gerrigel: 1 interactions
+R. Daneel et Sarton n’: 1 interactions
+R. Daneel et balbutia Enderby: 1 interactions
+pièce ! et R. Daneel
+Olivaw: 1 interactions
+Bentley Baley et R. Daneel: 1 interactions
+R. Daneel et s’écria Enderby: 1 interactions
+
+--- Interactions entre personnages ---
+Pauvre Julius et R. Daneel: 1 interactions
+R. Sammy et Cacher l’: 1 interactions
+R. Sammy et R. Daneel: 1 interactions
+R. Sammy et s’écria Gerrigel: 1 interactions
+R. Daneel et Cacher l’: 1 interactions
+Cacher l’ et s’écria Gerrigel: 1 interactions
+R. Daneel et s’écria Gerrigel: 1 interactions
+Norris n’ et R. Daneel: 1 interactions
+Voyons Jessie et R. Daneel: 1 interactions
+R. Sammy et Dieu du Ciel: 1 interactions
+R. Daneel et saint Gerrigel: 1 interactions
+Sarton n’ et R. Daneel: 1 interactions
+R. Daneel et balbutia Enderby: 1 interactions
+R. Daneel
+Olivaw et pièce !: 1 interactions
+R. Daneel et Bentley Baley: 1 interactions
+s’écria Enderby et R. Daneel: 1 interactions
