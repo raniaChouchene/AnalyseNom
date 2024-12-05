@@ -1,132 +1,551 @@
 
 --- Interactions entre personnages ---
-R. Sammy <-> j’ai l’: 1 interactions
-R. Sammy <-> Robot Daneel: 1 interactions
-R. Sammy <-> Roj Nemennuh Sarton: 1 interactions
-R. Sammy <-> l’on n’: 1 interactions
-R. Sammy <-> s’écria Gerrigel: 1 interactions
-R. Sammy <-> constateriez qu’: 1 interactions
-R. Sammy <-> R. Sammy n’: 1 interactions
-R. Sammy <-> s’aperçut qu’: 1 interactions
-R. Sammy <-> saint Gerrigel: 1 interactions
-R. Sammy <-> saint Fastolfe: 1 interactions
-R. Sammy <-> l’affaire R. Sammy: 1 interactions
-R. Sammy <-> n’ai qu’: 1 interactions
-R. Sammy <-> Sarton n’: 1 interactions
-R. Sammy <-> écume séchée: 1 interactions
-R. Sammy <-> Y étiez: 1 interactions
-R. Sammy <-> pièce !: 1 interactions
-Robot Daneel <-> j’ai l’: 1 interactions
+Spacetown <-> Vince Barrett: 3 interactions
+Spacetown <-> Ton: 1 interactions
+Spacetown <-> Voudriez: 2 interactions
+Spacetown <-> Supposez: 1 interactions
+Spacetown <-> Spacien: 1 interactions
+Spacetown <-> Voilà: 1 interactions
+Enderby <-> Spacetown: 7 interactions
+Enderby <-> Lije: 5 interactions
+Enderby <-> Olivaw: 2 interactions
+Enderby <-> Jacques: 1 interactions
+Enderby <-> Vince Barrett: 3 interactions
+Enderby <-> Robot Daneel: 1 interactions
+Enderby <-> Impossible: 2 interactions
+Enderby <-> Paul: 1 interactions
+Enderby <-> Pierre: 1 interactions
+Enderby <-> Roj Nemennuh Sarton: 1 interactions
+Enderby <-> Julius: 4 interactions
+Enderby <-> Pauvre Julius: 1 interactions
+Enderby <-> Shakespeare: 1 interactions
+Enderby <-> Fastolfe: 2 interactions
+Enderby <-> Prenez: 1 interactions
+Enderby <-> Manuel: 1 interactions
+Enderby <-> Gerrigel: 2 interactions
+Enderby <-> Voudriez: 2 interactions
+Enderby <-> Prétendez: 1 interactions
+Enderby <-> Supposez: 2 interactions
+Enderby <-> Mange: 1 interactions
+Enderby <-> Norris: 1 interactions
+Enderby <-> Julius Enderby: 3 interactions
+Enderby <-> Phil: 1 interactions
+Enderby <-> Francis Clousarr: 1 interactions
+Enderby <-> Sammy: 1 interactions
+Enderby <-> Lequel: 1 interactions
+Enderby <-> Francis: 1 interactions
+Enderby <-> Sarton: 2 interactions
+Enderby <-> Jézabel: 1 interactions
+Enderby <-> Impensable: 1 interactions
+Lije <-> Spacetown: 5 interactions
+Lije <-> Olivaw: 3 interactions
+Lije <-> Vince Barrett: 2 interactions
+Lije <-> Robot Daneel: 1 interactions
+Lije <-> Paul: 1 interactions
+Lije <-> Pierre: 1 interactions
+Lije <-> Roj Nemennuh Sarton: 1 interactions
+Lije <-> Paul Gerhard: 1 interactions
+Lije <-> Manuel: 1 interactions
+Lije <-> Voudriez: 2 interactions
+Lije <-> Prétendez: 1 interactions
+Lije <-> Supposez: 1 interactions
+Lije <-> Mange: 1 interactions
+Lije <-> Norris: 1 interactions
+Lije <-> Phil: 1 interactions
+Lije <-> Pardonnez: 1 interactions
+Lije <-> Lizzy: 1 interactions
+Lije <-> Sarton: 2 interactions
+Lije <-> Naboth: 1 interactions
+Lije <-> Mes: 1 interactions
+Lije <-> Lije Baley: 1 interactions
+Olivaw <-> Spacetown: 3 interactions
+Olivaw <-> Vince Barrett: 1 interactions
+Olivaw <-> Robot Daneel: 1 interactions
+Olivaw <-> Paul: 1 interactions
+Olivaw <-> Pierre: 1 interactions
+Olivaw <-> Roj Nemennuh Sarton: 1 interactions
+Olivaw <-> Spacien: 1 interactions
+Olivaw <-> Voudriez: 1 interactions
+Jacques <-> Spacetown: 1 interactions
+Jacques <-> Lije: 1 interactions
+Jacques <-> Olivaw: 1 interactions
+Jacques <-> Vince Barrett: 1 interactions
+Jacques <-> Robot Daneel: 1 interactions
+Jacques <-> Paul: 1 interactions
+Jacques <-> Pierre: 1 interactions
+Jacques <-> Roj Nemennuh Sarton: 1 interactions
+Jacques <-> Julius: 1 interactions
+Vince Barrett <-> Voudriez: 1 interactions
+Robot Daneel <-> Spacetown: 1 interactions
+Robot Daneel <-> Vince Barrett: 1 interactions
 Robot Daneel <-> Roj Nemennuh Sarton: 1 interactions
-Roj Nemennuh Sarton <-> j’ai l’: 1 interactions
-Fastolfe n’ <-> Section Q. 27: 1 interactions
-Fastolfe n’ <-> R. Daneel: 1 interactions
-Fastolfe n’ <-> Pauvre Julius: 1 interactions
-R. Daneel <-> Section Q. 27: 1 interactions
-R. Daneel <-> l’on n’: 1 interactions
-R. Daneel <-> s’écria Gerrigel: 1 interactions
-R. Daneel <-> R. Sammy: 8 interactions
-R. Daneel <-> constateriez qu’: 1 interactions
-R. Daneel <-> Voyons Jessie: 1 interactions
-R. Daneel <-> n’ai pas l’: 1 interactions
-R. Daneel <-> R. Sammy n’: 1 interactions
-R. Daneel <-> s’aperçut qu’: 1 interactions
-R. Daneel <-> saint Gerrigel: 1 interactions
-R. Daneel <-> saint Fastolfe: 1 interactions
-R. Daneel <-> l’affaire R. Sammy: 1 interactions
-R. Daneel <-> n’ai qu’: 1 interactions
-R. Daneel <-> Sarton n’: 1 interactions
-R. Daneel <-> écume séchée: 1 interactions
-R. Daneel <-> Y étiez: 1 interactions
-R. Daneel <-> R. Daneel
-Olivaw: 1 interactions
-R. Daneel <-> pièce !: 1 interactions
-R. Daneel <-> R. Daneel sauta: 1 interactions
-R. Daneel <-> l’on m’: 1 interactions
-R. Daneel <-> R. Daneel Olivaw: 1 interactions
-R. Daneel <-> R. Daneel s’: 1 interactions
-Pauvre Julius <-> Section Q. 27: 1 interactions
-Pauvre Julius <-> R. Daneel: 1 interactions
-Ne croyez <-> R. Daneel: 1 interactions
-A. Gerrigel <-> l’on n’: 1 interactions
-A. Gerrigel <-> s’écria Gerrigel: 1 interactions
-A. Gerrigel <-> Paul Gerhard: 1 interactions
-A. Gerrigel <-> R. Daneel: 1 interactions
-A. Gerrigel <-> Cacher l’: 1 interactions
-A. Gerrigel <-> R. Sammy: 1 interactions
-l’on n’ <-> s’écria Gerrigel: 1 interactions
-Paul Gerhard <-> l’on n’: 1 interactions
-Paul Gerhard <-> s’écria Gerrigel: 1 interactions
-Paul Gerhard <-> R. Daneel: 1 interactions
-Paul Gerhard <-> R. Sammy: 1 interactions
-Cacher l’ <-> l’on n’: 1 interactions
-Cacher l’ <-> s’écria Gerrigel: 1 interactions
-Cacher l’ <-> Paul Gerhard: 1 interactions
-Cacher l’ <-> R. Daneel: 1 interactions
-Cacher l’ <-> R. Sammy: 1 interactions
-Norris n’ <-> R. Sammy: 1 interactions
-Norris n’ <-> R. Daneel: 1 interactions
-Norris n’ <-> constateriez qu’: 1 interactions
-Ca m’ <-> Voyons Jessie: 1 interactions
-Ca m’ <-> Jane Myers: 1 interactions
-Ca m’ <-> R. Daneel: 1 interactions
-Ca m’ <-> n’ai pas l’: 1 interactions
-Voyons Jessie <-> n’ai pas l’: 1 interactions
-Jane Myers <-> Voyons Jessie: 1 interactions
-Jane Myers <-> R. Daneel: 1 interactions
-Jane Myers <-> n’ai pas l’: 1 interactions
-Dieu du Ciel <-> R. Sammy: 1 interactions
-Dieu du Ciel <-> R. Daneel: 1 interactions
-Dieu du Ciel <-> Entendu !: 1 interactions
-Entendu ! <-> R. Sammy: 1 interactions
-Entendu ! <-> R. Daneel: 1 interactions
-Docteur Gerrigel <-> R. Sammy n’: 1 interactions
-Docteur Gerrigel <-> s’aperçut qu’: 1 interactions
-Docteur Gerrigel <-> saint Gerrigel: 1 interactions
-Docteur Gerrigel <-> saint Fastolfe: 1 interactions
-Docteur Gerrigel <-> l’affaire R. Sammy: 1 interactions
-Docteur Gerrigel <-> R. Daneel: 1 interactions
-Docteur Gerrigel <-> n’ai qu’: 1 interactions
-Docteur Gerrigel <-> R. Sammy: 1 interactions
-R. Sammy n’ <-> s’aperçut qu’: 1 interactions
-R. Sammy n’ <-> saint Gerrigel: 1 interactions
-R. Sammy n’ <-> saint Fastolfe: 1 interactions
-R. Sammy n’ <-> l’affaire R. Sammy: 1 interactions
-R. Sammy n’ <-> n’ai qu’: 1 interactions
-saint Gerrigel <-> s’aperçut qu’: 1 interactions
-saint Fastolfe <-> s’aperçut qu’: 1 interactions
-saint Fastolfe <-> saint Gerrigel: 1 interactions
-l’affaire R. Sammy <-> s’aperçut qu’: 1 interactions
-l’affaire R. Sammy <-> saint Gerrigel: 1 interactions
-l’affaire R. Sammy <-> saint Fastolfe: 1 interactions
-l’affaire R. Sammy <-> n’ai qu’: 1 interactions
-n’ai qu’ <-> s’aperçut qu’: 1 interactions
-n’ai qu’ <-> saint Gerrigel: 1 interactions
-n’ai qu’ <-> saint Fastolfe: 1 interactions
-Ca n’ <-> R. Sammy: 1 interactions
-Ca n’ <-> Sarton n’: 1 interactions
-Ca n’ <-> R. Daneel: 1 interactions
-Y étiez <-> écume séchée: 1 interactions
-R. Daneel
-Olivaw <-> R. Sammy: 1 interactions
-R. Daneel
-Olivaw <-> pièce !: 1 interactions
-M. Olivaw <-> R. Daneel: 1 interactions
-Jéhovah n’ <-> M. Olivaw: 1 interactions
-Jéhovah n’ <-> R. Daneel: 1 interactions
-Jéhovah n’ <-> Jézabel s’: 1 interactions
-Jézabel s’ <-> M. Olivaw: 1 interactions
-Jézabel s’ <-> R. Daneel: 1 interactions
-Daneel Olivaw <-> M. Olivaw: 1 interactions
-Daneel Olivaw <-> Jéhovah n’: 1 interactions
-Daneel Olivaw <-> R. Daneel: 2 interactions
-Daneel Olivaw <-> Jézabel s’: 1 interactions
-Daneel Olivaw <-> Elijah m’: 1 interactions
-Moi pas <-> R. Daneel: 1 interactions
-Moi pas <-> l’on m’: 1 interactions
-R. Daneel Olivaw <-> n’as qu’: 1 interactions
-R. Daneel Olivaw <-> R. Sammy: 1 interactions
-Ca s’ <-> R. Sammy: 1 interactions
-Ca s’ <-> R. Daneel: 1 interactions
-Ca s’ <-> R. Daneel Olivaw: 1 interactions
-Elijah m’ <-> R. Daneel: 1 interactions
+Impossible <-> Spacetown: 2 interactions
+Impossible <-> Lije: 2 interactions
+Impossible <-> Olivaw: 2 interactions
+Impossible <-> Jacques: 1 interactions
+Impossible <-> Vince Barrett: 1 interactions
+Impossible <-> Robot Daneel: 1 interactions
+Impossible <-> Paul: 1 interactions
+Impossible <-> Pierre: 1 interactions
+Impossible <-> Roj Nemennuh Sarton: 1 interactions
+Impossible <-> Julius: 2 interactions
+Impossible <-> Voudriez: 1 interactions
+Impossible <-> Julius Enderby: 1 interactions
+Paul <-> Spacetown: 1 interactions
+Paul <-> Vince Barrett: 1 interactions
+Paul <-> Robot Daneel: 1 interactions
+Paul <-> Pierre: 1 interactions
+Paul <-> Roj Nemennuh Sarton: 1 interactions
+Pierre <-> Spacetown: 1 interactions
+Pierre <-> Vince Barrett: 1 interactions
+Pierre <-> Robot Daneel: 1 interactions
+Pierre <-> Roj Nemennuh Sarton: 1 interactions
+Roj Nemennuh Sarton <-> Spacetown: 1 interactions
+Roj Nemennuh Sarton <-> Vince Barrett: 1 interactions
+Julius <-> Spacetown: 3 interactions
+Julius <-> Lije: 3 interactions
+Julius <-> Olivaw: 2 interactions
+Julius <-> Vince Barrett: 2 interactions
+Julius <-> Robot Daneel: 1 interactions
+Julius <-> Paul: 1 interactions
+Julius <-> Pierre: 1 interactions
+Julius <-> Roj Nemennuh Sarton: 1 interactions
+Julius <-> Paul Gerhard: 1 interactions
+Julius <-> Sammy: 1 interactions
+Julius <-> Lequel: 1 interactions
+Julius <-> Voudriez: 1 interactions
+Julius <-> Julius Enderby: 1 interactions
+Julius <-> Supposez: 1 interactions
+Ecoutez <-> Spacetown: 2 interactions
+Ecoutez <-> Enderby: 2 interactions
+Ecoutez <-> Lije: 1 interactions
+Ecoutez <-> Olivaw: 1 interactions
+Ecoutez <-> Jacques: 1 interactions
+Ecoutez <-> Vince Barrett: 1 interactions
+Ecoutez <-> Robot Daneel: 1 interactions
+Ecoutez <-> Impossible: 1 interactions
+Ecoutez <-> Paul: 1 interactions
+Ecoutez <-> Pierre: 1 interactions
+Ecoutez <-> Roj Nemennuh Sarton: 1 interactions
+Ecoutez <-> Julius: 1 interactions
+Ecoutez <-> Pauvre Julius: 1 interactions
+Ecoutez <-> Shakespeare: 1 interactions
+Ecoutez <-> Fastolfe: 1 interactions
+Ecoutez <-> Prenez: 1 interactions
+Baley <-> Spacetown: 7 interactions
+Baley <-> Enderby: 7 interactions
+Baley <-> Lije: 6 interactions
+Baley <-> Olivaw: 2 interactions
+Baley <-> Jacques: 1 interactions
+Baley <-> Vince Barrett: 3 interactions
+Baley <-> Robot Daneel: 1 interactions
+Baley <-> Impossible: 2 interactions
+Baley <-> Paul: 1 interactions
+Baley <-> Pierre: 1 interactions
+Baley <-> Roj Nemennuh Sarton: 1 interactions
+Baley <-> Julius: 5 interactions
+Baley <-> Ecoutez: 2 interactions
+Baley <-> Pauvre Julius: 1 interactions
+Baley <-> Bentley: 2 interactions
+Baley <-> Churchill: 1 interactions
+Baley <-> Shakespeare: 1 interactions
+Baley <-> Fastolfe: 4 interactions
+Baley <-> Prenez: 1 interactions
+Baley <-> Elijah Baley: 2 interactions
+Baley <-> Ton: 1 interactions
+Baley <-> Ben: 1 interactions
+Baley <-> Gerrigel: 3 interactions
+Baley <-> Paul Gerhard: 1 interactions
+Baley <-> Heisenberg: 1 interactions
+Baley <-> Incertitude: 1 interactions
+Baley <-> Ecoute: 1 interactions
+Baley <-> Manuel: 1 interactions
+Baley <-> Voudriez: 2 interactions
+Baley <-> Prétendez: 1 interactions
+Baley <-> Dis: 1 interactions
+Baley <-> Barrett: 1 interactions
+Baley <-> Supposez: 2 interactions
+Baley <-> Mange: 1 interactions
+Baley <-> Norris: 1 interactions
+Baley <-> Dites: 1 interactions
+Baley <-> Julius Enderby: 3 interactions
+Baley <-> Phil: 1 interactions
+Baley <-> Francis Clousarr: 1 interactions
+Baley <-> Boris: 1 interactions
+Baley <-> Sammy: 1 interactions
+Baley <-> Lequel: 1 interactions
+Baley <-> Enchanté: 1 interactions
+Baley <-> Francis: 1 interactions
+Baley <-> Impensable: 1 interactions
+Baley <-> Continuez: 1 interactions
+Baley <-> Epoque Médiévale: 1 interactions
+Baley <-> Remontant: 1 interactions
+Baley <-> Voilà: 1 interactions
+Pauvre Julius <-> Spacetown: 1 interactions
+Pauvre Julius <-> Shakespeare: 1 interactions
+Pauvre Julius <-> Prenez: 1 interactions
+Bentley <-> Spacetown: 1 interactions
+Bentley <-> Enderby: 1 interactions
+Bentley <-> Pauvre Julius: 1 interactions
+Bentley <-> Churchill: 1 interactions
+Bentley <-> Shakespeare: 1 interactions
+Bentley <-> Fastolfe: 1 interactions
+Bentley <-> Ecoutez: 1 interactions
+Bentley <-> Prenez: 1 interactions
+Bentley <-> Lije: 3 interactions
+Bentley <-> Joseph Klemin: 1 interactions
+Bentley <-> Klemin: 1 interactions
+Bentley <-> Elisabeth: 1 interactions
+Bentley <-> Continuez: 1 interactions
+Bentley <-> Pardonnez: 1 interactions
+Bentley <-> Francis Clousarr: 1 interactions
+Bentley <-> Jézabel: 2 interactions
+Bentley <-> Jane Myers: 1 interactions
+Bentley <-> Lizzy: 1 interactions
+Bentley <-> Jéhu: 1 interactions
+Bentley <-> Bentley Baley: 1 interactions
+Bentley <-> Naboth: 1 interactions
+Bentley <-> Olivaw: 1 interactions
+Bentley <-> Jessica: 1 interactions
+Bentley <-> Mes: 1 interactions
+Bentley <-> Jouer: 1 interactions
+Bentley <-> Lije Baley: 1 interactions
+Bentley <-> Elijah Baley: 1 interactions
+Bentley <-> Julius Enderby: 1 interactions
+Churchill <-> Spacetown: 1 interactions
+Churchill <-> Enderby: 1 interactions
+Churchill <-> Pauvre Julius: 1 interactions
+Churchill <-> Shakespeare: 1 interactions
+Churchill <-> Fastolfe: 1 interactions
+Churchill <-> Ecoutez: 1 interactions
+Churchill <-> Prenez: 1 interactions
+Shakespeare <-> Spacetown: 1 interactions
+Fastolfe <-> Spacetown: 2 interactions
+Fastolfe <-> Pauvre Julius: 1 interactions
+Fastolfe <-> Shakespeare: 1 interactions
+Fastolfe <-> Prenez: 1 interactions
+Fastolfe <-> Lije: 1 interactions
+Fastolfe <-> Supposez: 1 interactions
+Fastolfe <-> Julius: 1 interactions
+Fastolfe <-> Remontant: 1 interactions
+Fastolfe <-> Voilà: 1 interactions
+Adam <-> Spacetown: 1 interactions
+Adam <-> Enderby: 1 interactions
+Adam <-> Pauvre Julius: 1 interactions
+Adam <-> Bentley: 1 interactions
+Adam <-> Churchill: 1 interactions
+Adam <-> Shakespeare: 1 interactions
+Adam <-> Fastolfe: 1 interactions
+Adam <-> Ecoutez: 1 interactions
+Adam <-> Baley: 1 interactions
+Adam <-> Prenez: 1 interactions
+Prenez <-> Spacetown: 1 interactions
+Prenez <-> Shakespeare: 1 interactions
+Elijah Baley <-> Ton: 1 interactions
+Elijah Baley <-> Spacetown: 3 interactions
+Elijah Baley <-> Lije: 2 interactions
+Elijah Baley <-> Enderby: 1 interactions
+Elijah Baley <-> Sarton: 1 interactions
+Elijah Baley <-> Olivaw: 1 interactions
+Elijah Baley <-> Spacien: 1 interactions
+Elijah Baley <-> Julius Enderby: 2 interactions
+Ben <-> Elijah Baley: 1 interactions
+Ben <-> Ton: 1 interactions
+Ben <-> Spacetown: 1 interactions
+Ben <-> Jéhu: 1 interactions
+Ben <-> Lije: 1 interactions
+Ben <-> Bentley Baley: 1 interactions
+Ben <-> Naboth: 1 interactions
+Ben <-> Olivaw: 1 interactions
+Ben <-> Jessica: 1 interactions
+Ben <-> Mes: 1 interactions
+Ben <-> Jouer: 1 interactions
+Ben <-> Bentley: 1 interactions
+Ben <-> Jézabel: 1 interactions
+Ben <-> Lije Baley: 1 interactions
+Gerrigel <-> Lije: 2 interactions
+Gerrigel <-> Paul Gerhard: 1 interactions
+Gerrigel <-> Heisenberg: 1 interactions
+Gerrigel <-> Julius: 2 interactions
+Gerrigel <-> Incertitude: 1 interactions
+Gerrigel <-> Manuel: 1 interactions
+Gerrigel <-> Spacetown: 2 interactions
+Gerrigel <-> Voudriez: 1 interactions
+Gerrigel <-> Prétendez: 1 interactions
+Gerrigel <-> Supposez: 1 interactions
+Gerrigel <-> Vince Barrett: 2 interactions
+Gerrigel <-> Mange: 1 interactions
+Gerrigel <-> Norris: 1 interactions
+Gerrigel <-> Julius Enderby: 1 interactions
+Gerrigel <-> Phil: 1 interactions
+Gerrigel <-> Sammy: 1 interactions
+Gerrigel <-> Lequel: 1 interactions
+Heisenberg <-> Lije: 1 interactions
+Heisenberg <-> Paul Gerhard: 1 interactions
+Heisenberg <-> Julius: 1 interactions
+Heisenberg <-> Incertitude: 1 interactions
+Incertitude <-> Lije: 1 interactions
+Incertitude <-> Paul Gerhard: 1 interactions
+Incertitude <-> Julius: 1 interactions
+Ecoute <-> Manuel: 1 interactions
+Ecoute <-> Enderby: 1 interactions
+Ecoute <-> Lije: 1 interactions
+Ecoute <-> Gerrigel: 1 interactions
+Ecoute <-> Spacetown: 1 interactions
+Ecoute <-> Voudriez: 1 interactions
+Ecoute <-> Prétendez: 1 interactions
+Ecoute <-> Supposez: 1 interactions
+Ecoute <-> Vince Barrett: 1 interactions
+Ecoute <-> Mange: 1 interactions
+Ecoute <-> Norris: 1 interactions
+Ecoute <-> Julius Enderby: 1 interactions
+Ecoute <-> Phil: 1 interactions
+Manuel <-> Spacetown: 1 interactions
+Manuel <-> Voudriez: 1 interactions
+Manuel <-> Prétendez: 1 interactions
+Manuel <-> Supposez: 1 interactions
+Manuel <-> Vince Barrett: 1 interactions
+Manuel <-> Norris: 1 interactions
+Manuel <-> Phil: 1 interactions
+Prétendez <-> Spacetown: 1 interactions
+Prétendez <-> Voudriez: 1 interactions
+Prétendez <-> Supposez: 1 interactions
+Prétendez <-> Vince Barrett: 1 interactions
+Dis <-> Ecoute: 1 interactions
+Dis <-> Manuel: 1 interactions
+Dis <-> Enderby: 1 interactions
+Dis <-> Lije: 1 interactions
+Dis <-> Gerrigel: 1 interactions
+Dis <-> Spacetown: 1 interactions
+Dis <-> Voudriez: 1 interactions
+Dis <-> Prétendez: 1 interactions
+Dis <-> Supposez: 1 interactions
+Dis <-> Vince Barrett: 1 interactions
+Dis <-> Mange: 1 interactions
+Dis <-> Norris: 1 interactions
+Dis <-> Dites: 1 interactions
+Dis <-> Julius Enderby: 1 interactions
+Dis <-> Phil: 1 interactions
+Barrett <-> Ecoute: 1 interactions
+Barrett <-> Manuel: 1 interactions
+Barrett <-> Enderby: 1 interactions
+Barrett <-> Lije: 1 interactions
+Barrett <-> Gerrigel: 1 interactions
+Barrett <-> Spacetown: 1 interactions
+Barrett <-> Voudriez: 1 interactions
+Barrett <-> Prétendez: 1 interactions
+Barrett <-> Dis: 1 interactions
+Barrett <-> Supposez: 1 interactions
+Barrett <-> Vince Barrett: 1 interactions
+Barrett <-> Mange: 1 interactions
+Barrett <-> Norris: 1 interactions
+Barrett <-> Dites: 1 interactions
+Barrett <-> Julius Enderby: 1 interactions
+Barrett <-> Phil: 1 interactions
+Supposez <-> Voudriez: 1 interactions
+Supposez <-> Vince Barrett: 1 interactions
+Mange <-> Manuel: 1 interactions
+Mange <-> Spacetown: 1 interactions
+Mange <-> Voudriez: 1 interactions
+Mange <-> Prétendez: 1 interactions
+Mange <-> Supposez: 1 interactions
+Mange <-> Vince Barrett: 1 interactions
+Mange <-> Norris: 1 interactions
+Mange <-> Phil: 1 interactions
+Norris <-> Spacetown: 1 interactions
+Norris <-> Voudriez: 1 interactions
+Norris <-> Prétendez: 1 interactions
+Norris <-> Supposez: 1 interactions
+Norris <-> Vince Barrett: 1 interactions
+Norris <-> Phil: 1 interactions
+Dites <-> Ecoute: 1 interactions
+Dites <-> Manuel: 1 interactions
+Dites <-> Enderby: 1 interactions
+Dites <-> Lije: 1 interactions
+Dites <-> Gerrigel: 1 interactions
+Dites <-> Spacetown: 1 interactions
+Dites <-> Voudriez: 1 interactions
+Dites <-> Prétendez: 1 interactions
+Dites <-> Supposez: 1 interactions
+Dites <-> Vince Barrett: 1 interactions
+Dites <-> Mange: 1 interactions
+Dites <-> Norris: 1 interactions
+Dites <-> Julius Enderby: 1 interactions
+Dites <-> Phil: 1 interactions
+Julius Enderby <-> Manuel: 1 interactions
+Julius Enderby <-> Lije: 4 interactions
+Julius Enderby <-> Spacetown: 4 interactions
+Julius Enderby <-> Voudriez: 2 interactions
+Julius Enderby <-> Prétendez: 1 interactions
+Julius Enderby <-> Supposez: 1 interactions
+Julius Enderby <-> Vince Barrett: 1 interactions
+Julius Enderby <-> Mange: 1 interactions
+Julius Enderby <-> Norris: 1 interactions
+Julius Enderby <-> Phil: 1 interactions
+Julius Enderby <-> Jézabel: 1 interactions
+Julius Enderby <-> Sarton: 1 interactions
+Julius Enderby <-> Olivaw: 2 interactions
+Julius Enderby <-> Spacien: 1 interactions
+Phil <-> Spacetown: 1 interactions
+Phil <-> Voudriez: 1 interactions
+Phil <-> Prétendez: 1 interactions
+Phil <-> Supposez: 1 interactions
+Phil <-> Vince Barrett: 1 interactions
+Joseph Klemin <-> Lije: 1 interactions
+Joseph Klemin <-> Klemin: 1 interactions
+Joseph Klemin <-> Pardonnez: 1 interactions
+Joseph Klemin <-> Jézabel: 1 interactions
+Joseph Klemin <-> Lizzy: 1 interactions
+Klemin <-> Lije: 1 interactions
+Klemin <-> Pardonnez: 1 interactions
+Klemin <-> Lizzy: 1 interactions
+Elisabeth <-> Lije: 1 interactions
+Elisabeth <-> Joseph Klemin: 1 interactions
+Elisabeth <-> Klemin: 1 interactions
+Elisabeth <-> Pardonnez: 1 interactions
+Elisabeth <-> Francis Clousarr: 1 interactions
+Elisabeth <-> Jézabel: 1 interactions
+Elisabeth <-> Jane Myers: 1 interactions
+Elisabeth <-> Lizzy: 1 interactions
+Continuez <-> Lije: 2 interactions
+Continuez <-> Joseph Klemin: 1 interactions
+Continuez <-> Klemin: 1 interactions
+Continuez <-> Elisabeth: 1 interactions
+Continuez <-> Pardonnez: 1 interactions
+Continuez <-> Francis Clousarr: 1 interactions
+Continuez <-> Jézabel: 1 interactions
+Continuez <-> Jane Myers: 1 interactions
+Continuez <-> Lizzy: 1 interactions
+Continuez <-> Spacetown: 1 interactions
+Continuez <-> Impensable: 1 interactions
+Continuez <-> Enderby: 1 interactions
+Continuez <-> Olivaw: 1 interactions
+Continuez <-> Voudriez: 1 interactions
+Continuez <-> Impossible: 1 interactions
+Continuez <-> Julius Enderby: 1 interactions
+Continuez <-> Julius: 1 interactions
+Francis Clousarr <-> Lije: 1 interactions
+Francis Clousarr <-> Joseph Klemin: 1 interactions
+Francis Clousarr <-> Klemin: 1 interactions
+Francis Clousarr <-> Pardonnez: 1 interactions
+Francis Clousarr <-> Jézabel: 1 interactions
+Francis Clousarr <-> Jane Myers: 1 interactions
+Francis Clousarr <-> Lizzy: 1 interactions
+Jézabel <-> Lije: 3 interactions
+Jézabel <-> Klemin: 1 interactions
+Jézabel <-> Pardonnez: 1 interactions
+Jézabel <-> Lizzy: 1 interactions
+Jézabel <-> Spacetown: 1 interactions
+Jézabel <-> Sarton: 1 interactions
+Jézabel <-> Naboth: 1 interactions
+Jézabel <-> Olivaw: 1 interactions
+Jézabel <-> Mes: 1 interactions
+Jézabel <-> Lije Baley: 1 interactions
+Jane Myers <-> Lije: 1 interactions
+Jane Myers <-> Joseph Klemin: 1 interactions
+Jane Myers <-> Klemin: 1 interactions
+Jane Myers <-> Pardonnez: 1 interactions
+Jane Myers <-> Jézabel: 1 interactions
+Jane Myers <-> Lizzy: 1 interactions
+Lizzy <-> Pardonnez: 1 interactions
+Boris <-> Francis Clousarr: 1 interactions
+Boris <-> Enderby: 1 interactions
+Sammy <-> Spacetown: 1 interactions
+Sammy <-> Vince Barrett: 1 interactions
+Lequel <-> Spacetown: 1 interactions
+Lequel <-> Sammy: 1 interactions
+Lequel <-> Vince Barrett: 1 interactions
+Enchanté <-> Spacetown: 1 interactions
+Enchanté <-> Enderby: 1 interactions
+Enchanté <-> Gerrigel: 1 interactions
+Enchanté <-> Sammy: 1 interactions
+Enchanté <-> Lequel: 1 interactions
+Enchanté <-> Vince Barrett: 1 interactions
+Enchanté <-> Francis: 1 interactions
+Enchanté <-> Julius: 1 interactions
+Francis <-> Spacetown: 1 interactions
+Francis <-> Gerrigel: 1 interactions
+Francis <-> Sammy: 1 interactions
+Francis <-> Lequel: 1 interactions
+Francis <-> Vince Barrett: 1 interactions
+Francis <-> Julius: 1 interactions
+Sarton <-> Spacetown: 2 interactions
+Comprenez <-> Spacetown: 1 interactions
+Comprenez <-> Enderby: 1 interactions
+Comprenez <-> Lije: 1 interactions
+Comprenez <-> Jézabel: 1 interactions
+Comprenez <-> Sarton: 1 interactions
+Comprenez <-> Julius Enderby: 1 interactions
+Cassez <-> Spacetown: 1 interactions
+Cassez <-> Elijah Baley: 1 interactions
+Cassez <-> Olivaw: 1 interactions
+Cassez <-> Spacien: 1 interactions
+Cassez <-> Julius Enderby: 1 interactions
+Jéhu <-> Lije: 1 interactions
+Jéhu <-> Naboth: 1 interactions
+Jéhu <-> Olivaw: 1 interactions
+Jéhu <-> Mes: 1 interactions
+Jéhu <-> Jézabel: 1 interactions
+Jéhu <-> Lije Baley: 1 interactions
+Bentley Baley <-> Jéhu: 1 interactions
+Bentley Baley <-> Lije: 1 interactions
+Bentley Baley <-> Naboth: 1 interactions
+Bentley Baley <-> Olivaw: 1 interactions
+Bentley Baley <-> Jessica: 1 interactions
+Bentley Baley <-> Mes: 1 interactions
+Bentley Baley <-> Jouer: 1 interactions
+Bentley Baley <-> Jézabel: 1 interactions
+Bentley Baley <-> Lije Baley: 1 interactions
+Naboth <-> Olivaw: 1 interactions
+Jessica <-> Jéhu: 1 interactions
+Jessica <-> Lije: 1 interactions
+Jessica <-> Naboth: 1 interactions
+Jessica <-> Olivaw: 1 interactions
+Jessica <-> Mes: 1 interactions
+Jessica <-> Jouer: 1 interactions
+Jessica <-> Jézabel: 1 interactions
+Jessica <-> Lije Baley: 1 interactions
+Mes <-> Naboth: 1 interactions
+Mes <-> Olivaw: 1 interactions
+Jouer <-> Jéhu: 1 interactions
+Jouer <-> Lije: 1 interactions
+Jouer <-> Naboth: 1 interactions
+Jouer <-> Olivaw: 1 interactions
+Jouer <-> Mes: 1 interactions
+Jouer <-> Jézabel: 1 interactions
+Jouer <-> Lije Baley: 1 interactions
+Baal <-> Jéhu: 1 interactions
+Baal <-> Lije: 1 interactions
+Baal <-> Bentley Baley: 1 interactions
+Baal <-> Naboth: 1 interactions
+Baal <-> Olivaw: 1 interactions
+Baal <-> Jessica: 1 interactions
+Baal <-> Mes: 1 interactions
+Baal <-> Jouer: 1 interactions
+Baal <-> Bentley: 1 interactions
+Baal <-> Jézabel: 1 interactions
+Baal <-> Ben: 1 interactions
+Baal <-> Lije Baley: 1 interactions
+Lije Baley <-> Naboth: 1 interactions
+Lije Baley <-> Olivaw: 1 interactions
+Lije Baley <-> Mes: 1 interactions
+Impensable <-> Spacetown: 1 interactions
+Impensable <-> Lije: 1 interactions
+Impensable <-> Olivaw: 1 interactions
+Impensable <-> Voudriez: 1 interactions
+Impensable <-> Impossible: 1 interactions
+Impensable <-> Julius Enderby: 1 interactions
+Impensable <-> Julius: 1 interactions
+Aurore <-> Lije: 1 interactions
+Aurore <-> Fastolfe: 2 interactions
+Aurore <-> Baley: 2 interactions
+Aurore <-> Spacetown: 1 interactions
+Aurore <-> Epoque Médiévale: 1 interactions
+Aurore <-> Remontant: 1 interactions
+Aurore <-> Voilà: 1 interactions
+Epoque Médiévale <-> Spacetown: 1 interactions
+Epoque Médiévale <-> Fastolfe: 1 interactions
+Epoque Médiévale <-> Remontant: 1 interactions
+Epoque Médiévale <-> Voilà: 1 interactions
+Remontant <-> Spacetown: 1 interactions
+Remontant <-> Voilà: 1 interactions

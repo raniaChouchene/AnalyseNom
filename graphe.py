@@ -1,96 +1,103 @@
 import spacy
-from collections import defaultdict
 import os
-import networkx as nx
 from itertools import combinations
+from collections import defaultdict
+import networkx as nx
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # Charger le modèle de langue français
 nlp = spacy.load("fr_core_news_sm")
 
-def detect_character_interactions_in_folder(folder_path, output_file="character_interactions.txt"):
+def detect_and_draw_interactions(folder_path, output_file="interactions_summary.txt", graph_output="interactions_graph.png", csv_output="interactions.csv"):
     """
-    Détecte les interactions entre personnages (co-occurrences) dans tous les fichiers texte d'un dossier et construit un graphe des interactions.
+    Détecte les interactions entre personnages, génère un graphique de réseau et exporte les données au format CSV.
     :param folder_path: Chemin vers le dossier contenant les fichiers texte d'entrée.
     :param output_file: Chemin vers le fichier texte de sortie.
+    :param graph_output: Chemin vers l'image de sortie du graphique.
+    :param csv_output: Chemin vers le fichier CSV de sortie.
     """
-    # Initialiser un dictionnaire pour stocker les co-occurrences des personnages
-    interactions = defaultdict(int)
+    interactions = defaultdict(lambda: defaultdict(int))
 
-    # Créer un graphe pour les interactions entre personnages
-    G = nx.Graph()
+    def is_valid_character(entity):
+        """
+        Vérifie si une entité est un personnage valide (nom propre uniquement).
+        """
+        if len(entity) < 3:
+            return False
+        doc = nlp(entity)
+        if all(token.pos_ == "PROPN" and token.is_alpha for token in doc):
+            return True
+        return False
 
-    # Fonction pour vérifier si une entité est un personnage valide
-    def is_valid_character(entity, context_sentence):
-        if " " not in entity:  # Doit contenir un prénom et un nom
-            return False
-        if len(entity) < 3:  # Eviter les entités courtes
-            return False
-        if any(token.pos_ == "VERB" for token in context_sentence):  # Eviter les verbes
-            return False
-        return True
-
-    # Parcourir tous les fichiers dans le dossier
+    # Parcourir les fichiers texte dans le dossier
     for filename in os.listdir(folder_path):
         file_path = os.path.join(folder_path, filename)
-
-        # Vérifier si c'est un fichier texte
         if os.path.isfile(file_path) and file_path.endswith('.txt'):
-            print(f"Traitement du fichier : {filename}")
-            
-            # Lire le contenu du fichier d'entrée
             with open(file_path, 'r', encoding='utf-8') as file:
                 text = file.read()
 
-            # Analyse du texte avec spaCy
+            # Analyse le texte
             doc = nlp(text)
 
-            # Stockage des personnages présents dans ce fichier
-            characters_in_file = []
+            # Extraction des personnages
+            characters_in_text = [
+                ent.text for ent in doc.ents
+                if ent.label_ == "PER" and is_valid_character(ent.text)
+            ]
 
-            # Extraction des entités nommées de type "PER" (Personnes)
-            for ent in doc.ents:
-                if ent.label_ == "PER" and is_valid_character(ent.text, ent.sent):
-                    characters_in_file.append(ent.text)
+            characters_in_text = list(set(characters_in_text))
 
-            # Ajouter les interactions entre les personnages présents dans ce fichier
-            for char1, char2 in combinations(set(characters_in_file), 2):
-                interactions[frozenset([char1, char2])] += 1
-                # Ajouter les personnages dans le graphe s'ils n'y sont pas déjà
-                if char1 not in G:
-                    G.add_node(char1)
-                if char2 not in G:
-                    G.add_node(char2)
-                # Ajouter une arête entre les personnages avec un poids correspondant au nombre de co-occurrences
-                G.add_edge(char1, char2, weight=interactions[frozenset([char1, char2])])
+            # Création des interactions entre personnages
+            for char1, char2 in combinations(characters_in_text, 2):
+                interactions[char1][char2] += 1
+                interactions[char2][char1] += 1
 
-    # Sauvegarder les résultats dans le fichier de sortie
-    with open(output_file, 'a', encoding='utf-8') as file:  # Mode append pour ajouter sans écraser
+    # Vérifier si des interactions ont été trouvées
+    if not interactions:
+        print("Aucune interaction détectée. Aucun fichier ne sera créé.")
+        return
+
+    # Écrire les interactions dans un fichier texte
+    with open(output_file, 'w', encoding='utf-8') as file:
         file.write("\n--- Interactions entre personnages ---\n")
-        for interaction, count in sorted(interactions.items(), key=lambda x: x[1], reverse=True):
-            # Récupérer les personnages des co-occurrences sous forme de tuple
-            chars = list(interaction)
-            file.write(f"{chars[0]} et {chars[1]}: {count} interactions\n")
+        for char1, related_chars in interactions.items():
+            for char2, count in related_chars.items():
+                if char1 < char2:
+                    file.write(f"{char1} <-> {char2}: {count} interactions\n")
 
-    print(f"Détection des interactions terminée. Résultats ajoutés dans {output_file}")
-    
-    return G
+    print(f"Extraction des interactions terminée. Résultats ajoutés dans {output_file}")
 
+    # Création et visualisation du graphe
+    G = nx.Graph()
+    for char1, related_chars in interactions.items():
+        for char2, count in related_chars.items():
+            if count > 0:
+                G.add_edge(char1, char2, weight=count)
 
-# Exemple d'utilisation
+    plt.figure(figsize=(8, 8))
+    pos = nx.spring_layout(G, seed=42)
+    nx.draw_networkx_nodes(G, pos, node_size=500, node_color="skyblue", alpha=0.9)
+    nx.draw_networkx_edges(G, pos, width=1.5, alpha=0.7, edge_color="gray")
+    nx.draw_networkx_labels(G, pos, font_size=10, font_family="sans-serif")
+    plt.title("Interactions entre personnages")
+    plt.savefig(graph_output)
+    plt.show()
+
+    # Exporter les interactions au format CSV
+    data = []
+    for char1, related_chars in interactions.items():
+        for char2, count in related_chars.items():
+            if char1 < char2:
+                data.append({"Personnage 1": char1, "Personnage 2": char2, "Interactions": count})
+
+    if data:
+        df = pd.DataFrame(data)
+        df.to_csv(csv_output, index=False, encoding='utf-8')
+        print(f"Export des interactions terminé. Fichier CSV sauvegardé sous {csv_output}")
+    else:
+        print("Aucune donnée valide pour le fichier CSV.")
+
+# Appel de la fonction
 folder_path = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\DataFile"
-G = detect_character_interactions_in_folder(folder_path)
-
-# Visualiser le graphe des interactions
-import matplotlib.pyplot as plt
-
-# Dessiner le graphe
-plt.figure(figsize=(12, 12))
-pos = nx.spring_layout(G, k=0.5)
-nx.draw(G, pos, with_labels=True, node_size=5000, node_color="skyblue", font_size=10, font_weight="bold", width=1, alpha=0.7)
-
-# Ajouter les poids des arêtes (co-occurrences) sur le graphe
-edge_labels = nx.get_edge_attributes(G, 'weight')
-nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
-
-plt.title("Graphe des interactions entre personnages")
-plt.show()
+detect_and_draw_interactions(folder_path)
