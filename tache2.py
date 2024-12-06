@@ -10,7 +10,7 @@ def get_bigrams(words):
     return zip(words, islice(words, 1, None))
 
 # Chemin du fichier texte
-fichier = r'C:\Users\user\Desktop\AmsProjet3\clearTextFonadionSample.txt'
+fichier = r'C:\Users\ADMIN\Desktop\AMS_PROJET\tp3_reseau\generationPersonnage\cleanTextSecondeFondation.txt'
 # Lire le contenu du fichier
 with open(fichier, 'r', encoding='utf-8') as file:
     texte = file.read()
