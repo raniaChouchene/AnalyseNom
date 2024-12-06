@@ -4,25 +4,21 @@ from itertools import combinations
 from collections import defaultdict
 import networkx as nx
 import pandas as pd
-import matplotlib.pyplot as plt
 
-
+# Charger le modèle de langue français de spaCy
 nlp = spacy.load("fr_core_news_sm")
-
 
 def detect_and_draw_interactions(
     folder_path,
-    graph_output="interactions_graph.png",
-    csv_output="my_submission.csv",
+    output_csv="submission.csv",
     interaction_threshold=1
 ):
     """
-    Détecte les interactions entre personnages dans des fichiers texte, génère des graphes GraphML et les exporte en CSV.
+    Détecte les interactions entre les personnages dans des fichiers texte, génère un graphe pour chaque chapitre et exporte les résultats sous forme de CSV pour Kaggle.
     
     :param folder_path: Chemin du dossier contenant les fichiers texte.
-    :param graph_output: Chemin pour enregistrer une image de démonstration du graphe des interactions.
-    :param csv_output: Chemin pour enregistrer le CSV avec les graphes au format GraphML.
-    :param interaction_threshold: Nombre minimum d'interactions pour inclure dans le graphe.
+    :param output_csv: Chemin pour enregistrer le fichier CSV des résultats.
+    :param interaction_threshold: Nombre minimum d'interactions pour inclure dans le graphe et le CSV.
     """
     interactions = defaultdict(lambda: defaultdict(int))
 
@@ -30,86 +26,81 @@ def detect_and_draw_interactions(
         """
         Vérifie si une entité est un nom propre valide.
         """
-        if len(entity.strip()) < 3: 
+        if len(entity.strip()) < 3:  # Élimine les noms trop courts
             return False
         doc = nlp(entity.strip())
         return all(token.pos_ == "PROPN" and token.is_alpha for token in doc)
 
-    # Stockage des graphes pour l'exportation
-    graph_data = {"ID": [], "graphml": []}
+    # Définir les chapitres à analyser
+    chapter_files = [
+        (range(0, 19), "paf"), 
+       # (range(0, 18), "lca")   # 18 chapitres pour "Les Cavernes d'Acier"
+    ]
+    
+    df_dict = {"ID": [], "graphml": []}
 
-    for filename in os.listdir(folder_path):
-        file_path = os.path.join(folder_path, filename)
-        if os.path.isfile(file_path) and file_path.endswith('.txt'):
-            try:
-                with open(file_path, 'r', encoding='utf-8') as file:
-                    text = file.read().strip()
-                if not text:
-                    print(f"Fichier vide ignoré : {filename}")
-                    continue
+    # Traiter chaque chapitre des livres
+    for chapters, book_code in chapter_files:
+        for chapter in chapters:
+            file_path = os.path.join(folder_path, f"chapter_{chapter+1}.txt")  # Compte à partir de 1 pour les fichiers
+            if os.path.isfile(file_path):
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as file:
+                        text = file.read().strip()
+                    if not text:
+                        print(f"Fichier vide ignoré : {file_path}")
+                        continue
 
-                # Analyse du texte avec spaCy
-                doc = nlp(text)
+                    # Analyse du texte avec spaCy
+                    doc = nlp(text)
 
-                characters_in_text = [
-                    ent.text.strip() for ent in doc.ents
-                    if ent.label_ == "PER" and is_valid_character(ent.text)
-                ]
-                characters_in_text = list(set(characters_in_text))  # Éliminer les doublons
+                    # Extraire les noms de personnages valides
+                    characters_in_text = [
+                        ent.text.strip() for ent in doc.ents
+                        if ent.label_ == "PER" and is_valid_character(ent.text)
+                    ]
+                    characters_in_text = list(set(characters_in_text))  # Éliminer les doublons
 
-              
-                for char1, char2 in combinations(characters_in_text, 2):
-                    interactions[char1][char2] += 1
-                    interactions[char2][char1] += 1
+                    # Créer les interactions entre les personnages
+                    for char1, char2 in combinations(characters_in_text, 2):
+                        interactions[char1][char2] += 1
+                        interactions[char2][char1] += 1
 
-              
-                G = nx.Graph()
-                for char1, related_chars in interactions.items():
-                    for char2, count in related_chars.items():
-                        if count >= interaction_threshold:
-                            G.add_edge(char1, char2, weight=count)
+                    # Créer un graphe pour le chapitre
+                    G = nx.Graph()
+                    for char1, related_chars in interactions.items():
+                        for char2, count in related_chars.items():
+                            if count >= interaction_threshold:
+                                G.add_edge(char1, char2, weight=count)
 
-              
-                for node in G.nodes():
-                    G.nodes[node]["names"] = f"{node};{node.lower()}"
+                    # Ajouter les noms des personnages au graphe sous l'attribut 'names'
+                    for node in G.nodes():
+                        G.nodes[node]["names"] = node  # Ajout du nom du personnage à l'attribut 'names'
 
-           
-                graphml = "".join(nx.generate_graphml(G))
-                graph_id = filename.split('.')[0]
-                graph_data["ID"].append(graph_id)
-                graph_data["graphml"].append(graphml)
+                    # Enregistrer le graphe au format GraphML
+                    graphml = "".join(nx.generate_graphml(G))
 
-            except Exception as e:
-                print(f"Erreur lors du traitement du fichier {filename} : {e}")
+                    # Ajouter les résultats dans le DataFrame
+                    df_dict["ID"].append(f"{book_code}{chapter}")
+                    df_dict["graphml"].append(graphml)
+
+                except Exception as e:
+                    print(f"Erreur lors du traitement du fichier {file_path} : {e}")
+            else:
+                print(f"Fichier non trouvé : {file_path}")
 
   
-    if G:
-        plt.figure(figsize=(10, 10))
-        pos = nx.spring_layout(G, seed=42)
-        edges = G.edges(data=True)
 
-        nx.draw_networkx_nodes(G, pos, node_size=600, node_color="skyblue", alpha=0.9)
-        nx.draw_networkx_edges(
-            G, pos,
-            edgelist=[(u, v) for u, v, d in edges if d["weight"] >= interaction_threshold],
-            width=[d["weight"] * 0.5 for u, v, d in edges if d["weight"] >= interaction_threshold],
-            alpha=0.6,
-            edge_color="gray"
-        )
-        nx.draw_networkx_labels(G, pos, font_size=10, font_family="sans-serif")
-        plt.title("Exemple de graphe d'interactions", fontsize=14)
-        plt.savefig(graph_output, dpi=300)
-        plt.show()
-
-    if graph_data["ID"]:
-        df = pd.DataFrame(graph_data)
-        df.set_index("ID", inplace=True)
-        df.to_csv(csv_output, encoding='utf-8')
-        print(f"Exportation des graphes terminée. Fichier CSV enregistré sous {csv_output}")
+    # Créer le DataFrame et l'exporter en CSV
+    if df_dict["ID"]:
+        df = pd.DataFrame(df_dict)
+        df.to_csv(output_csv, index=False, encoding='utf-8')
+        print(f"Soumission terminée. Fichier CSV enregistré sous {output_csv}")
     else:
-        print("Aucun graphe valide à exporter.")
+        print("Aucune interaction détectée. Aucun fichier CSV n'a été créé.")
 
-
+# Chemin du dossier contenant les fichiers texte
 folder_path = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\DataFile"
 
+# Exécuter la fonction
 detect_and_draw_interactions(folder_path)
