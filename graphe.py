@@ -1,107 +1,139 @@
-import spacy
 import os
 from itertools import combinations
 from collections import defaultdict
 import networkx as nx
 import pandas as pd
+from gensim import corpora, models, similarities
+from gensim.utils import simple_preprocess
+from unidecode import unidecode
+import spacy
 
-# Charger le modèle de langue français de spaCy
-nlp = spacy.load("fr_core_news_sm")
+# Load spaCy's French model
+nlp = spacy.load("fr_core_news_md")
 
-def detect_and_draw_interactions(
-    folder_path,
-    output_csv="submission.csv",
-    interaction_threshold=1
-):
+def detect_and_draw_interactions(folder_path, output_csv="submission.csv", interaction_threshold=1):
     """
-    Détecte les interactions entre les personnages dans des fichiers texte, génère un graphe pour chaque chapitre et exporte les résultats sous forme de CSV pour Kaggle.
-    
-    :param folder_path: Chemin du dossier contenant les sous-dossiers des livres.
-    :param output_csv: Chemin pour enregistrer le fichier CSV des résultats.
-    :param interaction_threshold: Nombre minimum d'interactions pour inclure dans le graphe et le CSV.
+    Detect character interactions in text files, generate graphs for each chapter, and export results to a CSV.
+
+    :param folder_path: Path to the folder containing subfolders with books and chapters.
+    :param output_csv: Path to save the CSV results.
+    :param interaction_threshold: Minimum number of interactions to include in the graph and CSV.
     """
-    interactions = defaultdict(lambda: defaultdict(int))
+    books = [
+        (list(range(1, 20)), "paf"),
+        (list(range(1, 19)), "lca"),
+    ]
 
-    def is_valid_character(entity):
-        """
-        Vérifie si une entité est un nom propre valide.
-        """
-        if len(entity.strip()) < 3:  
-            return False
-        doc = nlp(entity.strip())
-        return all(token.pos_ == "PROPN" and token.is_alpha for token in doc)
-
- 
-    subfolders = ["les_cavernes_d_acier", "prelude_a_fondation"]
-    
     df_dict = {"ID": [], "graphml": []}
+    lieuxASupprimer = []
+    listeDePersonnagesCorpus = []
 
-    for subfolder in subfolders:
-        subfolder_path = os.path.join(folder_path, subfolder)
-        if os.path.isdir(subfolder_path):
-            chapter_files = [f for f in os.listdir(subfolder_path) if f.endswith('.txt')]
-            for chapter_file in chapter_files:
-                chapter_number = chapter_file.split('_')[1].split('.')[0]  
-                file_path = os.path.join(subfolder_path, chapter_file)
-                
-                if os.path.isfile(file_path):
-                    try:
-                        with open(file_path, 'r', encoding='utf-8') as file:
-                            text = file.read().strip()
-                        if not text:
-                            print(f"Fichier vide ignoré : {file_path}")
-                            continue
+    for chapters, book_code in books:
+        for chapter in chapters:
+            repertory = "prelude_a_fondation" if book_code == "paf" else "les_cavernes_d_acier"
+            chapter_file = f"{folder_path}/{repertory}/chapter_{chapter}.txt.preprocessed"
 
-                        # Analyse du texte avec spaCy
-                        doc = nlp(text)
+            if not os.path.isfile(chapter_file):
+                print(f"File not found: {chapter_file}")
+                continue
 
-                        # Extraire les noms de personnages valides
-                        characters_in_text = [
-                            ent.text.strip() for ent in doc.ents
-                            if ent.label_ == "PER" and is_valid_character(ent.text)
-                        ]
-                        characters_in_text = list(set(characters_in_text))  
-                        for char1, char2 in combinations(characters_in_text, 2):
-                            interactions[char1][char2] += 1
-                            interactions[char2][char1] += 1
+            with open(chapter_file, "r", encoding="utf-8") as file:
+                text = file.read()
 
-                        # Créer un graphe pour le chapitre
-                        G = nx.Graph()
-                        for char1, related_chars in interactions.items():
-                            for char2, count in related_chars.items():
-                                if count >= interaction_threshold:
-                                    G.add_edge(char1, char2, weight=count)
+            doc = nlp(text)
 
-                        # Ajouter les noms des personnages au graphe sous l'attribut 'names'
-                        for node in G.nodes():
-                            G.nodes[node]["names"] = node 
-                        graphml = "".join(nx.generate_graphml(G))
+            # Filter entities and identify valid characters
+            listePersonnages, listeLieux = [], []
+            for ent in doc.ents:
+                if ent.label_ == "PER" and len(ent.text) > 2:
+                    ent_text = unidecode(ent.text.strip())
+                    listePersonnages.append(ent_text)
+                    listeDePersonnagesCorpus.append(ent_text)
+                elif ent.label_ == "LOC":
+                    listeLieux.append(ent.text.strip())
 
-                        # Ajouter les résultats dans le DataFrame
-                        df_dict["ID"].append(f"{subfolder[0:3]}{chapter_number}")  
-                        df_dict["graphml"].append(graphml)
+            # Filter out locations mistakenly detected as characters
+            listePersonnagesTrier = set(listePersonnages)
+            listeLieuxTrier = set(listeLieux)
 
-                    except Exception as e:
-                        print(f"Erreur lors du traitement du fichier {file_path} : {e}")
-                else:
-                    print(f"Fichier non trouvé : {file_path}")
-        else:
-            print(f"Répertoire non trouvé : {subfolder_path}")
+            for personnage in listePersonnagesTrier:
+                if listeLieux.count(personnage) > listePersonnages.count(personnage):
+                    lieuxASupprimer.append(personnage)
 
+            listePersonnages = [p for p in listePersonnagesTrier if p not in lieuxASupprimer]
 
-    if len(df_dict["ID"]) != 37:
-        print(f"Erreur : Nombre de chapitres doit être 37, mais il y en a {len(df_dict['ID'])}.")
+            # Identify and group name variants
+            listeNomsPersonnages = []
+            for nom in listePersonnages:
+                variantesNoms = [nom]
+                for autreNom in listePersonnages:
+                    if autreNom != nom and (autreNom in nom or nom in autreNom):
+                        variantesNoms.append(autreNom)
+                if not any(sorted(variantesNoms) == sorted(existing) for existing in listeNomsPersonnages):
+                    listeNomsPersonnages.append(variantesNoms)
+
+            # Create the interaction graph
+            G = nx.Graph()
+
+            # Train gensim LSI model on the chapter
+            processed_docs = [simple_preprocess(doc) for doc in text.split("\n")]
+            dictionary = corpora.Dictionary(processed_docs)
+            corpus = [dictionary.doc2bow(doc) for doc in processed_docs]
+            lsi = models.LsiModel(corpus, num_topics=200)
+            index = similarities.MatrixSimilarity(lsi[corpus])
+
+            relations = defaultdict(list)
+            for i in listeNomsPersonnages:
+                for j in i:
+                    for k in listeNomsPersonnages:
+                        for l in k:
+                            if j != l:
+                                query_bow_j = dictionary.doc2bow(simple_preprocess(j))
+                                query_lsi_j = lsi[query_bow_j]
+                                sims_j = index[query_lsi_j]
+
+                                query_bow_l = dictionary.doc2bow(simple_preprocess(l))
+                                query_lsi_l = lsi[query_bow_l]
+                                sims_l = index[query_lsi_l]
+
+                                if any(sim_j > 0.09 and sim_l > 0.09 for sim_j, sim_l in zip(sims_j, sims_l)):
+                                    relations[j].append(l)
+
+            # Populate the graph with nodes and edges
+            for source, targets in relations.items():
+                for target in targets:
+                    G.add_edge(source, target)
+            
+            for group in listeNomsPersonnages:
+                group = list(group)
+                first_element = group[0]
+                remaining_elements = ";".join(group[1:])
+                if first_element not in G.nodes:
+                    G.add_node(first_element)
+                G.nodes[first_element]["names"] = f"{first_element};{remaining_elements}" if remaining_elements else first_element
+
+            # Save graph data to DataFrame
+            df_dict["ID"].append(f"{book_code}{chapter}")
+
+            # Generate the GraphML content as a string
+            graphml_content = "<graphml xmlns='http://graphml.graphdrawing.org/xmlns' " \
+                              "xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation=" \
+                              "'http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd'>"
+
+            graphml_content += "".join(nx.generate_graphml(G))
+            graphml_content += "</graphml>"
+
+            df_dict["graphml"].append(graphml_content)
+
+    # Save results to CSV
+    if len(df_dict["ID"]) != sum(len(chapters) for chapters, _ in books):
+        print(f"Error: Chapter count mismatch. Expected {sum(len(chapters) for chapters, _ in books)}, found {len(df_dict['ID'])}.")
         return
 
+    df = pd.DataFrame(df_dict)
+    df.to_csv(output_csv, index=False, encoding="utf-8")
+    print(f"Submission completed. CSV saved to {output_csv}")
 
-    if df_dict["ID"]:
-        df = pd.DataFrame(df_dict)
-        df.to_csv(output_csv, index=False, encoding='utf-8')
-        print(f"Soumission terminée. Fichier CSV enregistré sous {output_csv}")
-    else:
-        print("Aucune interaction détectée. Aucun fichier CSV n'a été créé.")
-
-folder_path = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\DataFile"
-
-
+# Define folder path
+folder_path = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\allfiles\reseaux-de-personnages-de-fondation-session-2"
 detect_and_draw_interactions(folder_path)
