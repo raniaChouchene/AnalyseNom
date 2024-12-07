@@ -7,9 +7,18 @@ from gensim import corpora, models, similarities
 from gensim.utils import simple_preprocess
 from unidecode import unidecode
 import spacy
+from xml.sax.saxutils import escape
 
 # Load spaCy's French model
 nlp = spacy.load("fr_core_news_md")
+
+def sanitize_node_id(node_id):
+    """
+    Sanitize node IDs to ensure they are valid for GraphML.
+    - Replace spaces with underscores.
+    - Strip leading and trailing whitespace.
+    """
+    return node_id.strip().replace(" ", "_")
 
 def detect_and_draw_interactions(folder_path, output_csv="submission.csv", interaction_threshold=1):
     """
@@ -100,30 +109,32 @@ def detect_and_draw_interactions(folder_path, output_csv="submission.csv", inter
                                     relations[j].append(l)
 
             # Populate the graph with nodes and edges
-            for source, targets in relations.items():
-                for target in targets:
-                    G.add_edge(source, target)
+            if relations:
+                for source, targets in relations.items():
+                    for target in targets:
+                        sanitized_source = sanitize_node_id(source)
+                        sanitized_target = sanitize_node_id(target)
+                        G.add_edge(sanitized_source, sanitized_target)
             
             for group in listeNomsPersonnages:
                 group = list(group)
-                first_element = group[0]
-                remaining_elements = ";".join(group[1:])
+                first_element = sanitize_node_id(group[0])
+                remaining_elements = ";".join(sanitize_node_id(p) for p in group[1:])
                 if first_element not in G.nodes:
                     G.add_node(first_element)
-                G.nodes[first_element]["names"] = f"{first_element};{remaining_elements}" if remaining_elements else first_element
+                G.nodes[first_element]["names"] = escape(
+                    f"{first_element};{remaining_elements}" if remaining_elements else first_element
+                )
 
-            # Save graph data to DataFrame
-            df_dict["ID"].append(f"{book_code}{chapter-1}")
+            for node in G.nodes:
+                if "names" not in G.nodes[node]:
+                    G.nodes[node]["names"] = node
+            
+            
+            df_dict["ID"].append("{}{}".format(book_code, chapter - 1))
 
-            # Generate the GraphML content as a string
-            graphml_content = "<graphml xmlns='http://graphml.graphdrawing.org/xmlns' " \
-                              "xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation=" \
-                              "'http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd'>"
-
-            graphml_content += "".join(nx.generate_graphml(G))
-            graphml_content += "</graphml>"
-
-            df_dict["graphml"].append(graphml_content)
+            graphml = "".join(nx.generate_graphml(G))
+            df_dict["graphml"].append(graphml)
 
     # Save results to CSV
     if len(df_dict["ID"]) != sum(len(chapters) for chapters, _ in books):
