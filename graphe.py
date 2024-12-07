@@ -113,7 +113,7 @@ def detect_and_draw_interactions(folder_path, output_csv="submission.csv", inter
                 G.nodes[first_element]["names"] = f"{first_element};{remaining_elements}" if remaining_elements else first_element
 
             # Save graph data to DataFrame
-            df_dict["ID"].append(f"{book_code}{chapter}")
+            df_dict["ID"].append(f"{book_code}{chapter-1}")
 
             # Generate the GraphML content as a string
             graphml_content = "<graphml xmlns='http://graphml.graphdrawing.org/xmlns' " \
