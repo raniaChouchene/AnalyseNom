@@ -1,0 +1,229 @@
+
+--- Résultats extraits des fichiers ---
+R. Daneel: 18 occurrences
+balbutia Enderby: 3 occurrences
+s’écria Gerrigel: 2 occurrences
+Norris n’: 2 occurrences
+Bentley Baley: 2 occurrences
+R. Sammy: 2 occurrences
+Vous m’: 1 occurrences
+Pauvre Julius: 1 occurrences
+Cacher l’: 1 occurrences
+Voyons Jessie: 1 occurrences
+Dieu du Ciel: 1 occurrences
+saint Gerrigel: 1 occurrences
+Sarton n’: 1 occurrences
+R. Daneel
+Olivaw: 1 occurrences
+pièce !: 1 occurrences
+Moi pas: 1 occurrences
+Julius Enderby: 1 occurrences
+s’écria Enderby: 1 occurrences
+s’écria Baley: 1 occurrences
+
+--- Résultats extraits des fichiers ---
+Robot Daneel: 100 occurrences
+R. Daneel: 98 occurrences
+R. Sammy: 28 occurrences
+grommela Baley: 16 occurrences
+Fastolfe n’: 12 occurrences
+Mondes Extérieurs: 10 occurrences
+Julius Enderby: 8 occurrences
+s’écria Baley: 7 occurrences
+Ca m’: 6 occurrences
+Baley n’: 6 occurrences
+Baley s’: 5 occurrences
+constateriez qu’: 5 occurrences
+Daneel Olivaw: 5 occurrences
+j’ai l’: 4 occurrences
+Francis Clousarr: 4 occurrences
+Vince Barrett: 4 occurrences
+Elijah Baley: 4 occurrences
+Ne croyez: 3 occurrences
+A. Gerrigel: 2 occurrences
+Vous croyez: 2 occurrences
+s’écria Enderby: 2 occurrences
+Lije Baley: 2 occurrences
+R. Daneel Olivaw: 2 occurrences
+n’aimez pas les: 1 occurrences
+Roj Nemennuh Sarton: 1 occurrences
+Section Q. 27: 1 occurrences
+bredouilla Baley: 1 occurrences
+poignet meurtri: 1 occurrences
+Paul Gerhard: 1 occurrences
+l’on n’: 1 occurrences
+Robotique des Mondes Extérieurs: 1 occurrences
+l’Hôtel de Ville: 1 occurrences
+Jane Myers: 1 occurrences
+Joseph Klemin: 1 occurrences
+n’ai pas l’: 1 occurrences
+Entendu !: 1 occurrences
+M. Clousarr: 1 occurrences
+s’écria Clousarr: 1 occurrences
+l’affaire R. Sammy: 1 occurrences
+saint Fastolfe: 1 occurrences
+regardez Daneel: 1 occurrences
+R. Sammy n’: 1 occurrences
+Docteur Gerrigel: 1 occurrences
+Enderby l’: 1 occurrences
+s’aperçut qu’: 1 occurrences
+n’ai qu’: 1 occurrences
+Ca n’: 1 occurrences
+j’ai eu l’: 1 occurrences
+écume séchée: 1 occurrences
+Y étiez: 1 occurrences
+Vous m’: 1 occurrences
+R. Daneel sauta: 1 occurrences
+Jéhovah n’: 1 occurrences
+Jézabel s’: 1 occurrences
+s’écria Bentley: 1 occurrences
+M. Olivaw: 1 occurrences
+l’on m’: 1 occurrences
+Enderby n’: 1 occurrences
+n’as qu’: 1 occurrences
+Ca s’: 1 occurrences
+Veuillez m’: 1 occurrences
+Elijah m’: 1 occurrences
+supposez maintenant: 1 occurrences
+Supposez qu’: 1 occurrences
+Monsieur Baley: 1 occurrences
+R. Daneel s’: 1 occurrences
+Epoque Médiévale: 1 occurrences
+
+--- Résultats extraits des fichiers ---
+Robot Daneel: 100 occurrences
+R. Daneel: 98 occurrences
+R. Sammy: 28 occurrences
+grommela Baley: 16 occurrences
+Fastolfe n’: 12 occurrences
+Mondes Extérieurs: 10 occurrences
+Julius Enderby: 8 occurrences
+s’écria Baley: 7 occurrences
+Ca m’: 6 occurrences
+Baley n’: 6 occurrences
+Baley s’: 5 occurrences
+constateriez qu’: 5 occurrences
+Daneel Olivaw: 5 occurrences
+j’ai l’: 4 occurrences
+Francis Clousarr: 4 occurrences
+Vince Barrett: 4 occurrences
+Elijah Baley: 4 occurrences
+Ne croyez: 3 occurrences
+A. Gerrigel: 2 occurrences
+Vous croyez: 2 occurrences
+s’écria Enderby: 2 occurrences
+Lije Baley: 2 occurrences
+R. Daneel Olivaw: 2 occurrences
+n’aimez pas les: 1 occurrences
+Roj Nemennuh Sarton: 1 occurrences
+Section Q. 27: 1 occurrences
+bredouilla Baley: 1 occurrences
+poignet meurtri: 1 occurrences
+Paul Gerhard: 1 occurrences
+l’on n’: 1 occurrences
+Robotique des Mondes Extérieurs: 1 occurrences
+l’Hôtel de Ville: 1 occurrences
+Jane Myers: 1 occurrences
+Joseph Klemin: 1 occurrences
+n’ai pas l’: 1 occurrences
+Entendu !: 1 occurrences
+M. Clousarr: 1 occurrences
+s’écria Clousarr: 1 occurrences
+l’affaire R. Sammy: 1 occurrences
+saint Fastolfe: 1 occurrences
+regardez Daneel: 1 occurrences
+R. Sammy n’: 1 occurrences
+Docteur Gerrigel: 1 occurrences
+Enderby l’: 1 occurrences
+s’aperçut qu’: 1 occurrences
+n’ai qu’: 1 occurrences
+Ca n’: 1 occurrences
+j’ai eu l’: 1 occurrences
+écume séchée: 1 occurrences
+Y étiez: 1 occurrences
+Vous m’: 1 occurrences
+R. Daneel sauta: 1 occurrences
+Jéhovah n’: 1 occurrences
+Jézabel s’: 1 occurrences
+s’écria Bentley: 1 occurrences
+M. Olivaw: 1 occurrences
+l’on m’: 1 occurrences
+Enderby n’: 1 occurrences
+n’as qu’: 1 occurrences
+Ca s’: 1 occurrences
+Veuillez m’: 1 occurrences
+Elijah m’: 1 occurrences
+supposez maintenant: 1 occurrences
+Supposez qu’: 1 occurrences
+Monsieur Baley: 1 occurrences
+R. Daneel s’: 1 occurrences
+Epoque Médiévale: 1 occurrences
+
+--- Résultats extraits des fichiers ---
+Robot Daneel: 100 occurrences
+R. Daneel: 98 occurrences
+R. Sammy: 28 occurrences
+grommela Baley: 16 occurrences
+Fastolfe n’: 12 occurrences
+Mondes Extérieurs: 10 occurrences
+Julius Enderby: 8 occurrences
+s’écria Baley: 7 occurrences
+Ca m’: 6 occurrences
+Baley n’: 6 occurrences
+Baley s’: 5 occurrences
+constateriez qu’: 5 occurrences
+Daneel Olivaw: 5 occurrences
+j’ai l’: 4 occurrences
+Francis Clousarr: 4 occurrences
+Vince Barrett: 4 occurrences
+Elijah Baley: 4 occurrences
+Ne croyez: 3 occurrences
+A. Gerrigel: 2 occurrences
+Vous croyez: 2 occurrences
+s’écria Enderby: 2 occurrences
+Lije Baley: 2 occurrences
+R. Daneel Olivaw: 2 occurrences
+n’aimez pas les: 1 occurrences
+Roj Nemennuh Sarton: 1 occurrences
+Section Q. 27: 1 occurrences
+bredouilla Baley: 1 occurrences
+poignet meurtri: 1 occurrences
+Paul Gerhard: 1 occurrences
+l’on n’: 1 occurrences
+Robotique des Mondes Extérieurs: 1 occurrences
+l’Hôtel de Ville: 1 occurrences
+Jane Myers: 1 occurrences
+Joseph Klemin: 1 occurrences
+n’ai pas l’: 1 occurrences
+Entendu !: 1 occurrences
+M. Clousarr: 1 occurrences
+s’écria Clousarr: 1 occurrences
+l’affaire R. Sammy: 1 occurrences
+saint Fastolfe: 1 occurrences
+regardez Daneel: 1 occurrences
+R. Sammy n’: 1 occurrences
+Docteur Gerrigel: 1 occurrences
+Enderby l’: 1 occurrences
+s’aperçut qu’: 1 occurrences
+n’ai qu’: 1 occurrences
+Ca n’: 1 occurrences
+j’ai eu l’: 1 occurrences
+écume séchée: 1 occurrences
+Y étiez: 1 occurrences
+Vous m’: 1 occurrences
+R. Daneel sauta: 1 occurrences
+Jéhovah n’: 1 occurrences
+Jézabel s’: 1 occurrences
+s’écria Bentley: 1 occurrences
+M. Olivaw: 1 occurrences
+l’on m’: 1 occurrences
+Enderby n’: 1 occurrences
+n’as qu’: 1 occurrences
+Ca s’: 1 occurrences
+Veuillez m’: 1 occurrences
+Elijah m’: 1 occurrences
+supposez maintenant: 1 occurrences
+Supposez qu’: 1 occurrences
+Monsieur Baley: 1 occurrences
+R. Daneel s’: 1 occurrences
+Epoque Médiévale: 1 occurrences

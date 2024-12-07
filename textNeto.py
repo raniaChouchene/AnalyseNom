@@ -2,13 +2,15 @@ import re
 import PyPDF2
 
 def nettoyer_texte(texte):
-    # Suppression des caractères spéciaux sauf le point et gestion des espaces
-    texte_propre = re.sub(r'\s+', ' ', texte)  # Remplace plusieurs espaces par un seul
-    texte_propre = re.sub(r'[^\w\s\.\,]', '', texte_propre)  # Supprime tous les caractères spéciaux sauf les lettres, chiffres, points et virgules
-
-    # Ajouter un retour à la ligne après chaque point suivi d'un espace
+    # Remplacement des multiples espaces par un seul, mais garder les retours à la ligne
+    texte_propre = re.sub(r'[^\S\r\n]+', ' ', texte) 
+    texte_propre = re.sub(r'[^\w\s\.\,\n]', '', texte_propre)  
+    
+    # Supprimer les espaces avant les ponctuations et s'assurer d'un espace après chaque point ou virgule
+    texte_propre = re.sub(r'\s+([.,])', r'\1', texte_propre)  
+    texte_propre = re.sub(r'([.,])(\S)', r'\1 \2', texte_propre)  
     texte_propre = re.sub(r'\.\s+', '.\n', texte_propre)
-
+    
     return texte_propre.strip()
 
 def extraire_texte_du_pdf(pdf_path):
@@ -21,17 +23,13 @@ def extraire_texte_du_pdf(pdf_path):
         return texte_complet
 
 def nettoyer_pdf(pdf_path, output_path):
-    # Extraction du texte brut du PDF
     texte_brut = extraire_texte_du_pdf(pdf_path)
-    
-    # Nettoyage du texte
     texte_propre = nettoyer_texte(texte_brut)
-    
-    # Sauvegarde du texte nettoyé dans un fichier
+
     with open(output_path, 'w', encoding='utf-8') as fichier_sortie:
         fichier_sortie.write(texte_propre)
 
-# Exemple d'utilisation
+
 pdf_file = r'C:\Users\user\Desktop\AmsProjet3\Corpus_ASIMOV\Fondation_sample.pdf'
 output_file = r'C:\Users\user\Desktop\AmsProjet3\clearTextFonadionSample.txt'
 

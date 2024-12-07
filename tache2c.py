@@ -1,29 +1,31 @@
 import spacy
 
-# Charger le modèle de langue français
+# Charger le modèle français de spaCy
 nlp = spacy.load("fr_core_news_sm")
 
-# Fonction pour générer la version POS du texte
+# Fonction pour générer les étiquettes POS dans le texte
 def generer_pos_texte(texte):
-    # Traiter le texte avec spaCy
     doc = nlp(texte)
-
-    # Créer une version avec les étiquettes POS
-    pos_texte = []
-    for token in doc:
-        pos_texte.append(f"{token.text}/{token.pos_}")
-
+    pos_texte = [f"{token.text}/{token.pos_}" for token in doc if not token.is_punct]
     return " ".join(pos_texte)
 
-# Chemin du fichier texte
-fichier = r'C:\Users\ADMIN\Desktop\AMS_PROJET\tp3_reseau\generationPersonnage\cleanTextSecondeFondation.txt'
+# Fonction pour traiter un fichier et enregistrer l'analyse POS dans un fichier de sortie
+def pos_tagging(input_file, output_file):
+    with open(input_file, 'r', encoding='utf-8') as f:
+        texte = f.read()
 
-# Lire le contenu du fichier
-with open(fichier, 'r', encoding='utf-8') as file:
-    texte = file.read()
+    resultat = generer_pos_texte(texte)
 
-# Générer la version POS du texte
-resultat = generer_pos_texte(texte)
+    # Enregistrer dans le fichier de sortie
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(resultat)
 
-# Afficher ou sauvegarder le résultat
-print(resultat)
+    print(f"Analyse POS terminée. Résultats enregistrés dans {output_file}")
+
+
+# Définition des chemins de fichiers
+input_file = r'C:\Users\user\Desktop\AmsProjet3\prelude_a_fondation\chapter_15.txt.preprocessed'
+output_file = r'C:\Users\user\Desktop\AmsProjet3\output2.txt'
+
+# Appel de la fonction
+pos_tagging(input_file, output_file)
