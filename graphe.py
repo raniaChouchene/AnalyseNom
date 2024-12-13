@@ -10,8 +10,10 @@ import spacy
 from unidecode import unidecode
 from fuzzywuzzy import fuzz, process
 from tqdm import tqdm
+import xml.etree.ElementTree as ET
+import xml.dom.minidom as minidom
 
-# Configure logging
+# Configuration de la journalisation
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s: %(message)s',
@@ -24,63 +26,49 @@ class CharacterInteractionAnalyzer:
     def __init__(
             self,
             nlp_model: str = "fr_core_news_lg",
-            name_match_threshold: int = 85,
-            interaction_logging: bool = False
+            name_match_threshold: int = 90,
+            interaction_logging: bool = False,
+            context_window: int = 3  # Réduction de la fenêtre de contexte
     ):
         """
-        Initialize the Character Interaction Analyzer.
-
-        Args:
-            nlp_model (str): Spacy language model to use
-            name_match_threshold (int): Fuzzy matching threshold for character names
-            interaction_logging (bool): Enable detailed interaction logging
+        Initialise l'Analyseur d'Interactions de Personnages.
         """
         try:
             self.nlp = spacy.load(nlp_model)
         except OSError:
-            logger.error(f"Could not load spaCy model {nlp_model}. Ensure it's installed.")
+            logger.error(f"Impossible de charger le modèle spaCy {nlp_model}.")
             raise
 
         self.name_match_threshold = name_match_threshold
         self.interaction_logging = interaction_logging
+        self.context_window = context_window
 
     @staticmethod
     def sanitize_node_id(node_id: str) -> str:
-        """
-        Normalize node identifiers consistently.
-
-        Args:
-            node_id (str): Original node identifier
-
-        Returns:
-            str: Normalized node identifier
-        """
+        """Normalise les identifiants de nœuds."""
         return unidecode(node_id.strip().replace(" ", "_").lower())
 
     def advanced_name_matching(self, names: List[str]) -> Dict[str, List[str]]:
         """
-        Group similar character names using fuzzy matching.
-
-        Args:
-            names (List[str]): List of character names to group
-
-        Returns:
-            Dict[str, List[str]]: Grouped character names
+        Groupe les noms de personnages similaires.
         """
         grouped_characters = defaultdict(list)
-        for name in names:
+        unique_names = list(set(names))  # Éliminer les doublons
+
+        for name in unique_names:
+            cleaned_name = name.strip().lower()
             if not grouped_characters:
-                grouped_characters[name].append(name)
+                grouped_characters[cleaned_name].append(name)
             else:
                 best_match, score = process.extractOne(
-                    name,
+                    cleaned_name,
                     list(grouped_characters.keys()),
-                    scorer=fuzz.token_sort_ratio
+                    scorer=fuzz.token_set_ratio
                 )
                 if best_match and score > self.name_match_threshold:
                     grouped_characters[best_match].append(name)
                 else:
-                    grouped_characters[name].append(name)
+                    grouped_characters[cleaned_name].append(name)
 
         return grouped_characters
 
@@ -90,43 +78,63 @@ class CharacterInteractionAnalyzer:
             characters: Dict[str, List[str]]
     ) -> nx.Graph:
         """
-        Detect interactions between characters in a text.
-
-        Args:
-            text (str): Text to analyze
-            characters (Dict[str, List[str]]): Grouped character names
-
-        Returns:
-            nx.Graph: Graph representing character interactions
+        Détecte les interactions entre personnages.
         """
         G = nx.Graph()
-        text_lower = text.lower()
         sentences = re.split(r'[.!?]+', text)
-        interaction_weights = Counter()
 
-        for src, src_variants in characters.items():
-            src_clean = self.sanitize_node_id(src)
+        # Conversion des noms en identifiants normalisés
+        character_nodes = {self.sanitize_node_id(src): src_variants
+                           for src, src_variants in characters.items()}
+
+        for src_clean, src_variants in character_nodes.items():
+            # Ajout des nœuds
             G.add_node(src_clean, names=";".join(src_variants))
 
-            for tgt, tgt_variants in characters.items():
-                if src != tgt:
-                    # Count sentence-level interactions
+            for tgt_clean, tgt_variants in character_nodes.items():
+                if src_clean != tgt_clean:
+                    # Calcul des interactions
                     sentence_interactions = sum(
                         1 for sentence in sentences
                         if any(var.lower() in sentence.lower() for var in src_variants) and
                         any(var.lower() in sentence.lower() for var in tgt_variants)
                     )
 
-                    # Add weighted edge if interactions exist
+                    # Ajout des arêtes avec un poids
                     if sentence_interactions > 0:
-                        G.add_edge(src_clean, self.sanitize_node_id(tgt), weight=sentence_interactions)
-                        interaction_weights[(src_clean, self.sanitize_node_id(tgt))] = sentence_interactions
-
-                    # Optional logging for detailed interaction tracking
-                    if self.interaction_logging:
-                        logger.debug(f"Interaction between {src_clean} and {tgt}: {sentence_interactions}")
+                        G.add_edge(src_clean, tgt_clean, weight=sentence_interactions)
 
         return G
+
+    def prettify_graphml(self, graphml: str) -> str:
+        """
+        Formate le GraphML pour assurer la compatibilité.
+        """
+        try:
+            root = ET.fromstring(graphml)
+
+            # Suppression des attributs potentiellement problématiques
+            for elem in root.iter():
+                if 'yfiles' in str(elem.tag):
+                    root.remove(elem)
+
+                # Nettoyage des attributs
+                attrs_to_remove = [
+                    attr for attr in elem.attrib
+                    if attr.startswith('{') or
+                       any(x in attr for x in ['xmlns:', 'xsi:', 'yfiles'])
+                ]
+                for attr in attrs_to_remove:
+                    del elem.attrib[attr]
+
+            # Conversion en chaîne formatée
+            rough_string = ET.tostring(root, 'utf-8')
+            reparsed = minidom.parseString(rough_string)
+            return reparsed.toprettyxml(indent="  ")
+
+        except Exception as e:
+            logger.error(f"Erreur lors du formatage GraphML : {e}")
+            return graphml
 
     def process_chapters(
             self,
@@ -135,17 +143,9 @@ class CharacterInteractionAnalyzer:
             output_csv: str = "submission.csv"
     ) -> pd.DataFrame:
         """
-        Process chapters and generate interaction graphs.
-
-        Args:
-            folder_path (str): Base folder containing chapter files
-            books (List[Tuple[List[int], str]], optional): Books and their chapter ranges
-            output_csv (str): Path to save output CSV
-
-        Returns:
-            pd.DataFrame: DataFrame with chapter IDs and interaction graphs
+        Traite les chapitres et génère des graphes d'interactions.
         """
-        # Default book configuration if not provided
+        # Configuration par défaut des livres
         if books is None:
             books = [
                 (list(range(1, 20)), "paf"),
@@ -157,18 +157,17 @@ class CharacterInteractionAnalyzer:
         for chapters, book_code in books:
             repertory = "prelude_a_fondation" if book_code == "paf" else "les_cavernes_d_acier"
 
-            # Use tqdm for progress tracking
-            for chapter in tqdm(chapters, desc=f"Processing {book_code} chapters"):
+            for chapter in tqdm(chapters, desc=f"Traitement des chapitres de {book_code}"):
                 chapter_file = os.path.join(folder_path, repertory, f"chapter_{chapter}.txt.preprocessed")
 
                 try:
                     with open(chapter_file, "r", encoding="utf-8") as file:
                         text = file.read()
 
-                    # Enhanced named entity recognition
+                    # Reconnaissance des entités nommées
                     doc = self.nlp(text)
 
-                    # Extract characters with robust filtering
+                    # Extraction des personnages
                     characters = [
                         unidecode(ent.text.strip())
                         for ent in doc.ents
@@ -177,47 +176,60 @@ class CharacterInteractionAnalyzer:
                             not any(char.isdigit() for char in ent.text))
                     ]
 
-                    # Advanced name grouping
+                    # Regroupement des noms
                     grouped_characters = self.advanced_name_matching(characters)
 
-                    # Create interaction graph
+                    # Création du graphe
                     G = self.detect_character_interactions(text, grouped_characters)
 
-                    # Prepare submission
+                    # Génération du GraphML
+                    graphml_str = nx.generate_graphml(G)
+
+                    # Formatage et nettoyage du GraphML
+                    graphml_cleaned = "".join(graphml_str)
+                    graphml_prettified = self.prettify_graphml(graphml_cleaned)
+
+                    # Préparation de la soumission
                     df_dict["ID"].append(f"{book_code}{chapter - 1}")
-                    graphml = "".join(nx.generate_graphml(G))
-                    df_dict["graphml"].append(graphml)
+                    df_dict["graphml"].append(graphml_prettified)
 
                 except FileNotFoundError:
-                    logger.warning(f"Chapter file not found: {chapter_file}")
+                    logger.warning(f"Fichier de chapitre non trouvé : {chapter_file}")
+                    # Ajout d'une entrée vide pour maintenir la cohérence
+                    df_dict["ID"].append(f"{book_code}{chapter - 1}")
+                    df_dict["graphml"].append("")
                 except Exception as e:
-                    logger.error(f"Error processing {chapter_file}: {e}")
+                    logger.error(f"Erreur lors du traitement de {chapter_file}: {e}")
+                    # Ajout d'une entrée vide pour maintenir la cohérence
+                    df_dict["ID"].append(f"{book_code}{chapter - 1}")
+                    df_dict["graphml"].append("")
 
-        # Export submission
+        # Exportation de la soumission
         df = pd.DataFrame(df_dict)
         df.to_csv(output_csv, index=False, encoding="utf-8")
-        logger.info(f"Submission created: {output_csv}")
+        logger.info(f"Soumission créée : {output_csv}")
 
         return df
 
 
 def main():
-    """Main execution function"""
+    """Fonction d'exécution principale"""
     folder_path = r"C:\Users\ADMIN\Desktop\AMS_PROJET\kaggle"
 
     try:
-        # Initialize analyzer with custom settings
+        # Initialisation de l'analyseur
         analyzer = CharacterInteractionAnalyzer(
             nlp_model="fr_core_news_lg",
-            name_match_threshold=85,
-            interaction_logging=False
+            name_match_threshold=90,
+            interaction_logging=False,
+            context_window=3  # Fenêtre de contexte réduite
         )
 
-        # Process chapters and generate interaction graphs
+        # Traitement des chapitres
         analyzer.process_chapters(folder_path)
 
     except Exception as e:
-        logger.error(f"An error occurred during execution: {e}")
+        logger.error(f"Une erreur s'est produite lors de l'exécution : {e}")
         raise
 
 
