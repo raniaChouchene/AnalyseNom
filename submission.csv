@@ -8,33 +8,16 @@ paf0,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""hummin"">
+    <ns0:node id=""l'empereur_du_vaste_empire
+galactique"">
             
-      <ns0:data key=""d0"">Hummin</ns0:data>
+      <ns0:data key=""d0"">l'Empereur du vaste Empiregalactique;L'Empereur;Empereur;l'Empereur</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""sire"">
+    <ns0:node id=""hari_seldon"">
             
-      <ns0:data key=""d0"">Sire</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""eto_demerzel"">
-            
-      <ns0:data key=""d0"">Eto Demerzel;Demerzel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""l'empereur"">
-            
-      <ns0:data key=""d0"">L'Empereur;l'Empereur;Empereur;l'Empereur du vaste Empiregalactique</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""seldon"">
-            
-      <ns0:data key=""d0"">Seldon;Hari Seldon</ns0:data>
+      <ns0:data key=""d0"">Hari Seldon;Seldon</ns0:data>
           
     </ns0:node>
         
@@ -50,15 +33,27 @@ paf0,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""terminus"">
+    <ns0:node id=""cleon"">
             
-      <ns0:data key=""d0"">Terminus</ns0:data>
+      <ns0:data key=""d0"">Cleon</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""wellis"">
+    <ns0:node id=""alban_wellis"">
             
-      <ns0:data key=""d0"">Wellis;Alban Wellis</ns0:data>
+      <ns0:data key=""d0"">Alban Wellis;Wellis</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""sire"">
+            
+      <ns0:data key=""d0"">Sire</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""demerzel"">
+            
+      <ns0:data key=""d0"">Demerzel;Eto Demerzel</ns0:data>
           
     </ns0:node>
         
@@ -68,15 +63,9 @@ paf0,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""etouffant"">
+    <ns0:node id=""hummin"">
             
-      <ns0:data key=""d0"">Etouffant</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""cleon"">
-            
-      <ns0:data key=""d0"">Cleon</ns0:data>
+      <ns0:data key=""d0"">Hummin</ns0:data>
           
     </ns0:node>
         
@@ -86,39 +75,53 @@ paf0,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:edge source=""sire"" target=""eto_demerzel"">
+    <ns0:node id=""etouffant"">
             
-      <ns0:data key=""d1"">2</ns0:data>
+      <ns0:data key=""d0"">Etouffant</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""eto_demerzel"" target=""seldon"">
+    <ns0:node id=""terminus"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d0"">Terminus</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""l'empereur"" target=""seldon"">
+    <ns0:edge source=""l'empereur_du_vaste_empire
+galactique"" target=""hari_seldon"">
             
       <ns0:data key=""d1"">8</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""l'empereur"" target=""empereurs"">
+    <ns0:edge source=""l'empereur_du_vaste_empire
+galactique"" target=""empereurs"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""trantor"">
+    <ns0:edge source=""hari_seldon"" target=""empereurs"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""demerzel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""trantor"">
             
       <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""empereurs"">
+    <ns0:edge source=""sire"" target=""demerzel"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
       
@@ -134,51 +137,9 @@ paf1,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""hummin"">
+    <ns0:node id=""l'empereur"">
             
-      <ns0:data key=""d0"">Hummin;Hummin grommela</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""seldon"">
-            
-      <ns0:data key=""d0"">Seldon;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""alem"">
-            
-      <ns0:data key=""d0"">Alem</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantorien"">
-            
-      <ns0:data key=""d0"">Trantorien</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantor"">
-            
-      <ns0:data key=""d0"">Trantor</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""avisiez"">
-            
-      <ns0:data key=""d0"">avisiez</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""lequel"">
-            
-      <ns0:data key=""d0"">Lequel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""aerotaxi"">
-            
-      <ns0:data key=""d0"">aerotaxi</ns0:data>
+      <ns0:data key=""d0"">l'Empereur</ns0:data>
           
     </ns0:node>
         
@@ -194,6 +155,66 @@ paf1,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
+    <ns0:node id=""trantorien"">
+            
+      <ns0:data key=""d0"">Trantorien</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""trantor"">
+            
+      <ns0:data key=""d0"">Trantor</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hari_seldon"">
+            
+      <ns0:data key=""d0"">Hari Seldon;Seldon</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""alem"">
+            
+      <ns0:data key=""d0"">Alem</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""lequel"">
+            
+      <ns0:data key=""d0"">Lequel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""cleon_ier"">
+            
+      <ns0:data key=""d0"">Cleon Ier</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""avisiez"">
+            
+      <ns0:data key=""d0"">avisiez</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""heliconien"">
+            
+      <ns0:data key=""d0"">Heliconien</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hummin_grommela"">
+            
+      <ns0:data key=""d0"">Hummin grommela;Hummin</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""anacreon"">
+            
+      <ns0:data key=""d0"">Anacreon</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""etiez_acrophobe"">
             
       <ns0:data key=""d0"">etiez acrophobe</ns0:data>
@@ -206,77 +227,11 @@ paf1,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""l'empereur"">
+    <ns0:node id=""aerotaxi"">
             
-      <ns0:data key=""d0"">l'Empereur</ns0:data>
+      <ns0:data key=""d0"">aerotaxi</ns0:data>
           
     </ns0:node>
-        
-    <ns0:node id=""anacreon"">
-            
-      <ns0:data key=""d0"">Anacreon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""cleon_ier"">
-            
-      <ns0:data key=""d0"">Cleon Ier</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""heliconien"">
-            
-      <ns0:data key=""d0"">Heliconien</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:edge source=""hummin"" target=""seldon"">
-            
-      <ns0:data key=""d1"">7</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hummin"" target=""alem"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""trantorien"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""lequel"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""trantor"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""alem"">
-            
-      <ns0:data key=""d1"">4</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""alem"" target=""trantorien"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""alem"" target=""trantor"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
         
     <ns0:edge source=""trantorien"" target=""trantor"">
             
@@ -284,7 +239,55 @@ paf1,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
+    <ns0:edge source=""trantorien"" target=""hari_seldon"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""trantorien"" target=""alem"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""trantor"" target=""hari_seldon"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""trantor"" target=""alem"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
     <ns0:edge source=""trantor"" target=""avisiez"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""lequel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""hummin_grommela"">
+            
+      <ns0:data key=""d1"">7</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""alem"">
+            
+      <ns0:data key=""d1"">4</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""alem"" target=""hummin_grommela"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -302,34 +305,15 @@ paf2,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""hummin"">
+    <ns0:node id=""chetter_hummin"">
             
-      <ns0:data key=""d0"">Hummin;Chetter Hummin</ns0:data>
+      <ns0:data key=""d0"">Chetter Hummin;Hummin</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""hari
-seldon"">
+    <ns0:node id=""hari_seldon"">
             
-      <ns0:data key=""d0"">HariSeldon;Seldon;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hein"">
-            
-      <ns0:data key=""d0"">Hein</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantor"">
-            
-      <ns0:data key=""d0"">Trantor</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""demerzel"">
-            
-      <ns0:data key=""d0"">Demerzel</ns0:data>
+      <ns0:data key=""d0"">Hari Seldon;Seldon;HariSeldon</ns0:data>
           
     </ns0:node>
         
@@ -339,21 +323,37 @@ seldon"">
           
     </ns0:node>
         
+    <ns0:node id=""trantor"">
+            
+      <ns0:data key=""d0"">Trantor</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hein"">
+            
+      <ns0:data key=""d0"">Hein</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""aerotaxi"">
             
       <ns0:data key=""d0"">aerotaxi</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""hummin"" target=""hari
-seldon"">
+    <ns0:node id=""demerzel"">
+            
+      <ns0:data key=""d0"">Demerzel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""chetter_hummin"" target=""hari_seldon"">
             
       <ns0:data key=""d1"">5</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""trantor"">
+    <ns0:edge source=""hari_seldon"" target=""trantor"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -371,27 +371,33 @@ paf3,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""tambourinant"">
+    <ns0:node id=""hari"">
             
-      <ns0:data key=""d0"">Tambourinant</ns0:data>
+      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""tenez"">
+    <ns0:node id=""m._hummin"">
             
-      <ns0:data key=""d0"">Tenez</ns0:data>
+      <ns0:data key=""d0"">M. Hummin;Hummin</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""dors"">
             
-      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
+      <ns0:data key=""d0"">Dors</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""hummin"">
+    <ns0:node id=""fuite"">
             
-      <ns0:data key=""d0"">Hummin;Chetter Hummin;M. Hummin</ns0:data>
+      <ns0:data key=""d0"">Fuite</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""seldon"">
+            
+      <ns0:data key=""d0"">Seldon</ns0:data>
           
     </ns0:node>
         
@@ -403,25 +409,13 @@ paf3,"<?xml version=""1.0"" ?>
         
     <ns0:node id=""chetter"">
             
-      <ns0:data key=""d0"">Chetter</ns0:data>
+      <ns0:data key=""d0"">Chetter;Chetter Hummin</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""seldon"">
+    <ns0:node id=""l'empereur"">
             
-      <ns0:data key=""d0"">Seldon;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hari"">
-            
-      <ns0:data key=""d0"">Hari</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""venabili"">
-            
-      <ns0:data key=""d0"">Venabili</ns0:data>
+      <ns0:data key=""d0"">L'Empereur;Empereur;l'Empereur</ns0:data>
           
     </ns0:node>
         
@@ -431,39 +425,15 @@ paf3,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""l'empereur"">
-            
-      <ns0:data key=""d0"">L'Empereur;l'Empereur;Empereur</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""demerzel"">
             
       <ns0:data key=""d0"">Demerzel</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""kan"">
+    <ns0:node id=""tambourinant"">
             
-      <ns0:data key=""d0"">Kan</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantor"">
-            
-      <ns0:data key=""d0"">Trantor</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""fuite"">
-            
-      <ns0:data key=""d0"">Fuite</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""auquel"">
-            
-      <ns0:data key=""d0"">Auquel</ns0:data>
+      <ns0:data key=""d0"">Tambourinant</ns0:data>
           
     </ns0:node>
         
@@ -479,109 +449,49 @@ paf3,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
+    <ns0:node id=""venabili"">
+            
+      <ns0:data key=""d0"">Venabili;Dors Venabili</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""tenez"">
+            
+      <ns0:data key=""d0"">Tenez</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""auquel"">
+            
+      <ns0:data key=""d0"">Auquel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""trantor"">
+            
+      <ns0:data key=""d0"">Trantor</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""kan"">
+            
+      <ns0:data key=""d0"">Kan</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""souvenez"">
             
       <ns0:data key=""d0"">Souvenez</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""tenez"" target=""dors"">
+    <ns0:edge source=""hari"" target=""m._hummin"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""hummin"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""seldon"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""hari"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""venabili"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hummin"" target=""encylopedia_galactica"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hummin"" target=""chetter"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hummin"" target=""seldon"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hummin"" target=""hari"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""encylopedia_galactica"" target=""seldon"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""encylopedia_galactica"" target=""hari"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""sire"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""kan"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""trantor"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""hari"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""fuite"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""demerzel"">
+    <ns0:edge source=""hari"" target=""dors"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -593,19 +503,109 @@ paf3,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""sire"" target=""l'empereur"">
+    <ns0:edge source=""hari"" target=""seldon"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari"" target=""encylopedia_galactica"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""sire"" target=""demerzel"">
+    <ns0:edge source=""m._hummin"" target=""chetter"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""m._hummin"" target=""dors"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""m._hummin"" target=""seldon"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""m._hummin"" target=""encylopedia_galactica"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""venabili"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""seldon"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""tenez"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""fuite"" target=""seldon"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""sire"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""encylopedia_galactica"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""demerzel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""trantor"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""kan"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""l'empereur"" target=""sire"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
     <ns0:edge source=""l'empereur"" target=""demerzel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""sire"" target=""demerzel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -623,15 +623,21 @@ paf4,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""dors"">
-            
-      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""kiangtow_randa"">
             
       <ns0:data key=""d0"">Kiangtow Randa;Randa</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""lisung"">
+            
+      <ns0:data key=""d0"">Lisung;Lisung Randa</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""dors"">
+            
+      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
           
     </ns0:node>
         
@@ -641,21 +647,9 @@ paf4,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""hummin"">
+    <ns0:node id=""hari"">
             
-      <ns0:data key=""d0"">Hummin</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""lisung_randa"">
-            
-      <ns0:data key=""d0"">Lisung Randa;Lisung</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantor"">
-            
-      <ns0:data key=""d0"">Trantor</ns0:data>
+      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
           
     </ns0:node>
         
@@ -665,15 +659,9 @@ paf4,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""taciturne"">
+    <ns0:node id=""trantor"">
             
-      <ns0:data key=""d0"">Taciturne</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hari"">
-            
-      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
+      <ns0:data key=""d0"">Trantor</ns0:data>
           
     </ns0:node>
         
@@ -689,19 +677,25 @@ paf4,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:edge source=""dors"" target=""kiangtow_randa"">
+    <ns0:node id=""taciturne"">
+            
+      <ns0:data key=""d0"">Taciturne</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hummin"">
+            
+      <ns0:data key=""d0"">Hummin</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""kiangtow_randa"" target=""lisung"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""seldon"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""kiangtow_randa"" target=""lisung_randa"">
+    <ns0:edge source=""kiangtow_randa"" target=""dors"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -713,13 +707,13 @@ paf4,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""lisung_randa"">
+    <ns0:edge source=""lisung"" target=""seldon"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""trantor"">
+    <ns0:edge source=""dors"" target=""seldon"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -731,7 +725,13 @@ paf4,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""trantor"" target=""leggen"">
+    <ns0:edge source=""seldon"" target=""trantor"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""leggen"" target=""trantor"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -749,40 +749,15 @@ paf5,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
+    <ns0:node id=""hari"">
+            
+      <ns0:data key=""d0"">Hari;HariSeldon;Hari Seldon</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""dors"">
             
       <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hari
-seldon"">
-            
-      <ns0:data key=""d0"">HariSeldon;Seldon;Hari;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""docteur_venabili"">
-            
-      <ns0:data key=""d0"">Docteur Venabili;Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""jenarr_leggen"">
-            
-      <ns0:data key=""d0"">Jenarr Leggen;Jenarr;JENARR;Leggen</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""benastra_sursauta"">
-            
-      <ns0:data key=""d0"">Benastra sursauta;Benastra</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""clowzia"">
-            
-      <ns0:data key=""d0"">Clowzia</ns0:data>
           
     </ns0:node>
         
@@ -792,15 +767,39 @@ seldon"">
           
     </ns0:node>
         
-    <ns0:node id=""heliconien"">
+    <ns0:node id=""seldon"">
             
-      <ns0:data key=""d0"">Heliconien</ns0:data>
+      <ns0:data key=""d0"">Seldon</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""controverse_leggen"">
+    <ns0:node id=""leggen"">
             
-      <ns0:data key=""d0"">Controverse Leggen</ns0:data>
+      <ns0:data key=""d0"">Leggen;Controverse Leggen;Jenarr Leggen</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""docteur_venabili"">
+            
+      <ns0:data key=""d0"">Docteur Venabili;Venabili</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""jenarr"">
+            
+      <ns0:data key=""d0"">Jenarr;JENARR</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""benastra_sursauta"">
+            
+      <ns0:data key=""d0"">Benastra sursauta;Benastra</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""heliconien"">
+            
+      <ns0:data key=""d0"">Heliconien</ns0:data>
           
     </ns0:node>
         
@@ -810,20 +809,31 @@ seldon"">
           
     </ns0:node>
         
-    <ns0:edge source=""dors"" target=""hari
-seldon"">
+    <ns0:node id=""clowzia"">
             
-      <ns0:data key=""d1"">4</ns0:data>
+      <ns0:data key=""d0"">Clowzia</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""hari"" target=""dors"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""docteur_venabili"">
+    <ns0:edge source=""hari"" target=""laquelle"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari"" target=""seldon"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""jenarr_leggen"">
+    <ns0:edge source=""dors"" target=""leggen"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
@@ -835,33 +845,49 @@ seldon"">
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""laquelle"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hari
-seldon"" target=""benastra_sursauta"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""docteur_venabili"" target=""jenarr_leggen"">
+    <ns0:edge source=""dors"" target=""docteur_venabili"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""jenarr_leggen"" target=""benastra_sursauta"">
+    <ns0:edge source=""dors"" target=""jenarr"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""jenarr_leggen"" target=""controverse_leggen"">
+    <ns0:edge source=""dors"" target=""seldon"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""benastra_sursauta"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""leggen"" target=""docteur_venabili"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""leggen"" target=""jenarr"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""docteur_venabili"" target=""jenarr"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""jenarr"" target=""benastra_sursauta"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -879,6 +905,12 @@ paf6,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
+    <ns0:node id=""hari"">
+            
+      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""dors"">
             
       <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
@@ -887,19 +919,7 @@ paf6,"<?xml version=""1.0"" ?>
         
     <ns0:node id=""seldon"">
             
-      <ns0:data key=""d0"">Seldon;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantor"">
-            
-      <ns0:data key=""d0"">Trantor</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hari"">
-            
-      <ns0:data key=""d0"">Hari</ns0:data>
+      <ns0:data key=""d0"">Seldon</ns0:data>
           
     </ns0:node>
         
@@ -909,39 +929,9 @@ paf6,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""hummin"">
+    <ns0:node id=""redites"">
             
-      <ns0:data key=""d0"">Hummin</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""eto_demerzel"">
-            
-      <ns0:data key=""d0"">Eto Demerzel;Demerzel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""mycogene"">
-            
-      <ns0:data key=""d0"">MYCOGENE;Mycogene</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""damiano_nord"">
-            
-      <ns0:data key=""d0"">Damiano Nord</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""kan"">
-            
-      <ns0:data key=""d0"">Kan</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hestelonia"">
-            
-      <ns0:data key=""d0"">Hestelonia</ns0:data>
+      <ns0:data key=""d0"">Redites</ns0:data>
           
     </ns0:node>
         
@@ -951,15 +941,51 @@ paf6,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
+    <ns0:node id=""damiano_nord"">
+            
+      <ns0:data key=""d0"">Damiano Nord</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hestelonia"">
+            
+      <ns0:data key=""d0"">Hestelonia</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""kan"">
+            
+      <ns0:data key=""d0"">Kan</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""cleon"">
+            
+      <ns0:data key=""d0"">Cleon</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""randa"">
             
       <ns0:data key=""d0"">Randa</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""redites"">
+    <ns0:node id=""trantor"">
             
-      <ns0:data key=""d0"">Redites</ns0:data>
+      <ns0:data key=""d0"">Trantor</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hummin"">
+            
+      <ns0:data key=""d0"">Hummin</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""demerzel"">
+            
+      <ns0:data key=""d0"">Demerzel;Eto Demerzel</ns0:data>
           
     </ns0:node>
         
@@ -969,11 +995,29 @@ paf6,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""cleon"">
+    <ns0:node id=""mycogene"">
             
-      <ns0:data key=""d0"">Cleon</ns0:data>
+      <ns0:data key=""d0"">Mycogene;MYCOGENE</ns0:data>
           
     </ns0:node>
+        
+    <ns0:edge source=""hari"" target=""dors"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari"" target=""seldon"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""leggen"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
         
     <ns0:edge source=""dors"" target=""seldon"">
             
@@ -987,15 +1031,9 @@ paf6,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""hari"">
+    <ns0:edge source=""seldon"" target=""leggen"">
             
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""leggen"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
@@ -1005,27 +1043,15 @@ paf6,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""kan"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
     <ns0:edge source=""seldon"" target=""trantor"">
             
       <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""hari"">
+    <ns0:edge source=""seldon"" target=""kan"">
             
       <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""leggen"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
@@ -1035,13 +1061,19 @@ paf6,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""hummin"" target=""eto_demerzel"">
+    <ns0:edge source=""ziggoreth"" target=""damiano_nord"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""damiano_nord"" target=""kan"">
+    <ns0:edge source=""ziggoreth"" target=""hestelonia"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""ziggoreth"" target=""kan"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -1053,25 +1085,19 @@ paf6,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""damiano_nord"" target=""ziggoreth"">
+    <ns0:edge source=""damiano_nord"" target=""kan"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""kan"" target=""hestelonia"">
+    <ns0:edge source=""hestelonia"" target=""kan"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""kan"" target=""ziggoreth"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hestelonia"" target=""ziggoreth"">
+    <ns0:edge source=""hummin"" target=""demerzel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -1089,45 +1115,27 @@ paf7,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
+    <ns0:node id=""hari"">
+            
+      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""dors"">
             
       <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""grisnuage"">
-            
-      <ns0:data key=""d0"">Grisnuage</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""seldon"">
             
-      <ns0:data key=""d0"">Seldon;Hari Seldon</ns0:data>
+      <ns0:data key=""d0"">Seldon</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""hari"">
+    <ns0:node id=""goutte-de-pluie_quarante-"">
             
-      <ns0:data key=""d0"">Hari</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""mycogene"">
-            
-      <ns0:data key=""d0"">MYCOGENE;Mycogene</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""levanian"">
-            
-      <ns0:data key=""d0"">Levanian;Endor Levanian</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""chetter_hummin"">
-            
-      <ns0:data key=""d0"">Chetter Hummin</ns0:data>
+      <ns0:data key=""d0"">Goutte-de-Pluie Quarante-;Goutte-de-Pluie Quarante-trois</ns0:data>
           
     </ns0:node>
         
@@ -1138,9 +1146,33 @@ soleil"">
           
     </ns0:node>
         
+    <ns0:node id=""grisnuage"">
+            
+      <ns0:data key=""d0"">Grisnuage</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""impossible"">
             
       <ns0:data key=""d0"">Impossible</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""chetter_hummin"">
+            
+      <ns0:data key=""d0"">Chetter Hummin</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""difficile"">
+            
+      <ns0:data key=""d0"">Difficile</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mycogenien"">
+            
+      <ns0:data key=""d0"">Mycogenien</ns0:data>
           
     </ns0:node>
         
@@ -1156,35 +1188,41 @@ soleil"">
           
     </ns0:node>
         
+    <ns0:node id=""frere"">
+            
+      <ns0:data key=""d0"">Frere</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mycogene"">
+            
+      <ns0:data key=""d0"">Mycogene;MYCOGENE</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""endor_levanian"">
+            
+      <ns0:data key=""d0"">Endor Levanian;Levanian</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""egalitaire"">
             
       <ns0:data key=""d0"">Egalitaire</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""goutte-de-pluie_quarante-"">
+    <ns0:edge source=""hari"" target=""dors"">
             
-      <ns0:data key=""d0"">Goutte-de-Pluie Quarante-;Goutte-de-Pluie Quarante-trois</ns0:data>
+      <ns0:data key=""d1"">1</ns0:data>
           
-    </ns0:node>
+    </ns0:edge>
         
-    <ns0:node id=""mycogenien"">
+    <ns0:edge source=""hari"" target=""seldon"">
             
-      <ns0:data key=""d0"">Mycogenien</ns0:data>
+      <ns0:data key=""d1"">1</ns0:data>
           
-    </ns0:node>
-        
-    <ns0:node id=""difficile"">
-            
-      <ns0:data key=""d0"">Difficile</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""frere"">
-            
-      <ns0:data key=""d0"">Frere</ns0:data>
-          
-    </ns0:node>
+    </ns0:edge>
         
     <ns0:edge source=""dors"" target=""grisnuage"">
             
@@ -1198,19 +1236,7 @@ soleil"">
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""hari"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""grisnuage"" target=""seldon"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""hari"">
+    <ns0:edge source=""seldon"" target=""grisnuage"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -1234,39 +1260,9 @@ paf8,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""grisnuage"">
+    <ns0:node id=""chetter_hummin"">
             
-      <ns0:data key=""d0"">Grisnuage</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hummin"">
-            
-      <ns0:data key=""d0"">Hummin;Chetter Hummin</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""dors"">
-            
-      <ns0:data key=""d0"">Dors</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hari"">
-            
-      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""seldon"">
-            
-      <ns0:data key=""d0"">Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hein"">
-            
-      <ns0:data key=""d0"">Hein</ns0:data>
+      <ns0:data key=""d0"">Chetter Hummin;Hummin</ns0:data>
           
     </ns0:node>
         
@@ -1276,15 +1272,27 @@ paf8,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""frere"">
+    <ns0:node id=""hari"">
             
-      <ns0:data key=""d0"">Frere;F-Frere</ns0:data>
+      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""humanique"">
+    <ns0:node id=""dors"">
             
-      <ns0:data key=""d0"">Humanique</ns0:data>
+      <ns0:data key=""d0"">Dors</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""seldon"">
+            
+      <ns0:data key=""d0"">Seldon</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mycogene"">
+            
+      <ns0:data key=""d0"">Mycogene</ns0:data>
           
     </ns0:node>
         
@@ -1300,13 +1308,37 @@ paf8,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""mycogene"">
+    <ns0:node id=""grisnuage"">
             
-      <ns0:data key=""d0"">Mycogene</ns0:data>
+      <ns0:data key=""d0"">Grisnuage</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""dors"" target=""hari"">
+    <ns0:node id=""humanique"">
+            
+      <ns0:data key=""d0"">Humanique</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hein"">
+            
+      <ns0:data key=""d0"">Hein</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""frere"">
+            
+      <ns0:data key=""d0"">Frere;F-Frere</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""hari"" target=""dors"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari"" target=""seldon"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -1315,12 +1347,6 @@ paf8,"<?xml version=""1.0"" ?>
     <ns0:edge source=""dors"" target=""seldon"">
             
       <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hari"" target=""seldon"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
@@ -1342,21 +1368,9 @@ paf9,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""dors_venabili"">
+    <ns0:node id=""mycogene"">
             
-      <ns0:data key=""d0"">Dors Venabili;Dors</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hari"">
-            
-      <ns0:data key=""d0"">Hari</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""seldon"">
-            
-      <ns0:data key=""d0"">Seldon;Hari Seldon</ns0:data>
+      <ns0:data key=""d0"">Mycogene</ns0:data>
           
     </ns0:node>
         
@@ -1366,15 +1380,27 @@ paf9,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
+    <ns0:node id=""seldon"">
+            
+      <ns0:data key=""d0"">Seldon</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hari"">
+            
+      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""mon"">
             
       <ns0:data key=""d0"">Mon</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""mycogene"">
+    <ns0:node id=""dors"">
             
-      <ns0:data key=""d0"">Mycogene</ns0:data>
+      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
           
     </ns0:node>
         
@@ -1384,9 +1410,9 @@ paf9,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""frere"">
+    <ns0:node id=""soeur"">
             
-      <ns0:data key=""d0"">Frere</ns0:data>
+      <ns0:data key=""d0"">Soeur</ns0:data>
           
     </ns0:node>
         
@@ -1396,19 +1422,19 @@ paf9,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""soeur"">
+    <ns0:node id=""frere"">
             
-      <ns0:data key=""d0"">Soeur</ns0:data>
+      <ns0:data key=""d0"">Frere</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""dors_venabili"" target=""hari"">
+    <ns0:edge source=""goutte-de-pluie_quarante-trois"" target=""seldon"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hari"" target=""seldon"">
+    <ns0:edge source=""seldon"" target=""hari"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
@@ -1420,9 +1446,9 @@ paf9,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""goutte-de-pluie_quarante-trois"">
+    <ns0:edge source=""hari"" target=""dors"">
             
-      <ns0:data key=""d1"">3</ns0:data>
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
       
@@ -1438,39 +1464,22 @@ paf10,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""dors"">
-            
-      <ns0:data key=""d0"">Dors;DorsVenabili;Dors Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""sacratorium"">
-            
-      <ns0:data key=""d0"">Sacratorium;Le Sacratorium</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""seldon"">
-            
-      <ns0:data key=""d0"">Seldon;Seldon...;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""hari"">
             
-      <ns0:data key=""d0"">Hari</ns0:data>
+      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""hummin"">
+    <ns0:node id=""seldon..."">
             
-      <ns0:data key=""d0"">Hummin</ns0:data>
+      <ns0:data key=""d0"">Seldon...;Seldon</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""mycogene"">
+    <ns0:node id=""dors
+venabili"">
             
-      <ns0:data key=""d0"">Mycogene</ns0:data>
+      <ns0:data key=""d0"">DorsVenabili;Dors;Dors Venabili</ns0:data>
           
     </ns0:node>
         
@@ -1480,9 +1489,15 @@ paf10,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""mycelium"">
+    <ns0:node id=""le_sacratorium"">
             
-      <ns0:data key=""d0"">Mycelium;Mycelium Soixante-douze</ns0:data>
+      <ns0:data key=""d0"">Le Sacratorium;Sacratorium</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""lissauer"">
+            
+      <ns0:data key=""d0"">Lissauer</ns0:data>
           
     </ns0:node>
         
@@ -1498,21 +1513,15 @@ paf10,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""goutte-de-pluie_quarante-cinq"">
+    <ns0:node id=""mycelium"">
             
-      <ns0:data key=""d0"">Goutte-de-Pluie Quarante-cinq;Goutte-de-Pluie Quarante-trois</ns0:data>
+      <ns0:data key=""d0"">Mycelium;Mycelium Soixante-douze</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""trantor"">
+    <ns0:node id=""hummin"">
             
-      <ns0:data key=""d0"">Trantor</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""fils"">
-            
-      <ns0:data key=""d0"">Fils</ns0:data>
+      <ns0:data key=""d0"">Hummin</ns0:data>
           
     </ns0:node>
         
@@ -1522,9 +1531,15 @@ paf10,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""lissauer"">
+    <ns0:node id=""fils"">
             
-      <ns0:data key=""d0"">Lissauer</ns0:data>
+      <ns0:data key=""d0"">Fils</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""goutte-de-pluie_quarante-cinq"">
+            
+      <ns0:data key=""d0"">Goutte-de-Pluie Quarante-cinq;Goutte-de-Pluie Quarante-trois</ns0:data>
           
     </ns0:node>
         
@@ -1534,39 +1549,54 @@ paf10,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:edge source=""dors"" target=""sacratorium"">
+    <ns0:node id=""mycogene"">
             
-      <ns0:data key=""d1"">2</ns0:data>
+      <ns0:data key=""d0"">Mycogene</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""dors"" target=""seldon"">
+    <ns0:node id=""trantor"">
             
-      <ns0:data key=""d1"">5</ns0:data>
+      <ns0:data key=""d0"">Trantor</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""dors"" target=""hari"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""sacratorium"" target=""seldon"">
+    <ns0:edge source=""hari"" target=""seldon..."">
             
       <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""hari"">
+    <ns0:edge source=""hari"" target=""dors
+venabili"">
             
-      <ns0:data key=""d1"">3</ns0:data>
+      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
     <ns0:edge source=""hari"" target=""ridicule"">
             
       <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon..."" target=""le_sacratorium"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon..."" target=""dors
+venabili"">
+            
+      <ns0:data key=""d1"">5</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors
+venabili"" target=""le_sacratorium"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
       
@@ -1582,27 +1612,33 @@ paf11,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""dors"">
+    <ns0:node id=""renegat"">
             
-      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hummin"">
-            
-      <ns0:data key=""d0"">Hummin</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""seldon"">
-            
-      <ns0:data key=""d0"">Seldon;Hari Seldon;Barbare Seldon</ns0:data>
+      <ns0:data key=""d0"">Renegat</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""hari"">
             
-      <ns0:data key=""d0"">Hari</ns0:data>
+      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""venabili"">
+            
+      <ns0:data key=""d0"">Venabili;Dors Venabili</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""dors"">
+            
+      <ns0:data key=""d0"">Dors</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""barbare_seldon"">
+            
+      <ns0:data key=""d0"">Barbare Seldon;Seldon</ns0:data>
           
     </ns0:node>
         
@@ -1612,39 +1648,9 @@ paf11,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""venabili"">
-            
-      <ns0:data key=""d0"">Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""sacratorium"">
-            
-      <ns0:data key=""d0"">Sacratorium;SACRATORIUM</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""mycogene"">
-            
-      <ns0:data key=""d0"">Mycogene</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""renegat"">
-            
-      <ns0:data key=""d0"">Renegat</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""chetter"">
             
       <ns0:data key=""d0"">Chetter</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""l'empereur"">
-            
-      <ns0:data key=""d0"">l'Empereur</ns0:data>
           
     </ns0:node>
         
@@ -1654,33 +1660,15 @@ paf11,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""trantor"">
+    <ns0:node id=""hummin"">
             
-      <ns0:data key=""d0"">Trantor</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""frere"">
-            
-      <ns0:data key=""d0"">Frere</ns0:data>
+      <ns0:data key=""d0"">Hummin</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""mycogenien"">
             
-      <ns0:data key=""d0"">mycogenien;Mycogenien</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""antennin"">
-            
-      <ns0:data key=""d0"">Antennin</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""eto_demerzel"">
-            
-      <ns0:data key=""d0"">Eto Demerzel;Demerzel</ns0:data>
+      <ns0:data key=""d0"">Mycogenien;mycogenien</ns0:data>
           
     </ns0:node>
         
@@ -1696,19 +1684,73 @@ paf11,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:edge source=""dors"" target=""hummin"">
+    <ns0:node id=""antennin"">
+            
+      <ns0:data key=""d0"">Antennin</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""frere"">
+            
+      <ns0:data key=""d0"">Frere</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""demerzel"">
+            
+      <ns0:data key=""d0"">Demerzel;Eto Demerzel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""l'empereur"">
+            
+      <ns0:data key=""d0"">l'Empereur</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""sacratorium"">
+            
+      <ns0:data key=""d0"">Sacratorium;SACRATORIUM</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mycogene"">
+            
+      <ns0:data key=""d0"">Mycogene</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""trantor"">
+            
+      <ns0:data key=""d0"">Trantor</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""hari"" target=""venabili"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""seldon"">
+    <ns0:edge source=""hari"" target=""dors"">
             
-      <ns0:data key=""d1"">11</ns0:data>
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""hari"">
+    <ns0:edge source=""hari"" target=""barbare_seldon"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""venabili"" target=""dors"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""venabili"" target=""barbare_seldon"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -1720,33 +1762,21 @@ paf11,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""venabili"">
+    <ns0:edge source=""dors"" target=""hummin"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hummin"" target=""seldon"">
+    <ns0:edge source=""dors"" target=""barbare_seldon"">
+            
+      <ns0:data key=""d1"">11</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""barbare_seldon"" target=""hummin"">
             
       <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""hari"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""venabili"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hari"" target=""venabili"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
       
@@ -1762,40 +1792,15 @@ paf12,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""maitre_hummin"">
+    <ns0:node id=""grimace"">
             
-      <ns0:data key=""d0"">Maitre Hummin;Hummin</ns0:data>
+      <ns0:data key=""d0"">Grimace</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""maitre
-seldon"">
+    <ns0:node id=""maitre_seldon"">
             
-      <ns0:data key=""d0"">MaitreSeldon;Seldon;Maitre Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""dahl"">
-            
-      <ns0:data key=""d0"">Dahl</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""dors"">
-            
-      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitresse_venabili"">
-            
-      <ns0:data key=""d0"">Maitresse Venabili;Maitresse;Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""lindor"">
-            
-      <ns0:data key=""d0"">Lindor;Hano Lindor</ns0:data>
+      <ns0:data key=""d0"">Maitre Seldon;Seldon;MaitreSeldon</ns0:data>
           
     </ns0:node>
         
@@ -1805,15 +1810,87 @@ seldon"">
           
     </ns0:node>
         
+    <ns0:node id=""dors"">
+            
+      <ns0:data key=""d0"">Dors</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""l'empereur"">
+            
+      <ns0:data key=""d0"">L'Empereur;Empereur;l'Empereur</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""empereurs"">
+            
+      <ns0:data key=""d0"">Empereurs</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""demerzel"">
+            
+      <ns0:data key=""d0"">Demerzel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""cleon"">
+            
+      <ns0:data key=""d0"">Cleon</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""casilia"">
+            
+      <ns0:data key=""d0"">Casilia</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""tisalver"">
+            
+      <ns0:data key=""d0"">Tisalver</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""sire"">
             
       <ns0:data key=""d0"">Sire</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""anat_bigell"">
+    <ns0:node id=""maitre-du-soleil_quatorze"">
             
-      <ns0:data key=""d0"">Anat Bigell</ns0:data>
+      <ns0:data key=""d0"">Maitre-du-Soleil Quatorze</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""venabili"">
+            
+      <ns0:data key=""d0"">Venabili;Maitresse Venabili;Dors Venabili</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mere_rittah"">
+            
+      <ns0:data key=""d0"">Mere Rittah</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""maitre_hummin"">
+            
+      <ns0:data key=""d0"">Maitre Hummin;Hummin</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""dahl"">
+            
+      <ns0:data key=""d0"">Dahl</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""lindor"">
+            
+      <ns0:data key=""d0"">Lindor;Hano Lindor</ns0:data>
           
     </ns0:node>
         
@@ -1829,87 +1906,9 @@ seldon"">
           
     </ns0:node>
         
-    <ns0:node id=""grimace"">
+    <ns0:node id=""anat_bigell"">
             
-      <ns0:data key=""d0"">Grimace</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitresse_tisalver"">
-            
-      <ns0:data key=""d0"">Maitresse Tisalver;Tisalver</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""mycogene"">
-            
-      <ns0:data key=""d0"">Mycogene</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""demerzel"">
-            
-      <ns0:data key=""d0"">Demerzel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""l'empereur"">
-            
-      <ns0:data key=""d0"">L'Empereur;l'Empereur;Empereur</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""empereurs"">
-            
-      <ns0:data key=""d0"">Empereurs</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""kan"">
-            
-      <ns0:data key=""d0"">Kan</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hein"">
-            
-      <ns0:data key=""d0"">Hein</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""mere_rittah"">
-            
-      <ns0:data key=""d0"">Mere Rittah</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""jirad"">
-            
-      <ns0:data key=""d0"">Jirad</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitre-du-soleil_quatorze"">
-            
-      <ns0:data key=""d0"">Maitre-du-Soleil Quatorze</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""cleon"">
-            
-      <ns0:data key=""d0"">Cleon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""chicanez"">
-            
-      <ns0:data key=""d0"">chicanez</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""casilia"">
-            
-      <ns0:data key=""d0"">Casilia</ns0:data>
+      <ns0:data key=""d0"">Anat Bigell</ns0:data>
           
     </ns0:node>
         
@@ -1919,102 +1918,115 @@ seldon"">
           
     </ns0:node>
         
-    <ns0:edge source=""maitre_hummin"" target=""maitre
-seldon"">
+    <ns0:node id=""maitresse"">
+            
+      <ns0:data key=""d0"">Maitresse;Maitresse Tisalver</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hein"">
+            
+      <ns0:data key=""d0"">Hein</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""chicanez"">
+            
+      <ns0:data key=""d0"">chicanez</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mycogene"">
+            
+      <ns0:data key=""d0"">Mycogene</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""jirad"">
+            
+      <ns0:data key=""d0"">Jirad</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""kan"">
+            
+      <ns0:data key=""d0"">Kan</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""grimace"" target=""maitre_seldon"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""maitre_seldon"" target=""hari"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""maitre_seldon"" target=""sire"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""maitre_seldon"" target=""venabili"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""maitre_seldon"" target=""maitre_hummin"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""maitre_hummin"" target=""dahl"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""maitre
-seldon"" target=""dors"">
+    <ns0:edge source=""maitre_seldon"" target=""dors"">
             
       <ns0:data key=""d1"">4</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""maitre
-seldon"" target=""maitresse_venabili"">
+    <ns0:edge source=""maitre_seldon"" target=""amaryl"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""maitre
-seldon"" target=""sire"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""maitre
-seldon"" target=""anat_bigell"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""maitre
-seldon"" target=""amaryl"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""maitre
-seldon"" target=""trantor"">
+    <ns0:edge source=""maitre_seldon"" target=""trantor"">
             
       <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""maitre
-seldon"" target=""hari"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""maitre
-seldon"" target=""grimace"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""maitre
-seldon"" target=""maitresse_tisalver"">
+    <ns0:edge source=""maitre_seldon"" target=""tisalver"">
             
       <ns0:data key=""d1"">4</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""maitre
-seldon"" target=""dahl"">
+    <ns0:edge source=""maitre_seldon"" target=""anat_bigell"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""maitre_seldon"" target=""dahl"">
             
       <ns0:data key=""d1"">4</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dahl"" target=""trantor"">
+    <ns0:edge source=""hari"" target=""dors"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dahl"" target=""maitresse_tisalver"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""maitresse_venabili"">
+    <ns0:edge source=""dors"" target=""venabili"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -2026,37 +2038,49 @@ seldon"" target=""dahl"">
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""hari"">
+    <ns0:edge source=""l'empereur"" target=""empereurs"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""sire"" target=""demerzel"">
+    <ns0:edge source=""l'empereur"" target=""demerzel"">
             
       <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""demerzel"" target=""sire"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""casilia"" target=""tisalver"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""tisalver"" target=""dahl"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""maitre_hummin"" target=""dahl"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dahl"" target=""trantor"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
     <ns0:edge source=""amaryl"" target=""hein"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""maitresse_tisalver"" target=""casilia"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""demerzel"" target=""l'empereur"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""l'empereur"" target=""empereurs"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -2074,65 +2098,9 @@ paf13,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""tenez"">
+    <ns0:node id=""hari"">
             
-      <ns0:data key=""d0"">Tenez</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""dors"">
-            
-      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hari
-seldon"">
-            
-      <ns0:data key=""d0"">HariSeldon;Seldon;Hari;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""chetter"">
-            
-      <ns0:data key=""d0"">Chetter</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""marron"">
-            
-      <ns0:data key=""d0"">Marron</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""casilia"">
-            
-      <ns0:data key=""d0"">Casilia</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""demerzel"">
-            
-      <ns0:data key=""d0"">Demerzel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""tisalver"">
-            
-      <ns0:data key=""d0"">Tisalver</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""mere
-rittah"">
-            
-      <ns0:data key=""d0"">MereRittah;Mere Rittah;Mere;La Mere Rittah</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""feinta"">
-            
-      <ns0:data key=""d0"">feinta</ns0:data>
+      <ns0:data key=""d0"">Hari;Hari Seldon;HariSeldon</ns0:data>
           
     </ns0:node>
         
@@ -2142,9 +2110,94 @@ rittah"">
           
     </ns0:node>
         
+    <ns0:node id=""dors"">
+            
+      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""maitre_seldon"">
+            
+      <ns0:data key=""d0"">Maitre Seldon;Seldon</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mere
+rittah"">
+            
+      <ns0:data key=""d0"">MereRittah;Mere;Mere Rittah;La Mere Rittah</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""casilia"">
+            
+      <ns0:data key=""d0"">Casilia</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""chetter"">
+            
+      <ns0:data key=""d0"">Chetter</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""demerzel"">
+            
+      <ns0:data key=""d0"">Demerzel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""ba-lee"">
+            
+      <ns0:data key=""d0"">Ba-Lee</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""raison"">
+            
+      <ns0:data key=""d0"">Raison</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""dahl"">
+            
+      <ns0:data key=""d0"">Dahl</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""etiez"">
+            
+      <ns0:data key=""d0"">Etiez</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""maitre-du-soleil_quatorze"">
+            
+      <ns0:data key=""d0"">Maitre-du-Soleil Quatorze</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""tisalver"">
+            
+      <ns0:data key=""d0"">Tisalver</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""marron"">
+            
+      <ns0:data key=""d0"">Marron</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""yugo_amaryl"">
             
       <ns0:data key=""d0"">Yugo Amaryl</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""tite_dame"">
+            
+      <ns0:data key=""d0"">tite dame;p'tite dame</ns0:data>
           
     </ns0:node>
         
@@ -2155,33 +2208,15 @@ venabili"">
           
     </ns0:node>
         
-    <ns0:node id=""raison"">
-            
-      <ns0:data key=""d0"">Raison</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""lequel"">
             
       <ns0:data key=""d0"">Lequel</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""mycogene"">
+    <ns0:node id=""feinta"">
             
-      <ns0:data key=""d0"">Mycogene</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""p'tite_dame"">
-            
-      <ns0:data key=""d0"">p'tite dame;tite dame</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""etiez"">
-            
-      <ns0:data key=""d0"">Etiez</ns0:data>
+      <ns0:data key=""d0"">feinta</ns0:data>
           
     </ns0:node>
         
@@ -2191,33 +2226,9 @@ venabili"">
           
     </ns0:node>
         
-    <ns0:node id=""maitre-du-soleil_quatorze"">
+    <ns0:node id=""mycogene"">
             
-      <ns0:data key=""d0"">Maitre-du-Soleil Quatorze</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitre_seldon"">
-            
-      <ns0:data key=""d0"">Maitre Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""ba-lee"">
-            
-      <ns0:data key=""d0"">Ba-Lee</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantor"">
-            
-      <ns0:data key=""d0"">Trantor</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""dahl"">
-            
-      <ns0:data key=""d0"">Dahl</ns0:data>
+      <ns0:data key=""d0"">Mycogene</ns0:data>
           
     </ns0:node>
         
@@ -2227,10 +2238,39 @@ venabili"">
           
     </ns0:node>
         
-    <ns0:edge source=""dors"" target=""hari
-seldon"">
+    <ns0:node id=""trantor"">
             
-      <ns0:data key=""d1"">4</ns0:data>
+      <ns0:data key=""d0"">Trantor</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""tenez"">
+            
+      <ns0:data key=""d0"">Tenez</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""hari"" target=""bouge"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari"" target=""dors"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari"" target=""maitre_seldon"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""casilia"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
@@ -2240,15 +2280,9 @@ seldon"">
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""marron"">
+    <ns0:edge source=""dors"" target=""maitre_seldon"">
             
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""casilia"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
@@ -2264,15 +2298,13 @@ seldon"">
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""bouge"">
+    <ns0:edge source=""dors"" target=""marron"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""raison"">
+    <ns0:edge source=""maitre_seldon"" target=""raison"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -2302,33 +2334,21 @@ paf14,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
+    <ns0:node id=""appelez-moi_davan"">
+            
+      <ns0:data key=""d0"">Appelez-moi Davan;Davan</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hari_seldon"">
+            
+      <ns0:data key=""d0"">Hari Seldon;Seldon</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""dors"">
             
-      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitresse_venabili"">
-            
-      <ns0:data key=""d0"">Maitresse Venabili;Maitresse;Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""davan"">
-            
-      <ns0:data key=""d0"">Davan;Maitre Davan;Appelez-moi Davan</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""seldon"">
-            
-      <ns0:data key=""d0"">Seldon;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitre_tisalver"">
-            
-      <ns0:data key=""d0"">Maitre Tisalver;Tisalver</ns0:data>
+      <ns0:data key=""d0"">Dors</ns0:data>
           
     </ns0:node>
         
@@ -2338,28 +2358,51 @@ paf14,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""hummin"">
+    <ns0:node id=""maitre_tisalver"">
             
-      <ns0:data key=""d0"">Hummin</ns0:data>
+      <ns0:data key=""d0"">Maitre Tisalver;Tisalver</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""yugo
-amaryl"">
+    <ns0:node id=""venabili"">
             
-      <ns0:data key=""d0"">YugoAmaryl;Amaryl</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""marlo_tanto"">
-            
-      <ns0:data key=""d0"">Marlo Tanto</ns0:data>
+      <ns0:data key=""d0"">Venabili;Maitresse Venabili;Dors Venabili</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""p'tite"">
             
       <ns0:data key=""d0"">p'tite</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hummin"">
+            
+      <ns0:data key=""d0"">Hummin</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""madame"">
+            
+      <ns0:data key=""d0"">madame</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""maitresse"">
+            
+      <ns0:data key=""d0"">Maitresse</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""amaryl"">
+            
+      <ns0:data key=""d0"">Amaryl;YugoAmaryl</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""demerzel"">
+            
+      <ns0:data key=""d0"">Demerzel</ns0:data>
           
     </ns0:node>
         
@@ -2375,43 +2418,79 @@ amaryl"">
           
     </ns0:node>
         
+    <ns0:node id=""maitre_davan"">
+            
+      <ns0:data key=""d0"">Maitre Davan</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""marlo_tanto"">
+            
+      <ns0:data key=""d0"">Marlo Tanto</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""dahl"">
             
       <ns0:data key=""d0"">Dahl</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""madame"">
-            
-      <ns0:data key=""d0"">madame</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""demerzel"">
-            
-      <ns0:data key=""d0"">Demerzel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:edge source=""dors"" target=""maitresse_venabili"">
+    <ns0:edge source=""appelez-moi_davan"" target=""hari_seldon"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""davan"">
+    <ns0:edge source=""appelez-moi_davan"" target=""dors"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""seldon"">
+    <ns0:edge source=""appelez-moi_davan"" target=""raych"">
             
       <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""maitre_tisalver"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""venabili"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""dors"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""hummin"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari_seldon"" target=""raych"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
     <ns0:edge source=""dors"" target=""maitre_tisalver"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""venabili"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
@@ -2423,45 +2502,9 @@ amaryl"">
           
     </ns0:edge>
         
-    <ns0:edge source=""maitresse_venabili"" target=""seldon"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""maitresse_venabili"" target=""maitre_tisalver"">
+    <ns0:edge source=""maitre_tisalver"" target=""venabili"">
             
       <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""davan"" target=""seldon"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""davan"" target=""raych"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""hummin"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""maitre_tisalver"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""raych"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
       
@@ -2477,63 +2520,15 @@ paf15,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""hor-reur"">
+    <ns0:node id=""hari"">
             
-      <ns0:data key=""d0"">hor-reur</ns0:data>
+      <ns0:data key=""d0"">Hari;Hari Seldon</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""dors"">
+    <ns0:node id=""maitre_seldon"">
             
-      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""l'empereur"">
-            
-      <ns0:data key=""d0"">L'Empereur;l'Empereur;Empereur</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""astinwald"">
-            
-      <ns0:data key=""d0"">Astinwald</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""seldon"">
-            
-      <ns0:data key=""d0"">Seldon;Maitre Seldon;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantor"">
-            
-      <ns0:data key=""d0"">Trantor</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""mycogene"">
-            
-      <ns0:data key=""d0"">Mycogene</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""kan"">
-            
-      <ns0:data key=""d0"">Kan;A Kan</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maire"">
-            
-      <ns0:data key=""d0"">Maire</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitresse"">
-            
-      <ns0:data key=""d0"">Maitresse;Maitresse Tisalver</ns0:data>
+      <ns0:data key=""d0"">Maitre Seldon;Seldon</ns0:data>
           
     </ns0:node>
         
@@ -2543,27 +2538,27 @@ paf15,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""dahl"">
+    <ns0:node id=""l'empereur"">
             
-      <ns0:data key=""d0"">Dahl</ns0:data>
+      <ns0:data key=""d0"">L'Empereur;Empereur;l'Empereur</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""marron"">
+    <ns0:node id=""dors"">
             
-      <ns0:data key=""d0"">Marron</ns0:data>
+      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""davan"">
+    <ns0:node id=""maire"">
             
-      <ns0:data key=""d0"">Davan</ns0:data>
+      <ns0:data key=""d0"">Maire</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""hari"">
+    <ns0:node id=""a_kan"">
             
-      <ns0:data key=""d0"">Hari</ns0:data>
+      <ns0:data key=""d0"">A Kan;Kan</ns0:data>
           
     </ns0:node>
         
@@ -2573,37 +2568,109 @@ paf15,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
+    <ns0:node id=""astinwald"">
+            
+      <ns0:data key=""d0"">Astinwald</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hor-reur"">
+            
+      <ns0:data key=""d0"">hor-reur</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""trantor"">
+            
+      <ns0:data key=""d0"">Trantor</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""davan"">
+            
+      <ns0:data key=""d0"">Davan</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""dahl"">
+            
+      <ns0:data key=""d0"">Dahl</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""maitresse"">
+            
+      <ns0:data key=""d0"">Maitresse;Maitresse Tisalver</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mycogene"">
+            
+      <ns0:data key=""d0"">Mycogene</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""neutralisez"">
             
       <ns0:data key=""d0"">Neutralisez</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""dors"" target=""l'empereur"">
+    <ns0:node id=""marron"">
+            
+      <ns0:data key=""d0"">Marron</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""hari"" target=""maitre_seldon"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari"" target=""raych"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""astinwald"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""seldon"">
+    <ns0:edge source=""maitre_seldon"" target=""dors"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""trantor"">
+    <ns0:edge source=""maitre_seldon"" target=""a_kan"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""l'empereur"" target=""kan"">
+    <ns0:edge source=""maitre_seldon"" target=""raych"">
+            
+      <ns0:data key=""d1"">4</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""maitre_seldon"" target=""trantor"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""maitre_seldon"" target=""dahl"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""raych"" target=""astinwald"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""l'empereur"" target=""dors"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -2615,55 +2682,25 @@ paf15,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""astinwald"" target=""raych"">
+    <ns0:edge source=""l'empereur"" target=""a_kan"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""kan"">
+    <ns0:edge source=""dors"" target=""astinwald"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""trantor"">
+    <ns0:edge source=""dors"" target=""trantor"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""seldon"" target=""hari"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""raych"">
-            
-      <ns0:data key=""d1"">4</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""seldon"" target=""dahl"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""trantor"" target=""kan"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""trantor"" target=""dahl"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""kan"" target=""maire"">
+    <ns0:edge source=""maire"" target=""a_kan"">
             
       <ns0:data key=""d1"">3</ns0:data>
           
@@ -2675,7 +2712,13 @@ paf15,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""raych"" target=""hari"">
+    <ns0:edge source=""a_kan"" target=""trantor"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""trantor"" target=""dahl"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -2693,40 +2736,21 @@ paf16,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
+    <ns0:node id=""hari"">
+            
+      <ns0:data key=""d0"">Hari;Hari Seldon;HariSeldon</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""dors"">
             
-      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
+      <ns0:data key=""d0"">Dors</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""hari
-seldon"">
+    <ns0:node id=""seldon"">
             
-      <ns0:data key=""d0"">HariSeldon;Seldon;Hari;Hari Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""kan"">
-            
-      <ns0:data key=""d0"">Kan</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""l'empereur"">
-            
-      <ns0:data key=""d0"">l'Empereur;Empereur</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""mannix_iv"">
-            
-      <ns0:data key=""d0"">Mannix IV;Mannix</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantor"">
-            
-      <ns0:data key=""d0"">Trantor</ns0:data>
+      <ns0:data key=""d0"">Seldon</ns0:data>
           
     </ns0:node>
         
@@ -2736,9 +2760,15 @@ seldon"">
           
     </ns0:node>
         
-    <ns0:node id=""attendez"">
+    <ns0:node id=""collaborez"">
             
-      <ns0:data key=""d0"">Attendez</ns0:data>
+      <ns0:data key=""d0"">Collaborez</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mannix"">
+            
+      <ns0:data key=""d0"">Mannix;Mannix IV</ns0:data>
           
     </ns0:node>
         
@@ -2748,9 +2778,51 @@ seldon"">
           
     </ns0:node>
         
+    <ns0:node id=""kan"">
+            
+      <ns0:data key=""d0"">Kan</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""rachelle"">
+            
+      <ns0:data key=""d0"">Rachelle</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""empereur"">
+            
+      <ns0:data key=""d0"">Empereur;l'Empereur</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""venabili"">
             
-      <ns0:data key=""d0"">Venabili</ns0:data>
+      <ns0:data key=""d0"">Venabili;Dors Venabili</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""maitre"">
+            
+      <ns0:data key=""d0"">Maitre;Maitre Seldon</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""attendez"">
+            
+      <ns0:data key=""d0"">Attendez</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""trantor"">
+            
+      <ns0:data key=""d0"">Trantor</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""yugo_amaryl"">
+            
+      <ns0:data key=""d0"">Yugo Amaryl</ns0:data>
           
     </ns0:node>
         
@@ -2766,33 +2838,15 @@ seldon"">
           
     </ns0:node>
         
+    <ns0:node id=""kanite"">
+            
+      <ns0:data key=""d0"">kanite;Kanite</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""sergent"">
             
       <ns0:data key=""d0"">Sergent</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""emmer_thalus"">
-            
-      <ns0:data key=""d0"">Emmer Thalus</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""yugo_amaryl"">
-            
-      <ns0:data key=""d0"">Yugo Amaryl</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitre"">
-            
-      <ns0:data key=""d0"">Maitre;Maitre Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""rachelle"">
-            
-      <ns0:data key=""d0"">Rachelle</ns0:data>
           
     </ns0:node>
         
@@ -2802,62 +2856,31 @@ seldon"">
           
     </ns0:node>
         
-    <ns0:node id=""kanite"">
+    <ns0:node id=""emmer_thalus"">
             
-      <ns0:data key=""d0"">kanite;Kanite</ns0:data>
+      <ns0:data key=""d0"">Emmer Thalus</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""collaborez"">
-            
-      <ns0:data key=""d0"">Collaborez</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:edge source=""dors"" target=""hari
-seldon"">
-            
-      <ns0:data key=""d1"">5</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""kan"">
+    <ns0:edge source=""hari"" target=""dors"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""l'empereur"">
+    <ns0:edge source=""hari"" target=""seldon"">
             
-      <ns0:data key=""d1"">2</ns0:data>
+      <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""mannix_iv"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""trantor"">
+    <ns0:edge source=""hari"" target=""raych"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""raych"">
-            
-      <ns0:data key=""d1"">7</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""attendez"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dors"" target=""madame_le_maire"">
+    <ns0:edge source=""dors"" target=""mannix"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -2869,43 +2892,133 @@ seldon"">
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""sergent"">
-            
-      <ns0:data key=""d1"">4</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hari
-seldon"" target=""rachelle"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hari
-seldon"" target=""trantor"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hari
-seldon"" target=""raych"">
+    <ns0:edge source=""dors"" target=""empereur"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""madame_le_maire"">
+    <ns0:edge source=""dors"" target=""madame_le_maire"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""venabili"">
+    <ns0:edge source=""dors"" target=""attendez"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""seldon"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""raych"">
+            
+      <ns0:data key=""d1"">7</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""trantor"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""kan"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""rachelle"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""venabili"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""madame_le_maire"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""sergent"">
+            
+      <ns0:data key=""d1"">4</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""raych"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""trantor"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""raych"" target=""rachelle"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""raych"" target=""sergent"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""raych"" target=""trantor"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""raych"" target=""kan"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""mannix"" target=""madame_le_maire"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""mannix"" target=""kan"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""madame_le_maire"" target=""rachelle"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""madame_le_maire"" target=""kan"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""kan"" target=""empereur"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -2923,73 +3036,19 @@ seldon"" target=""venabili"">
           
     </ns0:edge>
         
-    <ns0:edge source=""kan"" target=""l'empereur"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""kan"" target=""mannix_iv"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
     <ns0:edge source=""kan"" target=""trantor"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""kan"" target=""raych"">
+    <ns0:edge source=""rachelle"" target=""empereur"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""kan"" target=""madame_le_maire"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""l'empereur"" target=""rachelle"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""l'empereur"" target=""trantor"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""mannix_iv"" target=""madame_le_maire"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""trantor"" target=""raych"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""raych"" target=""sergent"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""raych"" target=""rachelle"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""madame_le_maire"" target=""rachelle"">
+    <ns0:edge source=""empereur"" target=""trantor"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -3025,34 +3084,21 @@ paf17,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""dors"">
+    <ns0:node id=""hari"">
             
-      <ns0:data key=""d0"">Dors;Dors Venabili</ns0:data>
+      <ns0:data key=""d0"">Hari</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""sergent"">
+    <ns0:node id=""rachelle_ire"">
             
-      <ns0:data key=""d0"">Sergent</ns0:data>
+      <ns0:data key=""d0"">Rachelle Ire;Rachelle</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""maitre
-seldon"">
+    <ns0:node id=""mannix"">
             
-      <ns0:data key=""d0"">MaitreSeldon;Seldon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""madame_maire"">
-            
-      <ns0:data key=""d0"">madame Maire;Maire;Madame le Maire;madame le Maire</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""venabili"">
-            
-      <ns0:data key=""d0"">Venabili</ns0:data>
+      <ns0:data key=""d0"">Mannix;Mannix IV</ns0:data>
           
     </ns0:node>
         
@@ -3062,45 +3108,9 @@ seldon"">
           
     </ns0:node>
         
-    <ns0:node id=""rachelle"">
+    <ns0:node id=""seldon"">
             
-      <ns0:data key=""d0"">Rachelle;Rachelle Ire</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""demerzel"">
-            
-      <ns0:data key=""d0"">Demerzel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""kan"">
-            
-      <ns0:data key=""d0"">Kan</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""trantor"">
-            
-      <ns0:data key=""d0"">Trantor</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""thalus"">
-            
-      <ns0:data key=""d0"">Thalus</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""demoris_dakariens"">
-            
-      <ns0:data key=""d0"">demoris dakariens</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""defroissa"">
-            
-      <ns0:data key=""d0"">defroissa</ns0:data>
+      <ns0:data key=""d0"">Seldon;MaitreSeldon</ns0:data>
           
     </ns0:node>
         
@@ -3110,15 +3120,51 @@ seldon"">
           
     </ns0:node>
         
-    <ns0:node id=""mycogene"">
+    <ns0:node id=""trantor"">
             
-      <ns0:data key=""d0"">Mycogene</ns0:data>
+      <ns0:data key=""d0"">Trantor</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""mannix_iv"">
+    <ns0:node id=""kan"">
             
-      <ns0:data key=""d0"">Mannix IV;Mannix</ns0:data>
+      <ns0:data key=""d0"">Kan</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""madame_le_maire"">
+            
+      <ns0:data key=""d0"">madame le Maire;Maire;Madame le Maire;madame Maire</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""venabili"">
+            
+      <ns0:data key=""d0"">Venabili;Dors Venabili</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""dors"">
+            
+      <ns0:data key=""d0"">Dors</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""demerzel"">
+            
+      <ns0:data key=""d0"">Demerzel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""sergent"">
+            
+      <ns0:data key=""d0"">Sergent</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""thalus"">
+            
+      <ns0:data key=""d0"">Thalus</ns0:data>
           
     </ns0:node>
         
@@ -3128,103 +3174,139 @@ seldon"">
           
     </ns0:node>
         
-    <ns0:node id=""hari"">
+    <ns0:node id=""mycogene"">
             
-      <ns0:data key=""d0"">Hari</ns0:data>
+      <ns0:data key=""d0"">Mycogene</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""dors"" target=""sergent"">
+    <ns0:node id=""defroissa"">
+            
+      <ns0:data key=""d0"">defroissa</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""demoris_dakariens"">
+            
+      <ns0:data key=""d0"">demoris dakariens</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""rachelle_ire"" target=""mannix"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""maitre
-seldon"">
+    <ns0:edge source=""rachelle_ire"" target=""hummin"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""rachelle_ire"" target=""seldon"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""rachelle_ire"" target=""raych"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""rachelle_ire"" target=""trantor"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""rachelle_ire"" target=""kan"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""mannix"" target=""madame_le_maire"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hummin"" target=""seldon"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hummin"" target=""demerzel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""venabili"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""seldon"" target=""dors"">
             
       <ns0:data key=""d1"">5</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""madame_maire"">
+    <ns0:edge source=""seldon"" target=""raych"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""dors"" target=""venabili"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""sergent"" target=""maitre
-seldon"">
+    <ns0:edge source=""seldon"" target=""sergent"">
             
       <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""sergent"" target=""kan"">
+    <ns0:edge source=""raych"" target=""venabili"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""sergent"" target=""trantor"">
+    <ns0:edge source=""raych"" target=""madame_le_maire"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""sergent"" target=""thalus"">
+    <ns0:edge source=""trantor"" target=""sergent"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""maitre
-seldon"" target=""hummin"">
+    <ns0:edge source=""trantor"" target=""kan"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""kan"" target=""sergent"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""maitre
-seldon"" target=""rachelle"">
+    <ns0:edge source=""madame_le_maire"" target=""dors"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""maitre
-seldon"" target=""raych"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""maitre
-seldon"" target=""venabili"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""madame_maire"" target=""mannix_iv"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""madame_maire"" target=""raych"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""venabili"" target=""raych"">
+    <ns0:edge source=""venabili"" target=""dors"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -3236,45 +3318,15 @@ seldon"" target=""venabili"">
           
     </ns0:edge>
         
-    <ns0:edge source=""hummin"" target=""rachelle"">
+    <ns0:edge source=""dors"" target=""sergent"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hummin"" target=""demerzel"">
+    <ns0:edge source=""sergent"" target=""thalus"">
             
       <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""rachelle"" target=""kan"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""rachelle"" target=""mannix_iv"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""rachelle"" target=""trantor"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""rachelle"" target=""raych"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""kan"" target=""trantor"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
       
@@ -3290,22 +3342,21 @@ paf18,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
+    <ns0:node id=""hari"">
+            
+      <ns0:data key=""d0"">Hari;HariSeldon</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""dors"">
             
       <ns0:data key=""d0"">Dors</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""hari
-seldon"">
+    <ns0:node id=""raych_seldon"">
             
-      <ns0:data key=""d0"">HariSeldon;Seldon;Hari</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""hummin"">
-            
-      <ns0:data key=""d0"">Hummin</ns0:data>
+      <ns0:data key=""d0"">Raych Seldon;Seldon;Raych</ns0:data>
           
     </ns0:node>
         
@@ -3322,15 +3373,51 @@ rittah"">
           
     </ns0:node>
         
-    <ns0:node id=""gacherais"">
+    <ns0:node id=""mannix"">
             
-      <ns0:data key=""d0"">gacherais</ns0:data>
+      <ns0:data key=""d0"">Mannix;Mannix IV</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""raych_seldon"">
+    <ns0:node id=""rachelle"">
             
-      <ns0:data key=""d0"">Raych Seldon;Raych</ns0:data>
+      <ns0:data key=""d0"">Rachelle</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""maire"">
+            
+      <ns0:data key=""d0"">Maire</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""kan"">
+            
+      <ns0:data key=""d0"">Kan</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""maitre-du-soleil_quatorze"">
+            
+      <ns0:data key=""d0"">Maitre-du-Soleil Quatorze</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""maitre_robot"">
+            
+      <ns0:data key=""d0"">Maitre Robot</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""sacratorium_de_mycogene"">
+            
+      <ns0:data key=""d0"">Sacratorium de Mycogene</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""hummin"">
+            
+      <ns0:data key=""d0"">Hummin</ns0:data>
           
     </ns0:node>
         
@@ -3341,101 +3428,73 @@ amaryl"">
           
     </ns0:node>
         
-    <ns0:node id=""kan"">
+    <ns0:node id=""gacherais"">
             
-      <ns0:data key=""d0"">Kan</ns0:data>
+      <ns0:data key=""d0"">gacherais</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""mannix_iv"">
-            
-      <ns0:data key=""d0"">Mannix IV;Mannix</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maire"">
-            
-      <ns0:data key=""d0"">Maire</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""rachelle"">
-            
-      <ns0:data key=""d0"">Rachelle</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitre-du-soleil_quatorze"">
-            
-      <ns0:data key=""d0"">Maitre-du-Soleil Quatorze</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""sacratorium_de_mycogene"">
-            
-      <ns0:data key=""d0"">Sacratorium de Mycogene</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""maitre_robot"">
-            
-      <ns0:data key=""d0"">Maitre Robot</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:edge source=""dors"" target=""hari
-seldon"">
+    <ns0:edge source=""hari"" target=""dors"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""hummin"">
+    <ns0:edge source=""hari"" target=""raych_seldon"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""hari"" target=""daneel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dors"" target=""raych_seldon"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""raych_seldon"" target=""hummin"">
             
       <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""raych_seldon"">
+    <ns0:edge source=""raych_seldon"" target=""daneel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""hari
-seldon"" target=""daneel"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""hummin"" target=""daneel"">
+    <ns0:edge source=""daneel"" target=""hummin"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""kan"" target=""mannix_iv"">
+    <ns0:edge source=""mannix"" target=""rachelle"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""mannix_iv"" target=""maire"">
+    <ns0:edge source=""mannix"" target=""maire"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""mannix_iv"" target=""rachelle"">
+    <ns0:edge source=""mannix"" target=""kan"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""maire"" target=""rachelle"">
+    <ns0:edge source=""rachelle"" target=""maire"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -3453,12 +3512,6 @@ lca0,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""vince"">
-            
-      <ns0:data key=""d0"">Vince;Vince Barrett</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""robot_daneel
 olivaw"">
             
@@ -3466,15 +3519,27 @@ olivaw"">
           
     </ns0:node>
         
-    <ns0:node id=""simpson"">
+    <ns0:node id=""jacques"">
             
-      <ns0:data key=""d0"">Simpson</ns0:data>
+      <ns0:data key=""d0"">Jacques</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""paul"">
+            
+      <ns0:data key=""d0"">Paul</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""baley"">
             
       <ns0:data key=""d0"">Baley</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""roj_nemennuh_sarton"">
+            
+      <ns0:data key=""d0"">Roj Nemennuh Sarton</ns0:data>
           
     </ns0:node>
         
@@ -3490,21 +3555,15 @@ olivaw"">
           
     </ns0:node>
         
-    <ns0:node id=""paul"">
-            
-      <ns0:data key=""d0"">Paul</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""spaciens"">
             
       <ns0:data key=""d0"">Spaciens</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""r._sammy"">
+    <ns0:node id=""vince_barrett"">
             
-      <ns0:data key=""d0"">R. Sammy</ns0:data>
+      <ns0:data key=""d0"">Vince Barrett;Vince</ns0:data>
           
     </ns0:node>
         
@@ -3514,17 +3573,29 @@ olivaw"">
           
     </ns0:node>
         
-    <ns0:node id=""jacques"">
+    <ns0:node id=""simpson"">
             
-      <ns0:data key=""d0"">Jacques</ns0:data>
+      <ns0:data key=""d0"">Simpson</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""roj_nemennuh_sarton"">
+    <ns0:node id=""r._sammy"">
             
-      <ns0:data key=""d0"">Roj Nemennuh Sarton</ns0:data>
+      <ns0:data key=""d0"">R. Sammy</ns0:data>
           
     </ns0:node>
+        
+    <ns0:edge source=""jacques"" target=""paul"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""paul"" target=""baley"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
         
     <ns0:edge source=""baley"" target=""enderby"">
             
@@ -3538,19 +3609,7 @@ olivaw"">
           
     </ns0:edge>
         
-    <ns0:edge source=""baley"" target=""paul"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
     <ns0:edge source=""enderby"" target=""julius"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""paul"" target=""jacques"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -3568,15 +3627,10 @@ lca1,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""montons"">
+    <ns0:node id=""r.
+daneel_olivaw"">
             
-      <ns0:data key=""d0"">Montons</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""julius_enderby"">
-            
-      <ns0:data key=""d0"">Julius Enderby;Enderby</ns0:data>
+      <ns0:data key=""d0"">R.Daneel Olivaw;Olivaw;R. DaneelOlivaw;Daneel;R. Daneel;R.Daneel</ns0:data>
           
     </ns0:node>
         
@@ -3586,22 +3640,21 @@ lca1,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
+    <ns0:node id=""julius_enderby"">
+            
+      <ns0:data key=""d0"">Julius Enderby;Enderby</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""spacetown"">
             
       <ns0:data key=""d0"">Spacetown</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""r.
-daneel"">
+    <ns0:node id=""instantanement_r._daneel"">
             
-      <ns0:data key=""d0"">R.Daneel;Instantanement R. Daneel;Daneel;R. Daneel;R. DaneelOlivaw;R.Daneel Olivaw</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""olivaw"">
-            
-      <ns0:data key=""d0"">Olivaw</ns0:data>
+      <ns0:data key=""d0"">Instantanement R. Daneel</ns0:data>
           
     </ns0:node>
         
@@ -3611,34 +3664,28 @@ daneel"">
           
     </ns0:node>
         
+    <ns0:node id=""montons"">
+            
+      <ns0:data key=""d0"">Montons</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""r._sammy"">
             
       <ns0:data key=""d0"">R. Sammy</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""julius_enderby"" target=""baley"">
+    <ns0:edge source=""r.
+daneel_olivaw"" target=""baley"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""julius_enderby"">
             
       <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""julius_enderby"" target=""spacetown"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""r.
-daneel"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""olivaw"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
@@ -3648,14 +3695,13 @@ daneel"">
           
     </ns0:edge>
         
-    <ns0:edge source=""spacetown"" target=""terrien"">
+    <ns0:edge source=""julius_enderby"" target=""spacetown"">
             
-      <ns0:data key=""d1"">2</ns0:data>
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""r.
-daneel"" target=""olivaw"">
+    <ns0:edge source=""spacetown"" target=""terrien"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
@@ -3673,15 +3719,21 @@ lca2,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""boris"">
+    <ns0:node id=""messieurs"">
             
-      <ns0:data key=""d0"">Boris</ns0:data>
+      <ns0:data key=""d0"">Messieurs</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""baley"">
             
       <ns0:data key=""d0"">Baley</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""boris"">
+            
+      <ns0:data key=""d0"">Boris</ns0:data>
           
     </ns0:node>
         
@@ -3692,19 +3744,13 @@ daneel"">
           
     </ns0:node>
         
-    <ns0:node id=""messieurs"">
-            
-      <ns0:data key=""d0"">Messieurs</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""elijah"">
             
       <ns0:data key=""d0"">Elijah</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""boris"" target=""baley"">
+    <ns0:edge source=""baley"" target=""boris"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -3729,6 +3775,31 @@ lca3,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
+    <ns0:node id=""julius
+enderby"">
+            
+      <ns0:data key=""d0"">JuliusEnderby</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""baley"">
+            
+      <ns0:data key=""d0"">Baley;Lije Baley;Bentley Baley</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""jessie"">
+            
+      <ns0:data key=""d0"">Jessie</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""de_jessica"">
+            
+      <ns0:data key=""d0"">De Jessica</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""ahab"">
             
       <ns0:data key=""d0"">Ahab</ns0:data>
@@ -3741,41 +3812,9 @@ lca3,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""m._olivaw"">
-            
-      <ns0:data key=""d0"">M. Olivaw;Olivaw</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""ben"">
             
       <ns0:data key=""d0"">Ben</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""r.
-daneel"">
-            
-      <ns0:data key=""d0"">R.Daneel;Daneel;R. Daneel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""daneel
-olivaw"">
-            
-      <ns0:data key=""d0"">DaneelOlivaw;Daneel Olivaw</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""jessie"">
-            
-      <ns0:data key=""d0"">Jessie</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""bentley_baley"">
-            
-      <ns0:data key=""d0"">Bentley Baley;Baley</ns0:data>
           
     </ns0:node>
         
@@ -3785,28 +3824,22 @@ olivaw"">
           
     </ns0:node>
         
-    <ns0:node id=""baal"">
-            
-      <ns0:data key=""d0"">Baal</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""jehu"">
-            
-      <ns0:data key=""d0"">Jehu</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""julius
-enderby"">
-            
-      <ns0:data key=""d0"">JuliusEnderby</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""jehoram"">
             
       <ns0:data key=""d0"">Jehoram</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""r.
+daneel"">
+            
+      <ns0:data key=""d0"">R.Daneel;R. Daneel;Daneel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""daneel_olivaw"">
+            
+      <ns0:data key=""d0"">Daneel Olivaw;Olivaw;DaneelOlivaw</ns0:data>
           
     </ns0:node>
         
@@ -3816,15 +3849,15 @@ enderby"">
           
     </ns0:node>
         
-    <ns0:node id=""de_jessica"">
+    <ns0:node id=""baal"">
             
-      <ns0:data key=""d0"">De Jessica</ns0:data>
+      <ns0:data key=""d0"">Baal</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""lije_baley"">
+    <ns0:node id=""m._olivaw"">
             
-      <ns0:data key=""d0"">Lije Baley</ns0:data>
+      <ns0:data key=""d0"">M. Olivaw</ns0:data>
           
     </ns0:node>
         
@@ -3834,41 +3867,72 @@ enderby"">
           
     </ns0:node>
         
+    <ns0:node id=""jehu"">
+            
+      <ns0:data key=""d0"">Jehu</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""julius
+enderby"" target=""baley"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""julius
+enderby"" target=""jessie"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""jessie"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""ben"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""elie"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""jessie"" target=""r.
+daneel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""jessie"" target=""daneel_olivaw"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""jessie"" target=""ben"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""jessie"" target=""naboth"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
     <ns0:edge source=""ahab"" target=""naboth"">
             
       <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""naboth"" target=""jessie"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""m._olivaw"" target=""ben"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""m._olivaw"" target=""r.
-daneel"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""m._olivaw"" target=""daneel
-olivaw"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""m._olivaw"" target=""jessie"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
@@ -3879,74 +3943,7 @@ daneel"">
           
     </ns0:edge>
         
-    <ns0:edge source=""ben"" target=""daneel
-olivaw"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""ben"" target=""jessie"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""ben"" target=""bentley_baley"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""r.
-daneel"" target=""daneel
-olivaw"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""r.
-daneel"" target=""jessie"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""daneel
-olivaw"" target=""jessie"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""jessie"" target=""julius
-enderby"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""jessie"" target=""bentley_baley"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""bentley_baley"" target=""elie"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""bentley_baley"" target=""julius
-enderby"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""bentley_baley"" target=""lije_baley"">
+    <ns0:edge source=""ben"" target=""daneel_olivaw"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
@@ -3955,6 +3952,13 @@ enderby"">
     <ns0:edge source=""elie"" target=""baal"">
             
       <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""r.
+daneel"" target=""daneel_olivaw"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
       
@@ -3976,34 +3980,15 @@ lca4,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""baley"">
+    <ns0:node id=""continuez"">
             
-      <ns0:data key=""d0"">Baley</ns0:data>
+      <ns0:data key=""d0"">Continuez</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""terrien"">
+    <ns0:node id=""olivaw"">
             
-      <ns0:data key=""d0"">Terrien</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""spaciens"">
-            
-      <ns0:data key=""d0"">Spaciens</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""julius_enderby"">
-            
-      <ns0:data key=""d0"">Julius Enderby;Enderby;Julius</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""r.
-daneel"">
-            
-      <ns0:data key=""d0"">R.Daneel;Daneel;R. Daneel</ns0:data>
+      <ns0:data key=""d0"">Olivaw</ns0:data>
           
     </ns0:node>
         
@@ -4019,15 +4004,40 @@ daneel"">
           
     </ns0:node>
         
-    <ns0:node id=""continuez"">
+    <ns0:node id=""terrien"">
             
-      <ns0:data key=""d0"">Continuez</ns0:data>
+      <ns0:data key=""d0"">Terrien</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""olivaw"">
+    <ns0:node id=""r.
+daneel"">
             
-      <ns0:data key=""d0"">Olivaw</ns0:data>
+      <ns0:data key=""d0"">R.Daneel;Daneel;R. Daneel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""enderby"">
+            
+      <ns0:data key=""d0"">Enderby;Julius Enderby</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""spaciens"">
+            
+      <ns0:data key=""d0"">Spaciens</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""baley"">
+            
+      <ns0:data key=""d0"">Baley</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""julius"">
+            
+      <ns0:data key=""d0"">Julius</ns0:data>
           
     </ns0:node>
         
@@ -4037,25 +4047,44 @@ daneel"">
           
     </ns0:node>
         
-    <ns0:edge source=""baley"" target=""terrien"">
+    <ns0:edge source=""sarton"" target=""spacetown"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""baley"" target=""spaciens"">
+    <ns0:edge source=""sarton"" target=""terrien"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""sarton"" target=""r.
+daneel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""baley"" target=""julius_enderby"">
+    <ns0:edge source=""spacetown"" target=""spaciens"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""spacetown"" target=""elijah"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""terrien"" target=""sarton"">
+    <ns0:edge source=""spacetown"" target=""terrien"">
+            
+      <ns0:data key=""d1"">4</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""terrien"" target=""enderby"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
@@ -4067,44 +4096,31 @@ daneel"">
           
     </ns0:edge>
         
-    <ns0:edge source=""terrien"" target=""julius_enderby"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""terrien"" target=""spacetown"">
-            
-      <ns0:data key=""d1"">4</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""spaciens"" target=""julius_enderby"">
+    <ns0:edge source=""terrien"" target=""baley"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""spaciens"" target=""spacetown"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""r.
-daneel"" target=""sarton"">
+    <ns0:edge source=""enderby"" target=""spaciens"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""sarton"" target=""spacetown"">
+    <ns0:edge source=""enderby"" target=""baley"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""spacetown"" target=""elijah"">
+    <ns0:edge source=""enderby"" target=""julius"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""spaciens"" target=""baley"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4122,9 +4138,9 @@ lca5,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""julius_enderby"">
+    <ns0:node id=""spaciens"">
             
-      <ns0:data key=""d0"">Julius Enderby;Enderby</ns0:data>
+      <ns0:data key=""d0"">Spaciens</ns0:data>
           
     </ns0:node>
         
@@ -4134,9 +4150,9 @@ lca5,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""spaciens"">
+    <ns0:node id=""julius_enderby"">
             
-      <ns0:data key=""d0"">Spaciens</ns0:data>
+      <ns0:data key=""d0"">Julius Enderby;Enderby</ns0:data>
           
     </ns0:node>
         
@@ -4146,7 +4162,7 @@ lca5,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:edge source=""julius_enderby"" target=""baley"">
+    <ns0:edge source=""baley"" target=""julius_enderby"">
             
       <ns0:data key=""d1"">4</ns0:data>
           
@@ -4164,9 +4180,9 @@ lca6,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""fastolfe"">
+    <ns0:node id=""sarton"">
             
-      <ns0:data key=""d0"">Fastolfe;Han Fastolfe</ns0:data>
+      <ns0:data key=""d0"">Sarton;Dr Sarton</ns0:data>
           
     </ns0:node>
         
@@ -4176,16 +4192,9 @@ lca6,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""r.
-daneel"">
+    <ns0:node id=""spacetown"">
             
-      <ns0:data key=""d0"">R.Daneel;Daneel;R. Daneel;R. Daneel Olivaw</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""sarton"">
-            
-      <ns0:data key=""d0"">Sarton;Dr Sarton</ns0:data>
+      <ns0:data key=""d0"">Spacetown</ns0:data>
           
     </ns0:node>
         
@@ -4195,9 +4204,15 @@ daneel"">
           
     </ns0:node>
         
-    <ns0:node id=""spacetown"">
+    <ns0:node id=""fastolfe"">
             
-      <ns0:data key=""d0"">Spacetown</ns0:data>
+      <ns0:data key=""d0"">Fastolfe;Han Fastolfe</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""daneel"">
+            
+      <ns0:data key=""d0"">Daneel;R. Daneel Olivaw;R.Daneel;R. Daneel</ns0:data>
           
     </ns0:node>
         
@@ -4213,52 +4228,7 @@ daneel"">
           
     </ns0:node>
         
-    <ns0:edge source=""fastolfe"" target=""baley"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""r.
-daneel"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""sarton"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""enderby"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""spacetown"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""r.
-daneel"" target=""spacetown"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""r.
-daneel"" target=""elijah"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""sarton"" target=""enderby"">
+    <ns0:edge source=""sarton"" target=""baley"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4270,9 +4240,51 @@ daneel"" target=""elijah"">
           
     </ns0:edge>
         
-    <ns0:edge source=""enderby"" target=""spacetown"">
+    <ns0:edge source=""sarton"" target=""enderby"">
             
       <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""spacetown"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""fastolfe"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""daneel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""enderby"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""spacetown"" target=""daneel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""spacetown"" target=""enderby"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""daneel"" target=""elijah"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
       
@@ -4288,39 +4300,22 @@ lca7,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""mon_cher"">
+    <ns0:node id=""dr_sarton"">
             
-      <ns0:data key=""d0"">Mon cher</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""docteur_fastolfe"">
-            
-      <ns0:data key=""d0"">docteur Fastolfe;Fastolfe</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""monsieur"">
-            
-      <ns0:data key=""d0"">Monsieur;monsieur Baley</ns0:data>
+      <ns0:data key=""d0"">Dr Sarton;DrSarton</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""baley"">
             
-      <ns0:data key=""d0"">Baley</ns0:data>
+      <ns0:data key=""d0"">Baley;monsieur Baley</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""supposez"">
+    <ns0:node id=""r.
+daneel"">
             
-      <ns0:data key=""d0"">Supposez</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""dr_sarton"">
-            
-      <ns0:data key=""d0"">Dr Sarton;DrSarton</ns0:data>
+      <ns0:data key=""d0"">R.Daneel;R. Daneel;Daneel</ns0:data>
           
     </ns0:node>
         
@@ -4330,40 +4325,21 @@ lca7,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""r.
-daneel"">
-            
-      <ns0:data key=""d0"">R.Daneel;Daneel;R. Daneel</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""enderby"">
             
       <ns0:data key=""d0"">Enderby</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""spacetown"">
+    <ns0:node id=""monsieur"">
             
-      <ns0:data key=""d0"">Spacetown</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""julius"">
-            
-      <ns0:data key=""d0"">Julius</ns0:data>
+      <ns0:data key=""d0"">Monsieur</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""dr_fastolfe"">
             
-      <ns0:data key=""d0"">Dr Fastolfe</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""elijah"">
-            
-      <ns0:data key=""d0"">Elijah</ns0:data>
+      <ns0:data key=""d0"">Dr Fastolfe;Fastolfe</ns0:data>
           
     </ns0:node>
         
@@ -4373,99 +4349,43 @@ daneel"">
           
     </ns0:node>
         
-    <ns0:edge source=""mon_cher"" target=""docteur_fastolfe"">
+    <ns0:node id=""elijah"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d0"">Elijah</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""mon_cher"" target=""monsieur"">
+    <ns0:node id=""mon_cher"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d0"">Mon cher</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""mon_cher"" target=""baley"">
+    <ns0:node id=""julius"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d0"">Julius</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""docteur_fastolfe"" target=""monsieur"">
+    <ns0:node id=""supposez"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d0"">Supposez</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""docteur_fastolfe"" target=""dr_fastolfe"">
+    <ns0:node id=""spacetown"">
             
-      <ns0:data key=""d1"">3</ns0:data>
+      <ns0:data key=""d0"">Spacetown</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""docteur_fastolfe"" target=""enderby"">
+    <ns0:node id=""docteur_fastolfe"">
             
-      <ns0:data key=""d1"">2</ns0:data>
+      <ns0:data key=""d0"">docteur Fastolfe</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""docteur_fastolfe"" target=""baley"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""monsieur"" target=""r.
-daneel"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""monsieur"" target=""baley"">
-            
-      <ns0:data key=""d1"">5</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""dr_sarton"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""spaciens"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""elijah"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""r.
-daneel"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""enderby"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""daneel_olivaw"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dr_sarton"" target=""spaciens"">
+    <ns0:edge source=""dr_sarton"" target=""baley"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4478,13 +4398,76 @@ daneel"">
           
     </ns0:edge>
         
+    <ns0:edge source=""dr_sarton"" target=""spaciens"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
     <ns0:edge source=""dr_sarton"" target=""enderby"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""spaciens"" target=""spacetown"">
+    <ns0:edge source=""baley"" target=""r.
+daneel"">
+            
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""monsieur"">
+            
+      <ns0:data key=""d1"">5</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""spaciens"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""dr_fastolfe"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""daneel_olivaw"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""elijah"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""mon_cher"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""enderby"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""r.
+daneel"" target=""monsieur"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""r.
+daneel"" target=""daneel_olivaw"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4496,16 +4479,51 @@ daneel"">
           
     </ns0:edge>
         
+    <ns0:edge source=""spaciens"" target=""spacetown"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
     <ns0:edge source=""spaciens"" target=""enderby"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""r.
-daneel"" target=""daneel_olivaw"">
+    <ns0:edge source=""enderby"" target=""dr_fastolfe"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""enderby"" target=""docteur_fastolfe"">
             
       <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""monsieur"" target=""dr_fastolfe"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""monsieur"" target=""mon_cher"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dr_fastolfe"" target=""mon_cher"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""dr_fastolfe"" target=""docteur_fastolfe"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
       
@@ -4521,9 +4539,9 @@ lca8,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""fastolfe"">
+    <ns0:node id=""spaciens"">
             
-      <ns0:data key=""d0"">Fastolfe;Dr Fastolfe;docteur Fastolfe</ns0:data>
+      <ns0:data key=""d0"">Spaciens</ns0:data>
           
     </ns0:node>
         
@@ -4533,15 +4551,15 @@ lca8,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""mon_cher"">
+    <ns0:node id=""fastolfe"">
             
-      <ns0:data key=""d0"">Mon cher</ns0:data>
+      <ns0:data key=""d0"">Fastolfe;Dr Fastolfe;docteur Fastolfe</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""spaciens"">
+    <ns0:node id=""mon_cher"">
             
-      <ns0:data key=""d0"">Spaciens</ns0:data>
+      <ns0:data key=""d0"">Mon cher</ns0:data>
           
     </ns0:node>
         
@@ -4551,31 +4569,31 @@ lca8,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""remontant"">
-            
-      <ns0:data key=""d0"">Remontant</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""spacetown"">
             
       <ns0:data key=""d0"">Spacetown</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""fastolfe"" target=""baley"">
+    <ns0:node id=""remontant"">
+            
+      <ns0:data key=""d0"">Remontant</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""spaciens"" target=""baley"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""fastolfe"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
     <ns0:edge source=""baley"" target=""mon_cher"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""spaciens"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4599,15 +4617,27 @@ lca9,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
+    <ns0:node id=""churchill"">
+            
+      <ns0:data key=""d0"">Churchill</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""shakespeare"">
+            
+      <ns0:data key=""d0"">Shakespeare</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""dr_sarton"">
             
       <ns0:data key=""d0"">Dr Sarton</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""spacetown"">
+    <ns0:node id=""baley"">
             
-      <ns0:data key=""d0"">Spacetown</ns0:data>
+      <ns0:data key=""d0"">Baley;grommela Baley</ns0:data>
           
     </ns0:node>
         
@@ -4617,9 +4647,9 @@ lca9,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""grommela_baley"">
+    <ns0:node id=""spacetown"">
             
-      <ns0:data key=""d0"">grommela Baley;Baley</ns0:data>
+      <ns0:data key=""d0"">Spacetown</ns0:data>
           
     </ns0:node>
         
@@ -4629,9 +4659,21 @@ lca9,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""spaciens"">
+    <ns0:node id=""adam"">
             
-      <ns0:data key=""d0"">Spaciens</ns0:data>
+      <ns0:data key=""d0"">Adam</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""r._daneel"">
+            
+      <ns0:data key=""d0"">R. Daneel;Daneel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""dr_fastolfe"">
+            
+      <ns0:data key=""d0"">Dr Fastolfe;Fastolfe</ns0:data>
           
     </ns0:node>
         
@@ -4641,15 +4683,21 @@ lca9,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""adam"">
+    <ns0:node id=""spaciens"">
             
-      <ns0:data key=""d0"">Adam</ns0:data>
+      <ns0:data key=""d0"">Spaciens</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""daneel"">
+    <ns0:node id=""blasphemant"">
             
-      <ns0:data key=""d0"">Daneel;R. Daneel</ns0:data>
+      <ns0:data key=""d0"">blasphemant</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""elijah"">
+            
+      <ns0:data key=""d0"">Elijah</ns0:data>
           
     </ns0:node>
         
@@ -4665,37 +4713,13 @@ lca9,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""elijah"">
+    <ns0:edge source=""churchill"" target=""shakespeare"">
             
-      <ns0:data key=""d0"">Elijah</ns0:data>
+      <ns0:data key=""d1"">1</ns0:data>
           
-    </ns0:node>
+    </ns0:edge>
         
-    <ns0:node id=""fastolfe"">
-            
-      <ns0:data key=""d0"">Fastolfe;Dr Fastolfe</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""blasphemant"">
-            
-      <ns0:data key=""d0"">blasphemant</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""churchill"">
-            
-      <ns0:data key=""d0"">Churchill</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""shakespeare"">
-            
-      <ns0:data key=""d0"">Shakespeare</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:edge source=""dr_sarton"" target=""spacetown"">
+    <ns0:edge source=""dr_sarton"" target=""baley"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4707,7 +4731,7 @@ lca9,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""dr_sarton"" target=""grommela_baley"">
+    <ns0:edge source=""dr_sarton"" target=""spacetown"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4719,43 +4743,37 @@ lca9,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""spacetown"" target=""monsieur"">
+    <ns0:edge source=""baley"" target=""monsieur"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""spacetown"" target=""grommela_baley"">
+    <ns0:edge source=""baley"" target=""dr_fastolfe"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""monsieur"" target=""grommela_baley"">
+    <ns0:edge source=""baley"" target=""spacetown"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""grommela_baley"" target=""fastolfe"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""grommela_baley"" target=""daneel"">
+    <ns0:edge source=""baley"" target=""r._daneel"">
             
       <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""adam"" target=""daneel"">
+    <ns0:edge source=""monsieur"" target=""spacetown"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""churchill"" target=""shakespeare"">
+    <ns0:edge source=""adam"" target=""r._daneel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4773,33 +4791,9 @@ lca10,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""ben"">
+    <ns0:node id=""circulat"">
             
-      <ns0:data key=""d0"">Ben</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""baley"">
-            
-      <ns0:data key=""d0"">Baley;Elijah Baley</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""daneel"">
-            
-      <ns0:data key=""d0"">Daneel;R. Daneel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""spacetown"">
-            
-      <ns0:data key=""d0"">Spacetown</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""elijah"">
-            
-      <ns0:data key=""d0"">Elijah</ns0:data>
+      <ns0:data key=""d0"">circulat</ns0:data>
           
     </ns0:node>
         
@@ -4809,19 +4803,49 @@ lca10,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""circulat"">
+    <ns0:node id=""baley"">
             
-      <ns0:data key=""d0"">circulat</ns0:data>
+      <ns0:data key=""d0"">Baley;Elijah Baley</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""ben"" target=""baley"">
+    <ns0:node id=""elijah"">
+            
+      <ns0:data key=""d0"">Elijah</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""ben"">
+            
+      <ns0:data key=""d0"">Ben</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""r._daneel"">
+            
+      <ns0:data key=""d0"">R. Daneel;Daneel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""spacetown"">
+            
+      <ns0:data key=""d0"">Spacetown</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""baley"" target=""elijah"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""baley"" target=""daneel"">
+    <ns0:edge source=""baley"" target=""ben"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""r._daneel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4833,13 +4857,7 @@ lca10,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""baley"" target=""elijah"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""daneel"" target=""elijah"">
+    <ns0:edge source=""elijah"" target=""r._daneel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4857,9 +4875,9 @@ lca11,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""a._gerrigel"">
+    <ns0:node id=""heisenberg"">
             
-      <ns0:data key=""d0"">A. Gerrigel;Gerrigel</ns0:data>
+      <ns0:data key=""d0"">Heisenberg</ns0:data>
           
     </ns0:node>
         
@@ -4869,9 +4887,15 @@ lca11,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""heisenberg"">
+    <ns0:node id=""paul_gerhard"">
             
-      <ns0:data key=""d0"">Heisenberg</ns0:data>
+      <ns0:data key=""d0"">Paul Gerhard</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""a._gerrigel"">
+            
+      <ns0:data key=""d0"">A. Gerrigel;Gerrigel</ns0:data>
           
     </ns0:node>
         
@@ -4881,21 +4905,22 @@ lca11,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""terrien"">
+    <ns0:node id=""francis
+clousarr"">
             
-      <ns0:data key=""d0"">Terrien</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""r._sammy"">
-            
-      <ns0:data key=""d0"">R. Sammy</ns0:data>
+      <ns0:data key=""d0"">FrancisClousarr</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""elijah"">
             
       <ns0:data key=""d0"">Elijah</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""terrien"">
+            
+      <ns0:data key=""d0"">Terrien</ns0:data>
           
     </ns0:node>
         
@@ -4911,26 +4936,19 @@ lca11,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""paul_gerhard"">
+    <ns0:node id=""r._sammy"">
             
-      <ns0:data key=""d0"">Paul Gerhard</ns0:data>
+      <ns0:data key=""d0"">R. Sammy</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""francis
-clousarr"">
-            
-      <ns0:data key=""d0"">FrancisClousarr</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:edge source=""a._gerrigel"" target=""baley"">
+    <ns0:edge source=""heisenberg"" target=""baley"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""baley"" target=""heisenberg"">
+    <ns0:edge source=""baley"" target=""a._gerrigel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4942,13 +4960,13 @@ clousarr"">
           
     </ns0:edge>
         
-    <ns0:edge source=""daneel"" target=""terrien"">
+    <ns0:edge source=""daneel"" target=""elijah"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""daneel"" target=""elijah"">
+    <ns0:edge source=""daneel"" target=""terrien"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -4966,18 +4984,6 @@ lca12,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""mon_cher"">
-            
-      <ns0:data key=""d0"">Mon cher</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""monsieur_baley"">
-            
-      <ns0:data key=""d0"">monsieur Baley;Baley</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""dr_sarton"">
             
       <ns0:data key=""d0"">Dr Sarton</ns0:data>
@@ -4987,6 +4993,42 @@ lca12,"<?xml version=""1.0"" ?>
     <ns0:node id=""julius_enderby"">
             
       <ns0:data key=""d0"">Julius Enderby;Enderby</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""baley"">
+            
+      <ns0:data key=""d0"">Baley;monsieur Baley</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""voudriez"">
+            
+      <ns0:data key=""d0"">Voudriez</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""r._daneel"">
+            
+      <ns0:data key=""d0"">R. Daneel;Daneel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""norris"">
+            
+      <ns0:data key=""d0"">Norris</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""mon_cher"">
+            
+      <ns0:data key=""d0"">Mon cher</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""jessie"">
+            
+      <ns0:data key=""d0"">Jessie</ns0:data>
           
     </ns0:node>
         
@@ -5003,6 +5045,12 @@ fastolfe"">
           
     </ns0:node>
         
+    <ns0:node id=""elijah"">
+            
+      <ns0:data key=""d0"">Elijah</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""manuel"">
             
       <ns0:data key=""d0"">Manuel</ns0:data>
@@ -5015,21 +5063,15 @@ fastolfe"">
           
     </ns0:node>
         
-    <ns0:node id=""daneel"">
-            
-      <ns0:data key=""d0"">Daneel;R. Daneel</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""auriez"">
             
       <ns0:data key=""d0"">Auriez</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""medievalistes"">
+    <ns0:node id=""vince_barrett"">
             
-      <ns0:data key=""d0"">Medievalistes</ns0:data>
+      <ns0:data key=""d0"">Vince Barrett;Barrett</ns0:data>
           
     </ns0:node>
         
@@ -5039,33 +5081,9 @@ fastolfe"">
           
     </ns0:node>
         
-    <ns0:node id=""elijah"">
+    <ns0:node id=""medievalistes"">
             
-      <ns0:data key=""d0"">Elijah</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""barrett"">
-            
-      <ns0:data key=""d0"">Barrett;Vince Barrett</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""norris"">
-            
-      <ns0:data key=""d0"">Norris</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""voudriez"">
-            
-      <ns0:data key=""d0"">Voudriez</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""jessie"">
-            
-      <ns0:data key=""d0"">Jessie</ns0:data>
+      <ns0:data key=""d0"">Medievalistes</ns0:data>
           
     </ns0:node>
         
@@ -5075,37 +5093,49 @@ fastolfe"">
           
     </ns0:node>
         
-    <ns0:edge source=""mon_cher"" target=""monsieur_baley"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""monsieur_baley"" target=""daneel"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""monsieur_baley"" target=""voudriez"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""monsieur_baley"" target=""norris"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
     <ns0:edge source=""dr_sarton"" target=""julius_enderby"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""julius_enderby"" target=""daneel"">
+    <ns0:edge source=""julius_enderby"" target=""r._daneel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""voudriez"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""r._daneel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""norris"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""baley"" target=""mon_cher"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""r._daneel"" target=""elijah"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""norris"" target=""vince_barrett"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -5113,18 +5143,6 @@ fastolfe"">
         
     <ns0:edge source=""spaciens"" target=""dr
 fastolfe"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""daneel"" target=""elijah"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""barrett"" target=""norris"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -5142,34 +5160,27 @@ lca13,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""gemit_baley"">
+    <ns0:node id=""jane_myers"">
             
-      <ns0:data key=""d0"">gemit Baley;Baley</ns0:data>
+      <ns0:data key=""d0"">Jane Myers</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""jessie"">
+    <ns0:node id=""continuez"">
             
-      <ns0:data key=""d0"">Jessie;Voyons Jessie</ns0:data>
+      <ns0:data key=""d0"">Continuez</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""r.
-daneel"">
+    <ns0:node id=""reponds-moi_oui"">
             
-      <ns0:data key=""d0"">R.Daneel;Daneel;R. Daneel</ns0:data>
+      <ns0:data key=""d0"">Reponds-moi oui;Reponds</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""reponds"">
+    <ns0:node id=""francis_clousarr"">
             
-      <ns0:data key=""d0"">Reponds;Reponds-moi oui</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""spaciens"">
-            
-      <ns0:data key=""d0"">Spaciens</ns0:data>
+      <ns0:data key=""d0"">Francis Clousarr</ns0:data>
           
     </ns0:node>
         
@@ -5179,9 +5190,21 @@ daneel"">
           
     </ns0:node>
         
-    <ns0:node id=""jane_myers"">
+    <ns0:node id=""gemit_baley"">
             
-      <ns0:data key=""d0"">Jane Myers</ns0:data>
+      <ns0:data key=""d0"">gemit Baley;Baley</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""voyons_jessie"">
+            
+      <ns0:data key=""d0"">Voyons Jessie;Jessie</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""spaciens"">
+            
+      <ns0:data key=""d0"">Spaciens</ns0:data>
           
     </ns0:node>
         
@@ -5191,9 +5214,10 @@ daneel"">
           
     </ns0:node>
         
-    <ns0:node id=""continuez"">
+    <ns0:node id=""r.
+daneel"">
             
-      <ns0:data key=""d0"">Continuez</ns0:data>
+      <ns0:data key=""d0"">R.Daneel;Daneel;R. Daneel</ns0:data>
           
     </ns0:node>
         
@@ -5215,33 +5239,27 @@ daneel"">
           
     </ns0:node>
         
-    <ns0:node id=""francis_clousarr"">
-            
-      <ns0:data key=""d0"">Francis Clousarr</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:edge source=""gemit_baley"" target=""jessie"">
+    <ns0:edge source=""gemit_baley"" target=""voyons_jessie"">
             
       <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""jessie"" target=""r.
+    <ns0:edge source=""voyons_jessie"" target=""r.
 daneel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""r.
-daneel"" target=""spaciens"">
+    <ns0:edge source=""spaciens"" target=""elisabeth"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""spaciens"" target=""elisabeth"">
+    <ns0:edge source=""spaciens"" target=""r.
+daneel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -5259,36 +5277,6 @@ lca14,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""boris"">
-            
-      <ns0:data key=""d0"">Boris</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""baley"">
-            
-      <ns0:data key=""d0"">Baley</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""dr_fastolfe"">
-            
-      <ns0:data key=""d0"">Dr Fastolfe</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""bon"">
-            
-      <ns0:data key=""d0"">Bon</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""daneel"">
-            
-      <ns0:data key=""d0"">Daneel;R. Daneel</ns0:data>
-          
-    </ns0:node>
-        
     <ns0:node id=""r.
 sammy"">
             
@@ -5296,9 +5284,9 @@ sammy"">
           
     </ns0:node>
         
-    <ns0:node id=""dieu_du_ciel"">
+    <ns0:node id=""francis_clousarr"">
             
-      <ns0:data key=""d0"">Dieu du Ciel;Ciel</ns0:data>
+      <ns0:data key=""d0"">Francis Clousarr</ns0:data>
           
     </ns0:node>
         
@@ -5314,15 +5302,39 @@ sammy"">
           
     </ns0:node>
         
-    <ns0:node id=""m._clousarr"">
+    <ns0:node id=""baley"">
             
-      <ns0:data key=""d0"">M. Clousarr</ns0:data>
+      <ns0:data key=""d0"">Baley</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""medievalistes"">
+    <ns0:node id=""bon"">
             
-      <ns0:data key=""d0"">Medievalistes</ns0:data>
+      <ns0:data key=""d0"">Bon</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""dr_fastolfe"">
+            
+      <ns0:data key=""d0"">Dr Fastolfe</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""daneel"">
+            
+      <ns0:data key=""d0"">Daneel;R. Daneel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""ciel"">
+            
+      <ns0:data key=""d0"">Ciel;Dieu du Ciel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""boris"">
+            
+      <ns0:data key=""d0"">Boris</ns0:data>
           
     </ns0:node>
         
@@ -5332,13 +5344,19 @@ sammy"">
           
     </ns0:node>
         
-    <ns0:node id=""francis_clousarr"">
+    <ns0:node id=""medievalistes"">
             
-      <ns0:data key=""d0"">Francis Clousarr</ns0:data>
+      <ns0:data key=""d0"">Medievalistes</ns0:data>
           
     </ns0:node>
         
-    <ns0:edge source=""baley"" target=""dr_fastolfe"">
+    <ns0:node id=""m._clousarr"">
+            
+      <ns0:data key=""d0"">M. Clousarr</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:edge source=""enderby"" target=""elijah"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -5350,15 +5368,15 @@ sammy"">
           
     </ns0:edge>
         
-    <ns0:edge source=""baley"" target=""daneel"">
+    <ns0:edge source=""baley"" target=""dr_fastolfe"">
             
-      <ns0:data key=""d1"">3</ns0:data>
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""enderby"" target=""elijah"">
+    <ns0:edge source=""baley"" target=""daneel"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d1"">3</ns0:data>
           
     </ns0:edge>
       
@@ -5374,15 +5392,33 @@ lca15,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
+    <ns0:node id=""saint_fastolfe"">
+            
+      <ns0:data key=""d0"">saint Fastolfe</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""francis"">
+            
+      <ns0:data key=""d0"">Francis</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""docteur_gerrigel"">
             
       <ns0:data key=""d0"">Docteur Gerrigel;Gerrigel</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""baley"">
+    <ns0:node id=""lequel"">
             
-      <ns0:data key=""d0"">Baley;monsieur Baley</ns0:data>
+      <ns0:data key=""d0"">Lequel</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""julius"">
+            
+      <ns0:data key=""d0"">Julius</ns0:data>
           
     </ns0:node>
         
@@ -5398,9 +5434,9 @@ lca15,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""francis"">
+    <ns0:node id=""baley"">
             
-      <ns0:data key=""d0"">Francis</ns0:data>
+      <ns0:data key=""d0"">Baley;monsieur Baley</ns0:data>
           
     </ns0:node>
         
@@ -5410,27 +5446,9 @@ lca15,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""r._sammy"">
+    <ns0:node id=""ciel"">
             
-      <ns0:data key=""d0"">R. Sammy</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""julius"">
-            
-      <ns0:data key=""d0"">Julius</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""saint_fastolfe"">
-            
-      <ns0:data key=""d0"">saint Fastolfe</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""causerez"">
-            
-      <ns0:data key=""d0"">causerez</ns0:data>
+      <ns0:data key=""d0"">Ciel</ns0:data>
           
     </ns0:node>
         
@@ -5440,9 +5458,15 @@ lca15,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""ciel"">
+    <ns0:node id=""elijah"">
             
-      <ns0:data key=""d0"">Ciel</ns0:data>
+      <ns0:data key=""d0"">Elijah</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""causerez"">
+            
+      <ns0:data key=""d0"">causerez</ns0:data>
           
     </ns0:node>
         
@@ -5452,27 +5476,15 @@ lca15,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""lequel"">
+    <ns0:node id=""r._sammy"">
             
-      <ns0:data key=""d0"">Lequel</ns0:data>
+      <ns0:data key=""d0"">R. Sammy</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""elijah"">
+    <ns0:edge source=""julius"" target=""daneel"">
             
-      <ns0:data key=""d0"">Elijah</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:edge source=""baley"" target=""daneel"">
-            
-      <ns0:data key=""d1"">3</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""baley"" target=""enderby"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
@@ -5482,9 +5494,15 @@ lca15,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""daneel"" target=""julius"">
+    <ns0:edge source=""daneel"" target=""baley"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d1"">3</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""enderby"" target=""baley"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
           
     </ns0:edge>
       
@@ -5500,15 +5518,21 @@ lca16,"<?xml version=""1.0"" ?>
     
   <ns0:graph edgedefault=""undirected"">
         
-    <ns0:node id=""telle"">
+    <ns0:node id=""sarton"">
             
-      <ns0:data key=""d0"">Telle</ns0:data>
+      <ns0:data key=""d0"">Sarton;Dr Sarton</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""elijah"">
+    <ns0:node id=""spacetown"">
             
-      <ns0:data key=""d0"">Elijah</ns0:data>
+      <ns0:data key=""d0"">Spacetown</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""enderby"">
+            
+      <ns0:data key=""d0"">Enderby</ns0:data>
           
     </ns0:node>
         
@@ -5524,15 +5548,9 @@ lca16,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""sarton"">
+    <ns0:node id=""elijah"">
             
-      <ns0:data key=""d0"">Sarton;Dr Sarton</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""spacetown"">
-            
-      <ns0:data key=""d0"">Spacetown</ns0:data>
+      <ns0:data key=""d0"">Elijah</ns0:data>
           
     </ns0:node>
         
@@ -5542,27 +5560,15 @@ lca16,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""r._sammy"">
+    <ns0:node id=""telle"">
             
-      <ns0:data key=""d0"">R. Sammy</ns0:data>
+      <ns0:data key=""d0"">Telle</ns0:data>
           
     </ns0:node>
         
     <ns0:node id=""daneel"">
             
       <ns0:data key=""d0"">Daneel;R. Daneel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""enderby"">
-            
-      <ns0:data key=""d0"">Enderby</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""medievalistes"">
-            
-      <ns0:data key=""d0"">Medievalistes</ns0:data>
           
     </ns0:node>
         
@@ -5573,19 +5579,19 @@ clousarr"">
           
     </ns0:node>
         
-    <ns0:edge source=""telle"" target=""elijah"">
+    <ns0:node id=""medievalistes"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d0"">Medievalistes</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""elijah"" target=""baley"">
+    <ns0:node id=""r._sammy"">
             
-      <ns0:data key=""d1"">1</ns0:data>
+      <ns0:data key=""d0"">R. Sammy</ns0:data>
           
-    </ns0:edge>
+    </ns0:node>
         
-    <ns0:edge source=""elijah"" target=""daneel"">
+    <ns0:edge source=""sarton"" target=""spacetown"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -5597,7 +5603,19 @@ clousarr"">
           
     </ns0:edge>
         
-    <ns0:edge source=""sarton"" target=""spacetown"">
+    <ns0:edge source=""baley"" target=""elijah"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""elijah"" target=""telle"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""elijah"" target=""daneel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
@@ -5621,6 +5639,18 @@ lca17,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
+    <ns0:node id=""julius_enderby"">
+            
+      <ns0:data key=""d0"">Julius Enderby;Enderby</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""terrien"">
+            
+      <ns0:data key=""d0"">Terrien</ns0:data>
+          
+    </ns0:node>
+        
     <ns0:node id=""spaciens"">
             
       <ns0:data key=""d0"">Spaciens</ns0:data>
@@ -5633,33 +5663,9 @@ lca17,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""julius_enderby"">
+    <ns0:node id=""r._daneel"">
             
-      <ns0:data key=""d0"">Julius Enderby;Enderby</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""daneel"">
-            
-      <ns0:data key=""d0"">Daneel;R. Daneel</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""terrien"">
-            
-      <ns0:data key=""d0"">Terrien</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""dr_fastolfe"">
-            
-      <ns0:data key=""d0"">Dr Fastolfe</ns0:data>
-          
-    </ns0:node>
-        
-    <ns0:node id=""aidez-"">
-            
-      <ns0:data key=""d0"">Aidez-</ns0:data>
+      <ns0:data key=""d0"">R. Daneel;Daneel</ns0:data>
           
     </ns0:node>
         
@@ -5669,15 +5675,21 @@ lca17,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""medievaliste"">
+    <ns0:node id=""jessie"">
             
-      <ns0:data key=""d0"">Medievaliste;Medievalistes</ns0:data>
+      <ns0:data key=""d0"">Jessie</ns0:data>
           
     </ns0:node>
         
-    <ns0:node id=""elijah"">
+    <ns0:node id=""aidez-"">
             
-      <ns0:data key=""d0"">Elijah</ns0:data>
+      <ns0:data key=""d0"">Aidez-</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""dr_fastolfe"">
+            
+      <ns0:data key=""d0"">Dr Fastolfe</ns0:data>
           
     </ns0:node>
         
@@ -5687,9 +5699,21 @@ lca17,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""jessie"">
+    <ns0:node id=""elijah"">
             
-      <ns0:data key=""d0"">Jessie</ns0:data>
+      <ns0:data key=""d0"">Elijah</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""medievaliste"">
+            
+      <ns0:data key=""d0"">Medievaliste;Medievalistes</ns0:data>
+          
+    </ns0:node>
+        
+    <ns0:node id=""allons"">
+            
+      <ns0:data key=""d0"">Allons</ns0:data>
           
     </ns0:node>
         
@@ -5699,11 +5723,17 @@ lca17,"<?xml version=""1.0"" ?>
           
     </ns0:node>
         
-    <ns0:node id=""allons"">
+    <ns0:edge source=""dr_sarton"" target=""julius_enderby"">
             
-      <ns0:data key=""d0"">Allons</ns0:data>
+      <ns0:data key=""d1"">1</ns0:data>
           
-    </ns0:node>
+    </ns0:edge>
+        
+    <ns0:edge source=""dr_sarton"" target=""terrien"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
         
     <ns0:edge source=""dr_sarton"" target=""spaciens"">
             
@@ -5717,45 +5747,9 @@ lca17,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""dr_sarton"" target=""julius_enderby"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dr_sarton"" target=""daneel"">
+    <ns0:edge source=""dr_sarton"" target=""r._daneel"">
             
       <ns0:data key=""d1"">4</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""dr_sarton"" target=""terrien"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""spaciens"" target=""dr_fastolfe"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""spacetown"" target=""daneel"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""spacetown"" target=""terrien"">
-            
-      <ns0:data key=""d1"">2</ns0:data>
-          
-    </ns0:edge>
-        
-    <ns0:edge source=""julius_enderby"" target=""daneel"">
-            
-      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
@@ -5765,15 +5759,39 @@ lca17,"<?xml version=""1.0"" ?>
           
     </ns0:edge>
         
-    <ns0:edge source=""daneel"" target=""elijah"">
+    <ns0:edge source=""julius_enderby"" target=""r._daneel"">
             
       <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         
-    <ns0:edge source=""daneel"" target=""terrien"">
+    <ns0:edge source=""terrien"" target=""spacetown"">
             
       <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""terrien"" target=""r._daneel"">
+            
+      <ns0:data key=""d1"">2</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""spaciens"" target=""dr_fastolfe"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""spacetown"" target=""r._daneel"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
+          
+    </ns0:edge>
+        
+    <ns0:edge source=""r._daneel"" target=""elijah"">
+            
+      <ns0:data key=""d1"">1</ns0:data>
           
     </ns0:edge>
         

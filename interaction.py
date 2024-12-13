@@ -63,5 +63,5 @@ def detect_interactions_between_characters_in_folder(folder_path, output_file="i
     print(f"Extraction des interactions terminée. Résultats ajoutés dans {output_file}")
 
 # Exemple d'utilisation
-folder_path = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\DataFile"
+folder_path = r"C:\Users\ADMIN\Desktop\AMS_PROJET\kaggle"
 detect_interactions_between_characters_in_folder(folder_path)
