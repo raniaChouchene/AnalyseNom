@@ -1,18 +1,16 @@
 import os
 import re
 import logging
-from typing import Dict, List, Tuple
+from typing import Dict, List
 from collections import defaultdict
 
 import networkx as nx
 import matplotlib.pyplot as plt
-import pandas as pd
 import spacy
 from unidecode import unidecode
 from fuzzywuzzy import fuzz, process
 from tqdm import tqdm
-import xml.etree.ElementTree as ET
-import xml.dom.minidom as minidom
+from PyPDF2 import PdfReader  # Pour lire les fichiers PDF
 
 # Configuration de la journalisation
 logging.basicConfig(
@@ -110,25 +108,26 @@ class CharacterInteractionAnalyzer:
     def visualize_character_interactions(
             self,
             folder_path: str,
-            book_code: str,
-            chapters: List[int],
             output_path: str = "character_interactions.png"
     ):
         """
-        Visualise les interactions entre personnages à partir des chapitres spécifiés.
+        Visualise les interactions entre personnages à partir des fichiers PDF.
         """
-        # Répertoire du livre
-        repertory = "prelude_a_fondation" if book_code == "paf" else "les_cavernes_d_acier"
-
-        # Graphe combiné pour tous les chapitres
+        # Graphe combiné pour tous les fichiers
         combined_graph = nx.Graph()
 
-        for chapter in tqdm(chapters, desc=f"Traitement des chapitres de {book_code}"):
-            chapter_file = os.path.join(folder_path, repertory, f"chapter_{chapter}.txt.preprocessed")
+        # Lister tous les fichiers PDF dans le répertoire
+        pdf_files = [f for f in os.listdir(folder_path) if f.endswith(".pdf")]
+
+        for pdf_file in tqdm(pdf_files, desc="Traitement des fichiers PDF"):
+            file_path = os.path.join(folder_path, pdf_file)
 
             try:
-                with open(chapter_file, "r", encoding="utf-8") as file:
-                    text = file.read()
+                # Lire le contenu du fichier PDF
+                reader = PdfReader(file_path)
+                text = ""
+                for page in reader.pages:
+                    text += page.extract_text()
 
                 # Reconnaissance des entités nommées
                 doc = self.nlp(text)
@@ -145,16 +144,14 @@ class CharacterInteractionAnalyzer:
                 # Regroupement des noms
                 grouped_characters = self.advanced_name_matching(characters)
 
-                # Création du graphe pour ce chapitre
-                chapter_graph = self.detect_character_interactions(text, grouped_characters)
+                # Création du graphe pour ce fichier
+                file_graph = self.detect_character_interactions(text, grouped_characters)
 
                 # Fusion des graphes
-                combined_graph = nx.compose(combined_graph, chapter_graph)
+                combined_graph = nx.compose(combined_graph, file_graph)
 
-            except FileNotFoundError:
-                logger.warning(f"Fichier de chapitre non trouvé : {chapter_file}")
             except Exception as e:
-                logger.error(f"Erreur lors du traitement de {chapter_file}: {e}")
+                logger.error(f"Erreur lors du traitement de {pdf_file}: {e}")
 
         # Visualisation
         plt.figure(figsize=(20, 20))
@@ -181,7 +178,7 @@ class CharacterInteractionAnalyzer:
         labels = {node: node for node in combined_graph.nodes()}
         nx.draw_networkx_labels(combined_graph, pos, labels, font_size=10)
 
-        plt.title(f"Interactions des personnages - {book_code.upper()}")
+        plt.title("Interactions des personnages - Corpus ASIMOV")
         plt.axis('off')
 
         # Sauvegarde du graphique
@@ -196,7 +193,7 @@ class CharacterInteractionAnalyzer:
 
 def main():
     """Fonction d'exécution principale"""
-    folder_path = r"C:\Users\ADMIN\Desktop\AMS_PROJET\kaggle"
+    folder_path = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\Corpus_ASIMOV"
 
     try:
         # Initialisation de l'analyseur
@@ -207,21 +204,10 @@ def main():
             context_window=3
         )
 
-        # Visualisation des interactions pour différents livres et chapitres
-        # Prélude à Fondation (PAF)
+        # Visualisation des interactions pour tous les fichiers PDF
         analyzer.visualize_character_interactions(
             folder_path,
-            "paf",
-            list(range(1, 20)),
-            output_path="paf_character_interactions.png"
-        )
-
-        # Les Cavernes d'Acier (LCA)
-        analyzer.visualize_character_interactions(
-            folder_path,
-            "lca",
-            list(range(1, 19)),
-            output_path="lca_character_interactions.png"
+            output_path="ASIMOV_character_interactions.png"
         )
 
     except Exception as e:
