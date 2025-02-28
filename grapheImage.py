@@ -1,7 +1,7 @@
 import os
 import re
 import logging
-from typing import Dict, List, Tuple
+from typing import Dict, List, Set, Tuple
 from collections import defaultdict
 
 import networkx as nx
@@ -27,7 +27,8 @@ class CharacterInteractionAnalyzer:
             nlp_model: str = "fr_core_news_lg",
             name_match_threshold: int = 90,
             interaction_logging: bool = False,
-            context_window: int = 3
+            context_window: int = 3,
+            anti_dic_path: str = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\antiDic.txt"
     ):
         """
         Initialise l'Analyseur d'Interactions de Personnages.
@@ -42,10 +43,21 @@ class CharacterInteractionAnalyzer:
         self.interaction_logging = interaction_logging
         self.context_window = context_window
 
+        # Chargement du dictionnaire des mots à éviter
+        self.anti_dic = self.load_anti_dic(anti_dic_path)
+
         # Dictionnaires pour les polarités
-        self.friendship_verbs = {"aimer", "adorer", "soutenir", "aider", "protéger"}
-        self.enmity_verbs = {"détester", "haïr", "combattre", "trahir", "attaquer"}
-        self.neutral_verbs = {"parler", "voir", "rencontrer", "observer"}
+        self.friendship_verbs = {"aimer", "adorer", "soutenir", "aider", "protéger", "défendre"}
+        self.enmity_verbs = {"détester", "haïr", "combattre", "trahir", "attaquer", "blesser"}
+        self.neutral_verbs = {"parler", "voir", "rencontrer", "observer", "écouter"}
+
+        self.friendship_adjectives = {"gentil", "sympathique", "bienveillant", "loyal"}
+        self.enmity_adjectives = {"méchant", "hostile", "dangereux", "traître"}
+
+    def load_anti_dic(self, anti_dic_path: str) -> Set[str]:
+        """Charge les mots à éviter depuis un fichier."""
+        with open(anti_dic_path, 'r', encoding='utf-8') as file:
+            return set(line.strip().lower() for line in file)
 
     @staticmethod
     def sanitize_node_id(node_id: str) -> str:
@@ -61,6 +73,8 @@ class CharacterInteractionAnalyzer:
 
         for name in unique_names:
             cleaned_name = name.strip().lower()
+            if cleaned_name in self.anti_dic:
+                continue  # Ignorer les mots à éviter
             if not grouped_characters:
                 grouped_characters[cleaned_name].append(name)
             else:
@@ -78,7 +92,7 @@ class CharacterInteractionAnalyzer:
 
     def detect_polarity(self, sentence: str) -> int:
         """
-        Détermine la polarité d'une phrase en fonction des verbes.
+        Détermine la polarité d'une phrase en fonction des verbes et adjectifs.
         """
         doc = self.nlp(sentence)
         polarity = 0
@@ -90,6 +104,12 @@ class CharacterInteractionAnalyzer:
                 polarity -= 1
             elif token.lemma_ in self.neutral_verbs:
                 polarity += 0
+
+            if token.pos_ == "ADJ":
+                if token.lemma_ in self.friendship_adjectives:
+                    polarity += 1
+                elif token.lemma_ in self.enmity_adjectives:
+                    polarity -= 1
 
         # Limite la polarité à l'intervalle [-3, 3]
         return max(-3, min(3, polarity))
@@ -202,7 +222,7 @@ class CharacterInteractionAnalyzer:
         popularity_ranking = self.rank_characters_by_popularity(combined_graph)
         logger.info(f"Classement des personnages par popularité : {popularity_ranking}")
 
-        # Visualisation
+        # Visualisation avec matplotlib
         plt.figure(figsize=(20, 20))
         pos = nx.spring_layout(combined_graph, k=0.5, iterations=50)
 
@@ -269,7 +289,7 @@ def main():
         # Visualisation des interactions pour tous les fichiers PDF
         analyzer.visualize_character_interactions(
             folder_path,
-            output_path="ASIMOV_character_interactions.png"
+            output_path="ASIMOV_character_interactions3.png"
         )
 
     except Exception as e:
