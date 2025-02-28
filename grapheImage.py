@@ -1,16 +1,18 @@
 import os
 import re
 import logging
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Set
 from collections import defaultdict
 
 import networkx as nx
 import matplotlib.pyplot as plt
+import community as community_louvain  # Pour la détection de communautés
 import spacy
 from unidecode import unidecode
 from fuzzywuzzy import fuzz, process
 from tqdm import tqdm
 from PyPDF2 import PdfReader
+from pyvis.network import Network
 
 # Configuration de la journalisation
 logging.basicConfig(
@@ -153,12 +155,12 @@ class CharacterInteractionAnalyzer:
 
         return G
 
-    def find_friendship_cliques(self, graph: nx.Graph) -> List[List[str]]:
+    def find_communities(self, graph: nx.Graph) -> Dict[str, int]:
         """
-        Trouve des sous-réseaux d'amitié (cliques) dans le graphe.
+        Trouve des communautés dans le graphe en utilisant l'algorithme de Louvain.
         """
-        cliques = list(nx.find_cliques(graph))
-        return cliques
+        partition = community_louvain.best_partition(graph)
+        return partition
 
     def rank_characters_by_popularity(self, graph: nx.Graph) -> Dict[str, float]:
         """
@@ -169,10 +171,12 @@ class CharacterInteractionAnalyzer:
     def visualize_character_interactions(
             self,
             folder_path: str,
-            output_path: str = "character_interactions.png"
+            output_image_path: str = "character_interactions.png",
+            output_html_path: str = "character_interactions.html"
     ):
         """
         Visualise les interactions entre personnages à partir des fichiers PDF.
+        Génère à la fois une image statique et un fichier HTML interactif.
         """
         # Graphe combiné pour tous les fichiers
         combined_graph = nx.Graph()
@@ -214,24 +218,24 @@ class CharacterInteractionAnalyzer:
             except Exception as e:
                 logger.error(f"Erreur lors du traitement de {pdf_file}: {e}")
 
-        # Trouver les cliques d'amitié
-        cliques = self.find_friendship_cliques(combined_graph)
-        logger.info(f"Sous-réseaux d'amitié (cliques) : {cliques}")
+        # Trouver les communautés
+        partition = self.find_communities(combined_graph)
+        communities = set(partition.values())
 
         # Classer les personnages par popularité
         popularity_ranking = self.rank_characters_by_popularity(combined_graph)
         logger.info(f"Classement des personnages par popularité : {popularity_ranking}")
 
-        # Visualisation avec matplotlib
+        # Génération de l'image statique avec matplotlib
         plt.figure(figsize=(20, 20))
-        pos = nx.spring_layout(combined_graph, k=0.5, iterations=50)
+        pos = nx.kamada_kawai_layout(combined_graph)  # Meilleure disposition pour réduire l'encombrement
 
-        # Dessin des nœuds
+        # Dessin des nœuds (tous en bleu clair)
         nx.draw_networkx_nodes(
             combined_graph,
             pos,
-            node_color='lightblue',
-            node_size=[combined_graph.degree(node) * 300 for node in combined_graph.nodes()],
+            node_color="lightblue",
+            node_size=[min(combined_graph.degree(node) * 50, 500) for node in combined_graph.nodes()],  # Limite la taille des nœuds
             alpha=0.8
         )
 
@@ -258,17 +262,39 @@ class CharacterInteractionAnalyzer:
 
         # Étiquettes des nœuds
         labels = {node: node for node in combined_graph.nodes()}
-        nx.draw_networkx_labels(combined_graph, pos, labels, font_size=10)
+        nx.draw_networkx_labels(combined_graph, pos, labels, font_size=10, font_color="black")
 
         plt.title("Interactions des personnages - Corpus ASIMOV")
         plt.axis('off')
 
-        # Sauvegarde du graphique
+        # Sauvegarde de l'image statique
         plt.tight_layout()
-        plt.savefig(output_path, dpi=300, bbox_inches='tight')
+        plt.savefig(output_image_path, dpi=300, bbox_inches='tight')
         plt.close()
+        logger.info(f"Image statique sauvegardée : {output_image_path}")
 
-        logger.info(f"Graphique d'interactions sauvegardé : {output_path}")
+        # Génération du fichier HTML interactif avec pyvis
+        net = Network(notebook=True, height="750px", width="100%", directed=False)
+        net.from_nx(combined_graph)
+
+        # Configuration des nœuds et arêtes
+        for node in net.nodes:
+            node["size"] = min(combined_graph.degree(node["id"]) * 5, 30)  # Limite la taille des nœuds
+            node["title"] = f"Popularité: {popularity_ranking.get(node['id'], 0):.2f}"
+
+        for edge in net.edges:
+            polarity = combined_graph.edges[edge["from"], edge["to"]].get("polarity", 0)
+            if polarity > 0:
+                edge["color"] = "green"  # Amitié
+            elif polarity < 0:
+                edge["color"] = "red"  # Inimitié
+            else:
+                edge["color"] = "gray"  # Neutre
+            edge["width"] = abs(polarity) * 2
+
+        # Sauvegarde du graphe interactif
+        net.show(output_html_path)
+        logger.info(f"Fichier HTML interactif sauvegardé : {output_html_path}")
 
         return combined_graph
 
@@ -289,7 +315,8 @@ def main():
         # Visualisation des interactions pour tous les fichiers PDF
         analyzer.visualize_character_interactions(
             folder_path,
-            output_path="ASIMOV_character_interactions3.png"
+            output_image_path="ASIMOV_character_interactions5.png",
+            output_html_path="ASIMOV_character_interactions2.html"
         )
 
     except Exception as e:
