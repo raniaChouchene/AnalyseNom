@@ -1,0 +1,941 @@
+#################################################
+# Mots fonctionels fr                           #
+# Version 8.67                                  #
+# Creada     : 10 Febrero de 2002               #
+# Modificada : 17 fevrier 2004                  # 
+# Modificada : 3 juin 2012                      # 
+# Auteurs    : Juan Manuel Torres Moreno        #        
+#              Patricia Velazquez Morales       #
+#                                               #
+# jhttp://juanmanuel.torres.free.fr             #
+#################################################
+
+
+à
+actuel
+actuels
+actuellement
+afin
+ah
+aïe
+ainsi
+ailleurs
+alors
+allô
+allo
+après
+assez
+asseyez
+au
+aucune
+aucunement
+aucun
+aujourd
+auparavant
+auprès
+auquel
+aussi
+aussitôt
+autant
+autour
+autre
+
+absolument
+autrement
+autres
+autrefois
+autrui
+auxdits
+auxdites
+aux
+auxquels
+auxquelles
+avec
+avant
+#################################
+#                                #        
+#        B                        #
+#                                #        
+#################################
+b
+bah
+bay
+bayta
+bang
+beaucoup
+bien
+bientôt
+bis
+bof
+bon
+bayta
+bons
+bonnes
+bonne
+boum
+bravo
+bref
+brr
+#################################
+#                               #        
+#        C                      #
+#                               #        
+#################################
+c
+car
+ca
+ce
+ceux
+ceci
+celle
+cela
+celles
+celui
+cependant
+certain
+certaine
+certainement
+certaines
+certains
+certes
+ces
+cet
+cette
+cettes
+ceux
+chez
+chut
+ci
+clic
+clac
+cocorico
+combien
+comme
+comment
+contre
+causerez
+continuez
+contrairement
+coucou
+commandant
+crac
+cric
+ça
+çà
+#################################
+#                                #
+#        CH                       #
+#                                #
+#################################
+chaque
+chacun
+chacune
+chapitre
+choyez
+chante
+chez
+#################################
+#                                #
+#        D                        #
+#                                #
+#################################
+d
+dans
+de
+debout
+dedans
+dehors
+déjà
+del
+demain
+devers
+depuis
+dernier
+derniers
+dernière
+dernières
+dernièrement
+derrière
+des
+dès
+desdits
+desdites
+désormais
+desquels
+desquelles
+dessous
+dessus
+devant
+différents
+différent
+divers
+donc
+dont
+dorénavant
+du
+debarrassai de twer
+dudit
+durant
+duquel
+#################################
+#                                #
+#        E                        #
+#                                #
+#################################
+e
+eh
+effectivement
+également
+elle
+elles
+en
+encore
+enfin
+ensemble
+ensuite
+entre
+envers
+environ
+et
+etc
+etcétera
+euh
+eux
+exseigneur de kalgan
+évidemment
+excellance
+empereur de riose
+exprès
+
+#################################
+#                                #
+#        F                        #
+#                                #
+#################################
+f
+façon
+façons
+facilement
+finalement
+fois
+#################################
+#                                #
+#        G                        #
+#                                #
+#################################
+g
+grand
+grands
+grande
+grandes
+généralement
+grâce
+gente dame
+guère
+gilmer
+#################################
+#                                #
+#        H                        #
+#                                #
+#################################
+h
+halte
+h
+hein
+hélas
+hep
+hier
+hormis
+hors
+ho
+hop
+hourrah
+hui
+hue
+hum
+#################################
+#                                #
+#        I                        #
+#                                #
+#################################
+ici
+infiniment
+incessamment
+incessant
+incessante
+il
+ils
+ii
+issu
+#################################
+#                                #
+#        J                        #
+#                                #
+#################################
+j
+jadis
+jamais
+je
+joue
+jusqu
+jusque
+justement
+k
+#################################
+#                                #
+#        L                        #
+#                                #
+#################################
+l
+la
+là
+ladite
+laquelle
+le
+le manchot
+le mulet
+le seigneur
+ledit
+les
+lesdits
+lesdites
+lequel
+lesquels
+lesquelles
+alvenirduplanseldon
+leur
+leurs
+loin
+le roi
+lameth
+longtemps
+lors
+lorsqu
+lorsque
+lui
+#################################
+#                                #
+#        M                        #
+#                                #
+#################################
+m
+ma
+maintenant
+maint
+mainte
+maintes
+marchand
+le marchand
+maman
+madame
+maire
+mais
+mal
+malheureusement
+malgr
+me
+mon cher monsieur
+mon cher hardin
+meilleure
+meilleures
+meilleur
+meilleurs
+même
+mêmes
+mes
+l'empereur
+miaou
+mien
+miens
+mienne
+miennes
+mieux
+mlle
+mme
+moi
+mis
+moindre
+moins
+mon
+moyennant
+#################################
+#                                #
+#        N                        #
+#                                #
+#################################
+n
+naguère
+ne
+néanmoins
+ni
+niez
+non
+nonobstant
+nos
+notre
+notres
+nôtre
+nôtres
+nous
+nul
+nulle
+nullement
+#################################
+#                                #
+#        O                        #
+#                                #
+#################################
+o
+Ô
+ô
+ò
+ok
+on
+ou
+où
+ouais
+oui
+or
+outre
+o
+ouf
+#################################
+#                                #
+#        P                        #
+#                                #
+#################################
+p
+paf
+par
+papa
+parbleu
+parce
+parfaitement
+psychosonde
+parfois
+partirez
+parmi
+particulièrement
+partout
+pas
+patatras
+pendant
+petit
+petits
+petite
+petites
+peu
+pif
+pis
+pire
+plouf
+plupart
+plus
+plusieurs
+plutôt
+pouah
+pour
+pourtant
+pourqui
+pourquoi
+practiquement
+près
+pere
+presque
+presqu
+priori
+probablement
+pst
+
+puis
+puisqu
+puisque
+#################################
+#                                #
+#        Q                        #
+#                                #
+#################################
+qu
+quand
+quant
+que
+quel
+quelconque
+quelconques
+quelle
+quelles
+quelqu
+quelque
+quelques
+quelquefois
+quels
+qui
+quiconque
+quoi
+quoique
+quoiqu
+#################################
+#                                #
+#        R                        #
+#                                #
+#################################
+r
+rien
+randu
+revint
+relativement
+respectivement
+#################################
+#                                #
+#        S                        #
+#                                #
+#################################
+s
+si
+sa
+sa seigneur
+sauf
+se
+sans
+siwenna
+siwennien
+selon
+ses
+seul
+seule
+seulement
+sien
+siens
+sienne
+siennes
+simple
+seigneurstettin
+stanell
+grand_maitre
+simplement
+sinon
+sitôt
+siwenna
+siwenniens
+soi
+sire
+son
+son eminence
+soudain
+soudainement
+sous
+souvent
+souvenez
+stop
+subit
+subite
+suivant
+suivit
+suivante
+sur
+sûr
+sûre
+sûrement
+sûres
+sûrs
+surtout
+susdit
+susdite
+susdits
+susdites
+suite
+#################################
+#                                #
+#        T                        #
+#                                #
+#################################
+t
+ta
+tandis
+tantôt
+tant
+tard
+tas
+te
+techniste
+tinter
+tel
+telle
+telles
+tellement
+tels
+tes
+tic
+tac
+tien
+tiens
+tienne
+tiennes
+toi
+ton
+tôt
+totalement
+toujours
+tous
+tout
+tournant 
+tentez 
+tinter
+toute
+toutefois
+toutes
+travers
+très
+trop
+tu
+#################################
+#                                #
+#        U                        #
+#                                #
+#################################
+u
+ur
+un
+une
+uniquement
+unes
+uns
+#################################
+#                                #
+#        V                        #
+#                                #
+#################################
+v
+vers
+via
+voici
+vois
+voilà
+voire
+votre
+voyans
+voyons
+vii
+vi
+votres
+vos
+vôtre
+vôtres
+versionOn
+vous
+vraiment
+vraisemblablement
+#################################
+#                                #
+#        Y                        #
+#                                #
+#################################
+y
+youppie
+#################################
+#                                #
+#        Z                        #
+#                                #        
+#################################
+z
+zut
+
+##################################
+
+#article
+chapitre
+page
+numéro
+deux
+et_al
+exemple
+
+#---------------------------
+#	DIRE
+#---------------------------
+dire
+disait
+disons
+dit
+#---------------------------
+#	ETRE
+#---------------------------
+être
+été
+étée
+étées
+étés
+étant
+étante
+étants
+étantes
+suis
+es
+est
+sommes
+êtes
+sont
+serai
+son
+seras
+sera
+serons
+serez
+seront
+serais
+serait
+serions
+seriez
+seraient
+étais
+était
+étions
+étiez
+étaient
+fus
+fut
+fûmes
+fûtes
+furent
+sois
+soit
+soyons
+soyez
+soient
+fusse
+fusses
+fût
+fussions
+fussiez
+fussent
+#---------------------------
+#	AVOIR
+#---------------------------
+avoir
+a
+ayant
+ayante
+ayantes
+ayants
+eu
+eue
+eues
+eus
+ai
+as
+avons
+avez
+ont
+aurai
+auras
+aura
+aurons
+aurez
+auront
+aurais
+aurait
+aurions
+auriez
+auraient
+avais
+avait
+avions
+aviez
+avaient
+eut
+eûmes
+eûtes
+eurent
+aie
+aies
+ait
+ayons
+ayez
+aient
+eusse
+eusses
+eût
+eussions
+eussiez
+eussent
+#---------------------------
+#	FALLOIR
+#---------------------------
+falloir
+faut
+fallait
+fallut
+faudra
+fallu
+farine
+faille
+fara
+fallût
+faudrait
+#---------------------------
+#	DEVOIR
+#---------------------------
+devoir
+devaient
+devais
+devait
+devant
+devez
+deviez
+devions
+devons
+devra
+devrai
+devraient
+devrais
+devrait
+devras
+devrez
+devriez
+devrions
+devrons
+devront
+dois
+doit
+doive
+doivent
+doives
+dû
+dûmes
+durent
+dus
+dusse
+dussent
+dusses
+dussiez
+dussions
+dut
+dût
+dûtes	 
+#---------------------------
+#	POUVOIR
+#---------------------------
+peut
+peuvent
+peux
+pourra
+pourrai
+pourraient
+pourrais
+pourrait
+pourras
+pourrez
+pourriez
+pourrions
+pourrons
+pourront
+pouvaient
+pouvais
+pouvait
+pouvant
+pouvez
+pouviez
+pouvions
+pouvons
+pu
+puis
+puisse
+puissent
+puisses
+puissiez
+puissions
+pûmes
+purent
+pus
+pusse
+pussent
+pusses
+pussiez
+pussions
+put
+pût
+pûtes
+
+#---------------------------
+#	VOULOIR
+#---------------------------
+veuille
+veuillent
+veuilles
+veuillez  
+veulent
+veut
+veux
+voudra
+voudrai
+voudraient
+voudrais
+voudrait
+voudras
+voudrez
+voudriez
+voudrions
+voudrons
+voudront
+voulaient
+voulais
+voulait
+voulant
+voulez
+vouliez
+vouliez
+voulions
+voulons
+voulu
+voulûmes
+voulurent
+voulus
+voulusse
+voulussent
+voulusses
+voulussiez
+voulussions
+voulut
+voulût
+voulûtes
+
+#---------------------------
+#	FAIRE
+#---------------------------
+fais
+faisaient
+faisais
+faisait
+faisant
+faisiez
+faisions
+faisons
+fait
+faites
+fasse
+fassent
+fasses
+fassiez
+fassions
+fera
+ferai
+feraient
+ferais
+ferait
+feras
+ferez
+feriez
+ferions
+ferons
+feront
+fîmes
+firent
+fis
+fisse
+fissent
+fisses
+fissiez
+fissions
+fit
+fîtes
+font

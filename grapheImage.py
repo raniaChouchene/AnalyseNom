@@ -1,20 +1,19 @@
 import os
 import re
 import logging
-from typing import Dict, List, Set
+import sys
+from typing import Dict, List, Set, Tuple
 from collections import defaultdict
-
 import networkx as nx
 import matplotlib.pyplot as plt
-import community as community_louvain  # Pour la détection de communautés
-import spacy
+import community as community_louvain
 from unidecode import unidecode
 from fuzzywuzzy import fuzz, process
 from tqdm import tqdm
 from PyPDF2 import PdfReader
 from pyvis.network import Network
 
-# Configuration de la journalisation
+# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s: %(message)s',
@@ -22,307 +21,405 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-
 class CharacterInteractionAnalyzer:
     def __init__(
             self,
             nlp_model: str = "fr_core_news_lg",
-            name_match_threshold: int = 90,
+            name_match_threshold: int = 85,
             interaction_logging: bool = False,
             context_window: int = 3,
-            anti_dic_path: str = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\antiDic.txt"
+            anti_dic_path: str = r"C:\Program Files\Python 3.12\antiDic.txt",
+            min_name_length: int = 3
     ):
         """
-        Initialise l'Analyseur d'Interactions de Personnages.
+        Initialize the Character Interaction Analyzer with robust spaCy handling.
         """
-        try:
-            self.nlp = spacy.load(nlp_model)
-        except OSError:
-            logger.error(f"Impossible de charger le modèle spaCy {nlp_model}.")
-            raise
+        # Initialize NLP model with proper error handling
+        self.nlp = self._load_spacy_model(nlp_model)
+        if self.nlp is None:
+            raise RuntimeError("Failed to initialize spaCy model")
 
         self.name_match_threshold = name_match_threshold
         self.interaction_logging = interaction_logging
         self.context_window = context_window
+        self.min_name_length = min_name_length
 
-        # Chargement du dictionnaire des mots à éviter
-        self.anti_dic = self.load_anti_dic(anti_dic_path)
+        # Load anti-dictionary
+        self.anti_dic = self._load_anti_dic(anti_dic_path)
 
-        # Dictionnaires pour les polarités
-        self.friendship_verbs = {"aimer", "adorer", "soutenir", "aider", "protéger", "défendre"}
-        self.enmity_verbs = {"détester", "haïr", "combattre", "trahir", "attaquer", "blesser"}
-        self.neutral_verbs = {"parler", "voir", "rencontrer", "observer", "écouter"}
+        # Initialize polarity dictionaries 
+        self._init_polarity_dictionaries()
 
-        self.friendship_adjectives = {"gentil", "sympathique", "bienveillant", "loyal"}
-        self.enmity_adjectives = {"méchant", "hostile", "dangereux", "traître"}
+    def _load_spacy_model(self, model_name: str):
+        """Load spaCy model with installation fallback."""
+        try:
+            import spacy
+            try:
+                return spacy.load(model_name)
+            except OSError:
+                logger.warning(f"spaCy model '{model_name}' not found. Attempting to download...")
+                from spacy.cli import download
+                download(model_name)
+                return spacy.load(model_name)
+        except ImportError:
+            logger.error("spaCy not installed. Please install with: pip install spacy")
+            return None
+        except Exception as e:
+            logger.error(f"Failed to load spaCy model: {e}")
+            return None
 
-    def load_anti_dic(self, anti_dic_path: str) -> Set[str]:
-        """Charge les mots à éviter depuis un fichier."""
-        with open(anti_dic_path, 'r', encoding='utf-8') as file:
-            return set(line.strip().lower() for line in file)
+    def _load_anti_dic(self, path: str) -> Set[str]:
+        """Load anti-dictionary with error handling."""
+        try:
+            if os.path.exists(path):
+                with open(path, 'r', encoding='utf-8') as f:
+                    return {unidecode(line.strip().lower()) for line in f}
+            return set()
+        except Exception as e:
+            logger.warning(f"Could not load anti-dictionary: {e}")
+            return set()
 
-    @staticmethod
-    def sanitize_node_id(node_id: str) -> str:
-        """Normalise les identifiants de nœuds."""
-        return unidecode(node_id.strip().replace(" ", "_").lower())
+    def _init_polarity_dictionaries(self):
+        """Initialize polarity dictionaries."""
+        self.friendship_verbs = {
+            "aimer", "adorer", "soutenir", "aider", "protéger", "défendre",
+            "sauver", "réconforter", "féliciter", "encourager", "apprécier",
+            "embrasser", "câliner", "sourire", "complimenter", "secourir"
+        }
+        self.enmity_verbs = {
+            "détester", "haïr", "combattre", "trahir", "attaquer", "blesser",
+            "tuer", "frapper", "insulter", "menacer", "voler", "tromper",
+            "humilier", "piéger", "jalouser", "poignarder", "dénoncer"
+        }
+        self.neutral_verbs = {
+            "parler", "voir", "rencontrer", "observer", "écouter", "dire",
+            "demander", "répondre", "regarder", "trouver", "penser", "croire"
+        }
+        self.friendship_adjectives = {
+            "gentil", "sympathique", "bienveillant", "loyal", "aimable",
+            "généreux", "honnête", "fidèle", "chaleureux", "dévoué", "courageux"
+        }
+        self.enmity_adjectives = {
+            "méchant", "hostile", "dangereux", "traître", "cruel",
+            "égoïste", "fourbe", "malveillant", "violent", "haineux", "sadique"
+        }
+
+    def is_valid_character_name(self, name: str) -> bool:
+        """Check if a name is valid for a character."""
+        if not name or len(name) < self.min_name_length:
+            return False
+        
+        name_lower = unidecode(name.lower())
+        if any(char.isdigit() for char in name):
+            return False
+            
+        # Exclude generic terms
+        generic_terms = {"monsieur", "madame", "docteur", "professeur", "capitaine"}
+        first_word = name_lower.split()[0] if name_lower.split() else ""
+        if first_word in generic_terms:
+            return False
+            
+        return name_lower not in self.anti_dic
+
+    def normalize_name(self, name: str) -> str:
+        """Normalize character names."""
+        # Remove titles and punctuation
+        name = re.sub(r"(^|\s)(M|Mme|Dr|Pr)\.?\s+", " ", name, flags=re.IGNORECASE)
+        name = re.sub(r"[^\w\s]", "", name)
+        return unidecode(name.strip().replace("_", " ").lower())
 
     def advanced_name_matching(self, names: List[str]) -> Dict[str, List[str]]:
-        """
-        Groupe les noms de personnages similaires.
-        """
-        grouped_characters = defaultdict(list)
-        unique_names = list(set(names))  # Éliminer les doublons
+        """Group similar character names."""
+        cleaned_names = [self.normalize_name(name) for name in names if self.is_valid_character_name(name)]
+        unique_names = list(set(cleaned_names))
+        
+        grouped = defaultdict(list)
+        processed = set()
 
         for name in unique_names:
-            cleaned_name = name.strip().lower()
-            if cleaned_name in self.anti_dic:
-                continue  # Ignorer les mots à éviter
-            if not grouped_characters:
-                grouped_characters[cleaned_name].append(name)
-            else:
-                best_match, score = process.extractOne(
-                    cleaned_name,
-                    list(grouped_characters.keys()),
-                    scorer=fuzz.token_set_ratio
-                )
-                if best_match and score > self.name_match_threshold:
-                    grouped_characters[best_match].append(name)
-                else:
-                    grouped_characters[cleaned_name].append(name)
+            if name in processed:
+                continue
+                
+            # Find similar names not yet processed
+            similar = [n for n in unique_names 
+                      if n not in processed 
+                      and fuzz.token_set_ratio(name, n) > self.name_match_threshold]
+            
+            if similar:
+                canonical = max(similar, key=len)
+                grouped[canonical] = similar
+                processed.update(similar)
 
-        return grouped_characters
+        return grouped
+
+    def extract_text_from_pdf(self, file_path: str) -> str:
+        """Extract text from PDF with error handling."""
+        try:
+            with open(file_path, 'rb') as f:
+                reader = PdfReader(f)
+                return "\n".join(page.extract_text() or "" for page in reader.pages)
+        except Exception as e:
+            logger.error(f"Error reading PDF {file_path}: {e}")
+            return ""
+
+    def extract_characters(self, text: str) -> Dict[str, List[str]]:
+        """Extract characters from text using NER."""
+        doc = self.nlp(text)
+        characters = [
+            ent.text.strip() 
+            for ent in doc.ents 
+            if ent.label_ == "PER" and self.is_valid_character_name(ent.text)
+        ]
+        return self.advanced_name_matching(characters)
 
     def detect_polarity(self, sentence: str) -> int:
-        """
-        Détermine la polarité d'une phrase en fonction des verbes et adjectifs.
-        """
+        """Detect relationship polarity in a sentence."""
         doc = self.nlp(sentence)
         polarity = 0
 
         for token in doc:
-            if token.lemma_ in self.friendship_verbs:
-                polarity += 1
-            elif token.lemma_ in self.enmity_verbs:
-                polarity -= 1
-            elif token.lemma_ in self.neutral_verbs:
-                polarity += 0
-
-            if token.pos_ == "ADJ":
-                if token.lemma_ in self.friendship_adjectives:
+            lemma = token.lemma_.lower()
+            if token.pos_ == "VERB":
+                if lemma in self.friendship_verbs:
                     polarity += 1
-                elif token.lemma_ in self.enmity_adjectives:
+                elif lemma in self.enmity_verbs:
+                    polarity -= 1
+            elif token.pos_ == "ADJ":
+                if lemma in self.friendship_adjectives:
+                    polarity += 1
+                elif lemma in self.enmity_adjectives:
                     polarity -= 1
 
-        # Limite la polarité à l'intervalle [-3, 3]
         return max(-3, min(3, polarity))
 
-    def detect_character_interactions(
-            self,
-            text: str,
-            characters: Dict[str, List[str]]
-    ) -> nx.Graph:
-        """
-        Détecte les interactions entre personnages avec polarités.
-        """
+    def detect_interactions(self, text: str, characters: Dict[str, List[str]]) -> Tuple[nx.Graph, List[tuple]]:
+        """Detect character interactions."""
         G = nx.Graph()
-        sentences = re.split(r'[.!?]+', text)
+        sentences = [s.strip() for s in re.split(r'[.!?]+', text) if s.strip()]
+        relations = []
 
-        # Conversion des noms en identifiants normalisés
-        character_nodes = {self.sanitize_node_id(src): src_variants
-                           for src, src_variants in characters.items()}
+        # Add nodes
+        for canon, aliases in characters.items():
+            G.add_node(canon, aliases=", ".join(aliases), size=10)
 
-        for src_clean, src_variants in character_nodes.items():
-            # Ajout des nœuds
-            G.add_node(src_clean, names=";".join(src_variants))
+        # Analyze interactions
+        for src, src_aliases in characters.items():
+            for tgt, tgt_aliases in characters.items():
+                if src != tgt:
+                    interactions = []
+                    
+                    for sent in sentences:
+                        src_in = any(alias.lower() in sent.lower() for alias in src_aliases)
+                        tgt_in = any(alias.lower() in sent.lower() for alias in tgt_aliases)
+                        
+                        if src_in and tgt_in:
+                            polarity = self.detect_polarity(sent)
+                            interactions.append((sent, polarity))
+                            
+                    if interactions:
+                        total_weight = len(interactions)
+                        avg_polarity = sum(p for _, p in interactions) / total_weight
+                        rel_type = self._get_relation_type(avg_polarity)
+                        
+                        G.add_edge(src, tgt, 
+                                 weight=total_weight,
+                                 polarity=avg_polarity,
+                                 type=rel_type)
+                        
+                        relations.append((
+                            src, tgt, 
+                            total_weight, 
+                            rel_type, 
+                            "; ".join(s[:50]+"..." for s, _ in interactions[:3])
+                        ))
 
-            for tgt_clean, tgt_variants in character_nodes.items():
-                if src_clean != tgt_clean:
-                    # Calcul des interactions et polarités
-                    total_polarity = 0
-                    interaction_count = 0
+        return G, relations
 
-                    for sentence in sentences:
-                        if (any(var.lower() in sentence.lower() for var in src_variants) and
-                            any(var.lower() in sentence.lower() for var in tgt_variants)):
-                            polarity = self.detect_polarity(sentence)
-                            total_polarity += polarity
-                            interaction_count += 1
+    def _get_relation_type(self, polarity: float) -> str:
+        """Classify relationship type."""
+        if polarity > 1.5: return "strong friendship"
+        if polarity > 0.5: return "friendship"
+        if polarity < -1.5: return "strong enmity"
+        if polarity < -0.5: return "enmity"
+        return "neutral"
 
-                    # Ajout des arêtes avec un poids et une polarité
-                    if interaction_count > 0:
-                        average_polarity = total_polarity / interaction_count
-                        G.add_edge(src_clean, tgt_clean, weight=interaction_count, polarity=average_polarity)
+    def generate_report(self, relations: List[tuple], output_path: str):
+        """Generate a text report of relationships."""
+        try:
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write("Character Relationship Report\n")
+                f.write("="*50 + "\n\n")
+                
+                for rel in sorted(relations, key=lambda x: x[2], reverse=True):
+                    src, tgt, weight, typ, examples = rel
+                    f.write(f"{src} → {tgt}\n")
+                    f.write(f"Type: {typ}\n")
+                    f.write(f"Interaction count: {weight}\n")
+                    f.write(f"Examples:\n{examples}\n")
+                    f.write("-"*50 + "\n")
+                    
+            logger.info(f"Report generated: {output_path}")
+        except Exception as e:
+            logger.error(f"Error generating report: {e}")
 
-        return G
-
-    def find_communities(self, graph: nx.Graph) -> Dict[str, int]:
-        """
-        Trouve des communautés dans le graphe en utilisant l'algorithme de Louvain.
-        """
-        partition = community_louvain.best_partition(graph)
-        return partition
-
-    def rank_characters_by_popularity(self, graph: nx.Graph) -> Dict[str, float]:
-        """
-        Classe les personnages par popularité (centralité de degré).
-        """
-        return nx.degree_centrality(graph)
-
-    def visualize_character_interactions(
-            self,
-            folder_path: str,
-            output_image_path: str = "character_interactions.png",
-            output_html_path: str = "character_interactions.html"
-    ):
-        """
-        Visualise les interactions entre personnages à partir des fichiers PDF.
-        Génère à la fois une image statique et un fichier HTML interactif.
-        """
-        # Graphe combiné pour tous les fichiers
-        combined_graph = nx.Graph()
-
-        # Lister tous les fichiers PDF dans le répertoire
-        pdf_files = [f for f in os.listdir(folder_path) if f.endswith(".pdf")]
-
-        for pdf_file in tqdm(pdf_files, desc="Traitement des fichiers PDF"):
-            file_path = os.path.join(folder_path, pdf_file)
-
+    def visualize_network(self, graph: nx.Graph, output_html: str):
+        """Generate interactive network visualization."""
+        try:
+            net = Network(
+                notebook=False,
+                height="800px",
+                width="100%",
+                bgcolor="#ffffff",
+                font_color="black",
+                select_menu=True,
+                filter_menu=True
+            )
+            
+            # Configure options
+            net.set_options("""
+            {
+                "nodes": {
+                    "scaling": {
+                        "min": 10,
+                        "max": 50
+                    }
+                },
+                "physics": {
+                    "stabilization": {
+                        "enabled": true,
+                        "iterations": 1000
+                    }
+                }
+            }
+            """)
+            
+            # Add nodes
+            importance = nx.degree_centrality(graph)
+            for node, data in graph.nodes(data=True):
+                net.add_node(
+                    node,
+                    label=node,
+                    size=importance[node] * 30 + 10,
+                    title=f"""
+                    Character: {node}
+                    Aliases: {data.get('aliases', 'N/A')}
+                    Importance: {importance[node]:.2f}
+                    """
+                )
+            
+            # Add edges
+            for u, v, data in graph.edges(data=True):
+                color = ("green" if data.get('type', '').startswith('friend') else
+                         "red" if data.get('type', '').startswith('enmity') else
+                         "gray")
+                net.add_edge(
+                    u, v,
+                    value=data.get('weight', 1),
+                    color=color,
+                    title=f"""
+                    Relation: {data.get('type', 'unknown')}
+                    Interactions: {data.get('weight', 0)}
+                    Polarity: {data.get('polarity', 0):.2f}
+                    """
+                )
+            
+            # Save visualization
             try:
-                # Lire le contenu du fichier PDF
-                reader = PdfReader(file_path)
-                text = ""
-                for page in reader.pages:
-                    text += page.extract_text()
-
-                # Reconnaissance des entités nommées
-                doc = self.nlp(text)
-
-                # Extraction des personnages
-                characters = [
-                    unidecode(ent.text.strip())
-                    for ent in doc.ents
-                    if (ent.label_ == "PER" and
-                        len(ent.text) > 2 and
-                        not any(char.isdigit() for char in ent.text))
-                ]
-
-                # Regroupement des noms
-                grouped_characters = self.advanced_name_matching(characters)
-
-                # Création du graphe pour ce fichier
-                file_graph = self.detect_character_interactions(text, grouped_characters)
-
-                # Fusion des graphes
-                combined_graph = nx.compose(combined_graph, file_graph)
-
+                net.save_graph(output_html)
+                logger.info(f"Visualization saved: {output_html}")
             except Exception as e:
-                logger.error(f"Erreur lors du traitement de {pdf_file}: {e}")
+                logger.error(f"Error saving HTML: {e}")
+                # Fallback method
+                html = net.generate_html()
+                with open(output_html, 'w', encoding='utf-8') as f:
+                    f.write(html)
+                logger.info(f"Visualization regenerated: {output_html}")
+                
+        except Exception as e:
+            logger.error(f"Error creating network: {e}")
+            raise
 
-        # Trouver les communautés
-        partition = self.find_communities(combined_graph)
-        communities = set(partition.values())
-
-        # Classer les personnages par popularité
-        popularity_ranking = self.rank_characters_by_popularity(combined_graph)
-        logger.info(f"Classement des personnages par popularité : {popularity_ranking}")
-
-        # Génération de l'image statique avec matplotlib
-        plt.figure(figsize=(20, 20))
-        pos = nx.kamada_kawai_layout(combined_graph)  # Meilleure disposition pour réduire l'encombrement
-
-        # Dessin des nœuds (tous en bleu clair)
-        nx.draw_networkx_nodes(
-            combined_graph,
-            pos,
-            node_color="lightblue",
-            node_size=[min(combined_graph.degree(node) * 50, 500) for node in combined_graph.nodes()],  # Limite la taille des nœuds
-            alpha=0.8
-        )
-
-        # Dessin des arêtes avec des couleurs et largeurs basées sur la polarité
-        edge_colors = []
-        edge_widths = []
-        for u, v, data in combined_graph.edges(data=True):
-            polarity = data.get("polarity", 0)
-            if polarity > 0:
-                edge_colors.append("green")  # Amitié
-            elif polarity < 0:
-                edge_colors.append("red")  # Inimitié
-            else:
-                edge_colors.append("gray")  # Neutre
-            edge_widths.append(abs(polarity) * 2)  # Largeur proportionnelle à la polarité
-
-        nx.draw_networkx_edges(
-            combined_graph,
-            pos,
-            edge_color=edge_colors,
-            width=edge_widths,
-            alpha=0.6
-        )
-
-        # Étiquettes des nœuds
-        labels = {node: node for node in combined_graph.nodes()}
-        nx.draw_networkx_labels(combined_graph, pos, labels, font_size=10, font_color="black")
-
-        plt.title("Interactions des personnages - Corpus ASIMOV")
-        plt.axis('off')
-
-        # Sauvegarde de l'image statique
-        plt.tight_layout()
-        plt.savefig(output_image_path, dpi=300, bbox_inches='tight')
-        plt.close()
-        logger.info(f"Image statique sauvegardée : {output_image_path}")
-
-        # Génération du fichier HTML interactif avec pyvis
-        net = Network(notebook=True, height="750px", width="100%", directed=False)
-        net.from_nx(combined_graph)
-
-        # Configuration des nœuds et arêtes
-        for node in net.nodes:
-            node["size"] = min(combined_graph.degree(node["id"]) * 5, 30)  # Limite la taille des nœuds
-            node["title"] = f"Popularité: {popularity_ranking.get(node['id'], 0):.2f}"
-
-        for edge in net.edges:
-            polarity = combined_graph.edges[edge["from"], edge["to"]].get("polarity", 0)
-            if polarity > 0:
-                edge["color"] = "green"  # Amitié
-            elif polarity < 0:
-                edge["color"] = "red"  # Inimitié
-            else:
-                edge["color"] = "gray"  # Neutre
-            edge["width"] = abs(polarity) * 2
-
-        # Sauvegarde du graphe interactif
-        net.show(output_html_path)
-        logger.info(f"Fichier HTML interactif sauvegardé : {output_html_path}")
-
+    def process_corpus(self, folder_path: str, output_prefix: str = "network"):
+        """Process a corpus of documents."""
+        if not os.path.isdir(folder_path):
+            raise ValueError(f"Directory not found: {folder_path}")
+        
+        pdf_files = [f for f in os.listdir(folder_path) if f.lower().endswith('.pdf')]
+        if not pdf_files:
+            raise ValueError("No PDF files found in directory")
+        
+        combined_graph = nx.Graph()
+        all_relations = []
+        
+        for pdf_file in tqdm(pdf_files, desc="Processing PDFs"):
+            try:
+                file_path = os.path.join(folder_path, pdf_file)
+                text = self.extract_text_from_pdf(file_path)
+                if not text:
+                    continue
+                    
+                characters = self.extract_characters(text)
+                graph, relations = self.detect_interactions(text, characters)
+                
+                combined_graph = nx.compose(combined_graph, graph)
+                all_relations.extend(relations)
+                
+            except Exception as e:
+                logger.error(f"Error processing {pdf_file}: {e}")
+        
+        # Generate outputs
+        output_html = f"{output_prefix}.html"
+        output_report = f"{output_prefix}_report.txt"
+        
+        self.generate_report(all_relations, output_report)
+        self.visualize_network(combined_graph, output_html)
+        
         return combined_graph
 
 
 def main():
-    """Fonction d'exécution principale"""
-    folder_path = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\Corpus_ASIMOV"
-
+    """Main entry point."""
     try:
-        # Initialisation de l'analyseur
+        # Configuration
+        corpus_path = r"C:\Users\user\Desktop\M1ILSEN\AmsProjet3\Corpus_ASIMOV"
+        output_prefix = "ASIMOV_network"
+        
+        # Initialize analyzer
         analyzer = CharacterInteractionAnalyzer(
             nlp_model="fr_core_news_lg",
-            name_match_threshold=90,
-            interaction_logging=False,
-            context_window=3
+            name_match_threshold=85,
+            interaction_logging=False
         )
-
-        # Visualisation des interactions pour tous les fichiers PDF
-        analyzer.visualize_character_interactions(
-            folder_path,
-            output_image_path="ASIMOV_character_interactions5.png",
-            output_html_path="ASIMOV_character_interactions2.html"
+        
+        # Process corpus
+        analyzer.process_corpus(
+            folder_path=corpus_path,
+            output_prefix=output_prefix
         )
-
+        
     except Exception as e:
-        logger.error(f"Une erreur s'est produite lors de l'exécution : {e}")
-        raise
+        logger.error(f"Fatal error: {e}", exc_info=True)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
+    # Check requirements
+    try:
+        import spacy
+        import networkx
+        import pyvis
+    except ImportError as e:
+        print(f"Missing required package: {e}")
+        print("Please install with: pip install spacy networkx pyvis python-louvain PyPDF2 fuzzywuzzy unidecode tqdm")
+        sys.exit(1)
+    
+    # Download French model if needed
+    try:
+        import spacy
+        spacy.load("fr_core_news_lg")
+    except OSError:
+        print("French language model not found. Downloading...")
+        from spacy.cli import download
+        download("fr_core_news_lg")
+    
     main()
