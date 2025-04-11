@@ -39,16 +39,18 @@ aussitôt
 autant
 autour
 autre
-
+altesse le souverain
 absolument
 autrement
 autres
 autrefois
 autrui
+accusez
 auxdits
 auxdites
 aux
 auxquels
+anselme haut rodric
 auxquelles
 avec
 avant
@@ -102,10 +104,13 @@ ces
 cet
 cette
 cettes
+cenn
 ceux
 chez
 chut
+commissaire
 ci
+chante
 clic
 clac
 cocorico
@@ -118,6 +123,8 @@ continuez
 contrairement
 coucou
 commandant
+ceux
+cil
 crac
 cric
 ça
@@ -149,6 +156,7 @@ déjà
 del
 demain
 devers
+daluen iv
 depuis
 dernier
 derniers
@@ -158,6 +166,7 @@ dernièrement
 derrière
 des
 dès
+dagobert ix
 desdits
 desdites
 désormais
@@ -245,6 +254,7 @@ hein
 hélas
 hep
 hier
+hella
 hormis
 hors
 ho
@@ -264,6 +274,7 @@ incessamment
 incessant
 incessante
 il
+ii
 ils
 ii
 issu
@@ -328,15 +339,19 @@ marchand
 le marchand
 maman
 madame
+mangin
 maire
 mais
+manouvre
 mal
 malheureusement
 malgr
 me
+monsieurs
 mon cher monsieur
 mon cher hardin
 meilleure
+mulet
 meilleures
 meilleur
 meilleurs
@@ -396,6 +411,7 @@ où
 ouais
 oui
 or
+orateur
 outre
 o
 ouf
@@ -412,6 +428,7 @@ parbleu
 parce
 parfaitement
 psychosonde
+particien
 parfois
 partirez
 parmi
@@ -435,6 +452,7 @@ plusieurs
 plutôt
 pouah
 pour
+pli
 pourtant
 pourqui
 pourquoi
@@ -443,6 +461,7 @@ près
 pere
 presque
 presqu
+premier ministre
 priori
 probablement
 pst
@@ -493,6 +512,8 @@ respectivement
 s
 si
 sa
+son
+sa seigneurie
 sa seigneur
 sauf
 se
@@ -520,6 +541,7 @@ siwenniens
 soi
 sire
 son
+s absolument 
 son eminence
 soudain
 soudainement
@@ -535,6 +557,7 @@ suivante
 sur
 sûr
 sûre
+supposons
 sûrement
 sûres
 sûrs
@@ -560,7 +583,10 @@ te
 techniste
 tinter
 tel
+te
 telle
+trantor
+tipellum
 telles
 tellement
 tels
@@ -572,13 +598,15 @@ tiens
 tienne
 tiennes
 toi
+terminus
 ton
 tôt
 totalement
 toujours
 tous
+traitor
 tout
-tournant 
+tournant
 tentez 
 tinter
 toute
@@ -609,6 +637,7 @@ v
 vers
 via
 voici
+verisof
 vois
 voilà
 voire
@@ -692,6 +721,7 @@ seraient
 étions
 étiez
 étaient
+exseigneur de kalgam
 fus
 fut
 fûmes
@@ -726,6 +756,7 @@ as
 avons
 avez
 ont
+auguste
 aurai
 auras
 aura

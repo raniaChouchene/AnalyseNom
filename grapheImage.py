@@ -114,7 +114,7 @@ class CharacterInteractionAnalyzer:
             return False
             
         # Exclude generic terms
-        generic_terms = {"monsieur", "madame", "docteur", "professeur", "capitaine"}
+        generic_terms = {"monsieur", "madame", "docteur", "professeur", "capitaine", "s absolument"}
         first_word = name_lower.split()[0] if name_lower.split() else ""
         if first_word in generic_terms:
             return False
@@ -270,9 +270,7 @@ class CharacterInteractionAnalyzer:
                 height="800px",
                 width="100%",
                 bgcolor="#ffffff",
-                font_color="black",
-                select_menu=True,
-                filter_menu=True
+                font_color="black"
             )
             
             # Configure options
