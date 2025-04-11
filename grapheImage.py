@@ -12,6 +12,7 @@ from fuzzywuzzy import fuzz, process
 from tqdm import tqdm
 from PyPDF2 import PdfReader
 from pyvis.network import Network
+from typing import Dict, List, Set, Tuple, Optional 
 
 # Configure logging
 logging.basicConfig(
@@ -46,6 +47,7 @@ class CharacterInteractionAnalyzer:
 
         # Load anti-dictionary
         self.anti_dic = self._load_anti_dic(anti_dic_path)
+        logger.info(f"Loaded {len(self.anti_dic)} terms in anti-dictionary")
 
         # Initialize polarity dictionaries 
         self._init_polarity_dictionaries()
@@ -69,15 +71,31 @@ class CharacterInteractionAnalyzer:
             return None
 
     def _load_anti_dic(self, path: str) -> Set[str]:
-        """Load anti-dictionary with error handling."""
+        """Load anti-dictionary with improved error handling and multiple encoding attempts."""
+        anti_dic_set = set()
         try:
             if os.path.exists(path):
-                with open(path, 'r', encoding='utf-8') as f:
-                    return {unidecode(line.strip().lower()) for line in f}
-            return set()
+                encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
+                
+                for encoding in encodings:
+                    try:
+                        with open(path, 'r', encoding=encoding) as f:
+                            anti_dic_set = {unidecode(line.strip().lower()) for line in f if line.strip()}
+                        logger.info(f"Successfully loaded anti-dictionary with {len(anti_dic_set)} entries using {encoding}")
+                        break
+                    except UnicodeDecodeError:
+                        logger.debug(f"Failed to decode using {encoding}, trying next encoding")
+                    except Exception as e:
+                        logger.warning(f"Error reading file with {encoding}: {e}")
+                
+                if not anti_dic_set:
+                    logger.warning("Could not load anti-dictionary with any encoding")
+            else:
+                logger.warning(f"Anti-dictionary file not found: {path}")
         except Exception as e:
             logger.warning(f"Could not load anti-dictionary: {e}")
-            return set()
+        
+        return anti_dic_set
 
     def _init_polarity_dictionaries(self):
         """Initialize polarity dictionaries."""
@@ -105,7 +123,7 @@ class CharacterInteractionAnalyzer:
         }
 
     def is_valid_character_name(self, name: str) -> bool:
-        """Check if a name is valid for a character."""
+        """Check if a name is valid for a character with improved anti-dictionary checking."""
         if not name or len(name) < self.min_name_length:
             return False
         
@@ -114,11 +132,18 @@ class CharacterInteractionAnalyzer:
             return False
             
         # Exclude generic terms
-        generic_terms = {"monsieur", "madame", "docteur", "professeur", "capitaine", "s absolument"}
-        first_word = name_lower.split()[0] if name_lower.split() else ""
-        if first_word in generic_terms:
+        generic_terms = {"monsieur", "madame", "docteur", "professeur", "capitaine", "s absolument", "s", "absolument" , "vii", "ii", "messieurs", "poli", "excellence"}
+        
+        # Check if any word in the name appears in anti_dic
+        name_words = name_lower.split()
+        if any(word in self.anti_dic for word in name_words):
             return False
             
+        first_word = name_words[0] if name_words else ""
+        if first_word in generic_terms:
+            return False
+        
+        # Check if the full name is in anti_dic    
         return name_lower not in self.anti_dic
 
     def normalize_name(self, name: str) -> str:
@@ -129,9 +154,18 @@ class CharacterInteractionAnalyzer:
         return unidecode(name.strip().replace("_", " ").lower())
 
     def advanced_name_matching(self, names: List[str]) -> Dict[str, List[str]]:
-        """Group similar character names."""
-        cleaned_names = [self.normalize_name(name) for name in names if self.is_valid_character_name(name)]
-        unique_names = list(set(cleaned_names))
+        """Group similar character names with improved anti-dictionary filtering."""
+        # First normalize all names
+        normalized_names = [self.normalize_name(name) for name in names]
+        
+        # Thorough anti-dictionary check: exclude any name that contains words from anti_dic
+        valid_names = []
+        for name in normalized_names:
+            name_parts = name.split()
+            if name and not any(part in self.anti_dic for part in name_parts) and name not in self.anti_dic:
+                valid_names.append(name)
+        
+        unique_names = list(set(valid_names))
         
         grouped = defaultdict(list)
         processed = set()
@@ -149,6 +183,9 @@ class CharacterInteractionAnalyzer:
                 canonical = max(similar, key=len)
                 grouped[canonical] = similar
                 processed.update(similar)
+            elif name not in processed:  # Include singletons
+                grouped[name] = [name]
+                processed.add(name)
 
         return grouped
 
@@ -163,14 +200,31 @@ class CharacterInteractionAnalyzer:
             return ""
 
     def extract_characters(self, text: str) -> Dict[str, List[str]]:
-        """Extract characters from text using NER."""
+        """Extract characters from text using NER with improved anti-dictionary filtering."""
         doc = self.nlp(text)
-        characters = [
-            ent.text.strip() 
-            for ent in doc.ents 
-            if ent.label_ == "PER" and self.is_valid_character_name(ent.text)
-        ]
-        return self.advanced_name_matching(characters)
+        characters = []
+        
+        for ent in doc.ents:
+            if ent.label_ == "PER":
+                name = ent.text.strip()
+                # Initial validity check
+                if self.is_valid_character_name(name):
+                    characters.append(name)
+        
+        # Double-check no anti-dictionary terms slipped through
+        filtered_characters = []
+        for name in characters:
+            normalized = self.normalize_name(name)
+            name_parts = normalized.split()
+            
+            # Skip if any part is in anti_dic or if the whole name is in anti_dic
+            if any(part in self.anti_dic for part in name_parts) or normalized in self.anti_dic:
+                logger.debug(f"Excluded character from anti-dictionary: {name}")
+                continue
+                
+            filtered_characters.append(name)
+        
+        return self.advanced_name_matching(filtered_characters)
 
     def detect_polarity(self, sentence: str) -> int:
         """Detect relationship polarity in a sentence."""
@@ -193,18 +247,34 @@ class CharacterInteractionAnalyzer:
         return max(-3, min(3, polarity))
 
     def detect_interactions(self, text: str, characters: Dict[str, List[str]]) -> Tuple[nx.Graph, List[tuple]]:
-        """Detect character interactions."""
+        """Detect character interactions with full anti-dictionary filtering."""
         G = nx.Graph()
         sentences = [s.strip() for s in re.split(r'[.!?]+', text) if s.strip()]
         relations = []
 
-        # Add nodes
+        # Final anti-dictionary check before adding nodes
+        filtered_characters = {}
         for canon, aliases in characters.items():
+            # Check canonical name against anti-dictionary
+            canon_parts = unidecode(canon.lower()).split()
+            if canon not in self.anti_dic and not any(part in self.anti_dic for part in canon_parts):
+                # Check all aliases against anti-dictionary
+                valid_aliases = []
+                for alias in aliases:
+                    alias_parts = unidecode(alias.lower()).split()
+                    if alias not in self.anti_dic and not any(part in self.anti_dic for part in alias_parts):
+                        valid_aliases.append(alias)
+                
+                if valid_aliases:  # Only add if we have valid aliases
+                    filtered_characters[canon] = valid_aliases
+
+        # Add nodes
+        for canon, aliases in filtered_characters.items():
             G.add_node(canon, aliases=", ".join(aliases), size=10)
 
         # Analyze interactions
-        for src, src_aliases in characters.items():
-            for tgt, tgt_aliases in characters.items():
+        for src, src_aliases in filtered_characters.items():
+            for tgt, tgt_aliases in filtered_characters.items():
                 if src != tgt:
                     interactions = []
                     
@@ -222,9 +292,9 @@ class CharacterInteractionAnalyzer:
                         rel_type = self._get_relation_type(avg_polarity)
                         
                         G.add_edge(src, tgt, 
-                                 weight=total_weight,
-                                 polarity=avg_polarity,
-                                 type=rel_type)
+                                  weight=total_weight,
+                                  polarity=avg_polarity,
+                                  type=rel_type)
                         
                         relations.append((
                             src, tgt, 
@@ -249,6 +319,8 @@ class CharacterInteractionAnalyzer:
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write("Character Relationship Report\n")
                 f.write("="*50 + "\n\n")
+                
+                f.write(f"Total relationships found: {len(relations)}\n\n")
                 
                 for rel in sorted(relations, key=lambda x: x[2], reverse=True):
                     src, tgt, weight, typ, examples = rel
@@ -348,19 +420,51 @@ class CharacterInteractionAnalyzer:
         
         combined_graph = nx.Graph()
         all_relations = []
+        all_characters = {}
         
         for pdf_file in tqdm(pdf_files, desc="Processing PDFs"):
             try:
                 file_path = os.path.join(folder_path, pdf_file)
                 text = self.extract_text_from_pdf(file_path)
                 if not text:
+                    logger.warning(f"No text extracted from {pdf_file}")
                     continue
                     
+                # Extract characters with anti-dictionary filtering
                 characters = self.extract_characters(text)
-                graph, relations = self.detect_interactions(text, characters)
+                logger.info(f"Found {len(characters)} characters in {pdf_file} after filtering")
                 
+                # Check any anti-dictionary terms that might have slipped through
+                filtered_chars = {}
+                for canon, aliases in characters.items():
+                    canon_lower = unidecode(canon.lower())
+                    
+                    # Skip if canonical name is in anti-dictionary
+                    if canon_lower in self.anti_dic or any(part in self.anti_dic for part in canon_lower.split()):
+                        logger.debug(f"Excluded character from anti-dictionary: {canon}")
+                        continue
+                    
+                    # Filter aliases against anti-dictionary
+                    valid_aliases = []
+                    for alias in aliases:
+                        alias_lower = unidecode(alias.lower())
+                        if alias_lower not in self.anti_dic and not any(part in self.anti_dic for part in alias_lower.split()):
+                            valid_aliases.append(alias)
+                    
+                    if valid_aliases:  # Only add if we have valid aliases
+                        filtered_chars[canon] = valid_aliases
+                
+                # Update the character list
+                all_characters.update(filtered_chars)
+                
+                # Detect interactions
+                graph, relations = self.detect_interactions(text, filtered_chars)
+                
+                # Combine with existing graph
                 combined_graph = nx.compose(combined_graph, graph)
                 all_relations.extend(relations)
+                
+                logger.info(f"Processed {pdf_file}: found {len(relations)} relationships")
                 
             except Exception as e:
                 logger.error(f"Error processing {pdf_file}: {e}")
@@ -368,10 +472,28 @@ class CharacterInteractionAnalyzer:
         # Generate outputs
         output_html = f"{output_prefix}.html"
         output_report = f"{output_prefix}_report.txt"
+        output_characters = f"{output_prefix}_characters.txt"
         
+        # Save character list
+        try:
+            with open(output_characters, 'w', encoding='utf-8') as f:
+                f.write("Character List\n")
+                f.write("="*50 + "\n\n")
+                
+                for canon, aliases in all_characters.items():
+                    f.write(f"{canon}\n")
+                    f.write(f"Aliases: {', '.join(aliases)}\n")
+                    f.write("-"*50 + "\n")
+            
+            logger.info(f"Character list saved: {output_characters}")
+        except Exception as e:
+            logger.error(f"Error saving character list: {e}")
+        
+        # Generate report and visualization
         self.generate_report(all_relations, output_report)
         self.visualize_network(combined_graph, output_html)
         
+        logger.info(f"Processing complete. Found {len(all_characters)} characters and {len(all_relations)} relationships.")
         return combined_graph
 
 
@@ -386,7 +508,8 @@ def main():
         analyzer = CharacterInteractionAnalyzer(
             nlp_model="fr_core_news_lg",
             name_match_threshold=85,
-            interaction_logging=False
+            interaction_logging=True,
+            anti_dic_path=r"C:\Program Files\Python 3.12\antiDic.txt"
         )
         
         # Process corpus

@@ -48,6 +48,7 @@ autrui
 accusez
 auxdits
 auxdites
+a
 aux
 auxquels
 anselme haut rodric
@@ -75,6 +76,7 @@ bons
 bonnes
 bonne
 boum
+bars
 bravo
 bref
 brr
@@ -151,6 +153,7 @@ dans
 de
 debout
 dedans
+drawt
 dehors
 déjà
 del
@@ -202,6 +205,7 @@ encore
 enfin
 ensemble
 ensuite
+encyclopedia galectica
 entre
 envers
 environ
@@ -227,6 +231,8 @@ façons
 facilement
 finalement
 fois
+flamboya
+filia
 #################################
 #                                #
 #        G                        #
@@ -242,6 +248,8 @@ grâce
 gente dame
 guère
 gilmer
+gentdame
+gente dame
 #################################
 #                                #
 #        H                        #
@@ -270,9 +278,12 @@ hum
 #################################
 ici
 infiniment
+indbur iii
 incessamment
 incessant
 incessante
+iasaac asimov
+iii
 il
 ii
 ils
@@ -311,6 +322,7 @@ les
 lesdits
 lesdites
 lequel
+lavenirdulanseldon
 lesquels
 lesquelles
 alvenirduplanseldon
@@ -336,6 +348,7 @@ maint
 mainte
 maintes
 marchand
+marchands
 le marchand
 maman
 madame
@@ -510,6 +523,7 @@ respectivement
 #                                #
 #################################
 s
+s
 si
 sa
 son
@@ -541,9 +555,10 @@ siwenniens
 soi
 sire
 son
-s absolument 
+sage
 son eminence
 soudain
+seigneuurs
 soudainement
 sous
 souvent
@@ -604,6 +619,7 @@ tôt
 totalement
 toujours
 tous
+tenez
 traitor
 tout
 tournant
@@ -646,6 +662,7 @@ voyans
 voyons
 vii
 vi
+iii
 votres
 vos
 vôtre
