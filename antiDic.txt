@@ -515,6 +515,9 @@ r
 rien
 randu
 revint
+ronflait
+reverait
+redoutablement
 relativement
 respectivement
 #################################

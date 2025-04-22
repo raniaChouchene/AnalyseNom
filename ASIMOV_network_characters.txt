@@ -1,388 +1,719 @@
 Character List
 ==================================================
 
+allonsy
+Aliases: allons, allonsy
+--------------------------------------------------
+detectes
+Aliases: detectes
+--------------------------------------------------
+han pritcher
+Aliases: han pritcher, pritcher
+--------------------------------------------------
+ovall gri
+Aliases: ovall gri
+--------------------------------------------------
+gente
+Aliases: gente
+--------------------------------------------------
+cleon
+Aliases: cleon
+--------------------------------------------------
+radole
+Aliases: radole
+--------------------------------------------------
+lee senter
+Aliases: lee senter
+--------------------------------------------------
+salvor 
+hardin
+Aliases: hardin, salvor hardin, salvor 
+hardin
+--------------------------------------------------
+hangar
+Aliases: hangar
+--------------------------------------------------
+patiemment
+Aliases: patiemment
+--------------------------------------------------
+kalgan
+Aliases: kalgan
+--------------------------------------------------
+hari 
+seldon
+Aliases: hari 
+seldon, hari seldon, seldon
+--------------------------------------------------
+loris
+Aliases: loris
+--------------------------------------------------
+bel 
+riose
+Aliases: bel 
+riose, bel riose
+--------------------------------------------------
+interessant
+Aliases: interessant
+--------------------------------------------------
+venere 
+seigneur
+Aliases: venere seigneur, venere 
+seigneur, seigneur
+--------------------------------------------------
+enfuyez
+Aliases: enfuyez
+--------------------------------------------------
 hober mallow
 Aliases: hober mallow, mallow
 --------------------------------------------------
 ricker
 Aliases: ricker
 --------------------------------------------------
-boucla
-Aliases: boucla
+folatre
+Aliases: folatre
 --------------------------------------------------
-salvor 
-hardin
-Aliases: salvor 
-hardin, salvor, hardin, salvor hardin
---------------------------------------------------
-hari 
-seldon
-Aliases: hari 
-seldon, seldon, hari seldon
---------------------------------------------------
-forell
-Aliases: forell
---------------------------------------------------
-amell brodrig
-Aliases: brodrig, amell brodrig
---------------------------------------------------
-assourdissez
-Aliases: assourdissez
---------------------------------------------------
-horleggor
-Aliases: horleggor
---------------------------------------------------
-ovall gri
-Aliases: ovall gri
---------------------------------------------------
-fran
-Aliases: fran
---------------------------------------------------
-magnifiee giganticus
-Aliases: magnifiee giganticus, magnifiee
---------------------------------------------------
-ducem 
-barr
-Aliases: ducem barr, ducem 
-barr, ducem, barr
---------------------------------------------------
-jord commason
-Aliases: commason, jord commason
---------------------------------------------------
-venere 
-seigneur
-Aliases: venere 
-seigneur, seigneur
---------------------------------------------------
-han pritcher
-Aliases: han, han pritcher
---------------------------------------------------
-general bel 
-riose
-Aliases: general bel 
-riose, general riose, riose
---------------------------------------------------
-interessant
-Aliases: interessant
---------------------------------------------------
-onum barr
-Aliases: onum barr, barr
---------------------------------------------------
-sergent luk
-Aliases: luk, sergent luk
---------------------------------------------------
-colonel pritcher
-Aliases: pritcher, colonel pritcher
---------------------------------------------------
-radolienne
-Aliases: radolienne
---------------------------------------------------
-neotrantor
-Aliases: neotrantor
---------------------------------------------------
-yume
-Aliases: yume
---------------------------------------------------
-isaac asimov
-Aliases: isaac asimov
---------------------------------------------------
-enfuyez
-Aliases: enfuyez
---------------------------------------------------
-orum palley
-Aliases: orum palley
---------------------------------------------------
-dagobert x
-Aliases: dagobert x
---------------------------------------------------
-seigneurs
-Aliases: seigneurs
+grommela fran
+Aliases: grommela fran, fran
 --------------------------------------------------
 anacreon
 Aliases: anacreon
 --------------------------------------------------
-untel
-Aliases: untel
+visiblement
+Aliases: visiblement
 --------------------------------------------------
-patricien
-Aliases: patricien
+ducem 
+barr
+Aliases: ducem barr, ducem 
+barr, barr
 --------------------------------------------------
-loris
-Aliases: loris
+orum palley
+Aliases: orum palley
 --------------------------------------------------
-pelotonnes
-Aliases: pelotonnes
+ergote
+Aliases: ergote
 --------------------------------------------------
-newton
-Aliases: newton
---------------------------------------------------
-folatre
-Aliases: folatre
---------------------------------------------------
-daluden iv
-Aliases: daluden iv
---------------------------------------------------
-lee senter
-Aliases: senter, lee senter
---------------------------------------------------
-bigre
-Aliases: bigre
---------------------------------------------------
-gente 
-dame
-Aliases: gente 
-dame
---------------------------------------------------
-torie
-Aliases: torie
---------------------------------------------------
-kalgan
-Aliases: kalgan
---------------------------------------------------
-indbur
-Aliases: indbur
+monsieur
+Aliases: monsieur
 --------------------------------------------------
 inchney
 Aliases: inchney
 --------------------------------------------------
+onum barr
+Aliases: onum barr, barr
+--------------------------------------------------
 toran
 Aliases: toran
 --------------------------------------------------
-renard
-Aliases: renard
+untel
+Aliases: untel
+--------------------------------------------------
+seigneurs
+Aliases: seigneurs
+--------------------------------------------------
+neotrantor
+Aliases: neotrantor
+--------------------------------------------------
+magnifiee
+Aliases: magnifiee
+--------------------------------------------------
+maitre
+Aliases: maitre
+--------------------------------------------------
+luk
+Aliases: luk
+--------------------------------------------------
+marchandne
+Aliases: marchandne
+--------------------------------------------------
+horleggor
+Aliases: horleggor
+--------------------------------------------------
+heureuse
+Aliases: heureuse
+--------------------------------------------------
+radolienne
+Aliases: radolienne
+--------------------------------------------------
+miran
+Aliases: miran
+--------------------------------------------------
+jord commason
+Aliases: commason, jord commason
+--------------------------------------------------
+daluden iv
+Aliases: daluden iv
+--------------------------------------------------
+isaac asimov
+Aliases: isaac asimov
+--------------------------------------------------
+forell
+Aliases: forell
+--------------------------------------------------
+dagobert x
+Aliases: dagobert x
+--------------------------------------------------
+iss
+Aliases: iss
+--------------------------------------------------
+indbur
+Aliases: indbur
+--------------------------------------------------
+excellence
+Aliases: excellence
+--------------------------------------------------
+newton
+Aliases: newton
+--------------------------------------------------
+patricien
+Aliases: patricien
+--------------------------------------------------
+general riose
+Aliases: general riose
+--------------------------------------------------
+gacherais
+Aliases: gacherais
+--------------------------------------------------
+siriens
+Aliases: siriens
+--------------------------------------------------
+arkady darell
+Aliases: arkady darell, darell
+--------------------------------------------------
+compo
+rellon
+Aliases: compo
+rellon, comporellon
+--------------------------------------------------
+heula
+Aliases: heula
+--------------------------------------------------
+mamie supernova
+Aliases: mamie supernova
+--------------------------------------------------
+tope
+Aliases: tope
+--------------------------------------------------
+ridicule
+Aliases: ridicule
+--------------------------------------------------
+contrecour trevize
+Aliases: contrecour trevize, trevize
+--------------------------------------------------
+branno
+Aliases: branno
+--------------------------------------------------
+tertio
+Aliases: tertio
+--------------------------------------------------
+gaien
+Aliases: gaien
+--------------------------------------------------
+rufirant
+Aliases: rufirant
+--------------------------------------------------
+globusculaire
+Aliases: globusculaire
+--------------------------------------------------
+secundo
+Aliases: secundo
+--------------------------------------------------
+evander sopellor
+Aliases: evander sopellor
+--------------------------------------------------
+abruptement
+Aliases: abruptement
+--------------------------------------------------
+point fermiere
+Aliases: point fermiere
+--------------------------------------------------
+urgece jj
+Aliases: urgece jj
+--------------------------------------------------
+preem palver
+Aliases: preem palver, palver
+--------------------------------------------------
+idiot
+Aliases: idiot
+--------------------------------------------------
+gaias notez
+Aliases: gaias, gaia, gaias notez
+--------------------------------------------------
+considerez
+Aliases: considerez
+--------------------------------------------------
+maitre cherchieur
+Aliases: maitre, maitre cherchieur
+--------------------------------------------------
+leonis cheng
+Aliases: leonis cheng
+--------------------------------------------------
+liono kodell
+Aliases: liono, liono kodell
+--------------------------------------------------
+sauriez
+Aliases: sauriez
+--------------------------------------------------
+opina 
+gendibal
+Aliases: opina 
+gendibal, gendibal
+--------------------------------------------------
+lippe
+Aliases: lippe
+--------------------------------------------------
+grommela gendibal
+Aliases: grommela gendibal
+--------------------------------------------------
+prenant
+Aliases: prenant
+--------------------------------------------------
+sq
+Aliases: sq
+--------------------------------------------------
+harlan branno
+Aliases: harlan branno
+--------------------------------------------------
+sapristi
+Aliases: sapristi
+--------------------------------------------------
+kodell
+Aliases: kodell
+--------------------------------------------------
+sobhaddartha
+Aliases: sobhaddartha
+--------------------------------------------------
+thoobing
+Aliases: thoobing
+--------------------------------------------------
+fou
+Aliases: fou
+--------------------------------------------------
+hame
+Aliases: hame
+--------------------------------------------------
+lachic
+Aliases: lachic
+--------------------------------------------------
+sura novi
+Aliases: sura, sura novi
+--------------------------------------------------
+grommela shandess
+Aliases: grommela shandess, shandess
+--------------------------------------------------
+isaac  
+fondation
+Aliases: isaac  
+fondation
+--------------------------------------------------
+jendippurus khoratt
+Aliases: jendippurus khoratt
+--------------------------------------------------
+surgi
+Aliases: surgi
+--------------------------------------------------
+liebel gennerat
+Aliases: liebel gennerat, gennerat
+--------------------------------------------------
+hamienne
+Aliases: hamienne, hamien
+--------------------------------------------------
+supposez
+Aliases: supposez
+--------------------------------------------------
+delora 
+delarmi
+Aliases: delora delarmi, delarmi, delora 
+delarmi
+--------------------------------------------------
+jlg
+Aliases: jlg
+--------------------------------------------------
+stor gendibal
+Aliases: stor gendibal
+--------------------------------------------------
+joie
+Aliases: joie
+--------------------------------------------------
+nieriez
+Aliases: nieriez
+--------------------------------------------------
+rida
+Aliases: rida
+--------------------------------------------------
+quintesetz
+Aliases: quintesetz
+--------------------------------------------------
+hyperspatialement
+Aliases: hyperspatialement
+--------------------------------------------------
+godhisavatta
+Aliases: godhisavatta
+--------------------------------------------------
+deformerai
+Aliases: deformerai
+--------------------------------------------------
+rurifant
+Aliases: rurifant
+--------------------------------------------------
+janov 
+pelorat
+Aliases: janov, janov pelorat, janov 
+pelorat
+--------------------------------------------------
+nettoyes
+Aliases: nettoyes
+--------------------------------------------------
+pel
+Aliases: pel
+--------------------------------------------------
+allez
+Aliases: allez
+--------------------------------------------------
+dirons
+Aliases: dirons
+--------------------------------------------------
+anonymement
+Aliases: anonymement
+--------------------------------------------------
+gendibal 
+fondation foudroyee
+Aliases: gendibal 
+fondation foudroyee
+--------------------------------------------------
+doucement gendibal
+Aliases: doucement gendibal
+--------------------------------------------------
+askone
+Aliases: askone
+--------------------------------------------------
+joidilachicarella
+Aliases: joidilachicarella
+--------------------------------------------------
+affermit
+Aliases: affermit
+--------------------------------------------------
+dom
+Aliases: dom
+--------------------------------------------------
+songeur
+Aliases: songeur
+--------------------------------------------------
+kallo
+Aliases: kallo
+--------------------------------------------------
+flexner
+Aliases: flexner
+--------------------------------------------------
+lg
+Aliases: lg
+--------------------------------------------------
+dites
+Aliases: dites
+--------------------------------------------------
+oratrice delarmi
+Aliases: oratrice delarmi, oratrice
+--------------------------------------------------
+scychellois
+Aliases: scychellois
+--------------------------------------------------
+pasque
+Aliases: pasque
+--------------------------------------------------
+jan
+Aliases: jan
+--------------------------------------------------
+munn li compor
+Aliases: munn li compor
+--------------------------------------------------
+persisterai
+Aliases: persisterai
+--------------------------------------------------
+prudente
+Aliases: prudente, prudent
+--------------------------------------------------
+mettez
+Aliases: mettez
+--------------------------------------------------
+leslim gianni
+Aliases: leslim gianni
+--------------------------------------------------
+quindor shandess
+Aliases: quindor shandess
+--------------------------------------------------
+astronef
+Aliases: astronef
+--------------------------------------------------
+pelorat
+Aliases: pelorat
+--------------------------------------------------
+pepin
+Aliases: pepin
+--------------------------------------------------
+primo
+Aliases: primo
+--------------------------------------------------
+patienter
+Aliases: patienter
+--------------------------------------------------
+preem pal
+Aliases: preem pal
+--------------------------------------------------
+storgendibal
+Aliases: storgendibal
+--------------------------------------------------
+pardon
+Aliases: pardon
+--------------------------------------------------
+danacreon
+Aliases: danacreon, anacreon
+--------------------------------------------------
+wienis
+Aliases: wienis
+--------------------------------------------------
+anacreoniens
+Aliases: anacreoniens, anacreonien
+--------------------------------------------------
+dorwin
+Aliases: dorwin
+--------------------------------------------------
+lepold ier
+Aliases: lepold ier, lepold
+--------------------------------------------------
+jaim twer
+Aliases: twer, jaim twer
+--------------------------------------------------
+cheologiques decouvets
+Aliases: cheologiques decouvets
+--------------------------------------------------
+siius
+Aliases: siius
+--------------------------------------------------
+haut rodric
+Aliases: rodric, haut rodric
+--------------------------------------------------
+pluema
+Aliases: pluema
+--------------------------------------------------
+walto
+Aliases: walto
+--------------------------------------------------
+hautlecorps
+Aliases: hautlecorps
+--------------------------------------------------
+bredouilla gaal
+Aliases: bredouilla gaal, gaal
+--------------------------------------------------
+yohan lee
+Aliases: lee, yohan lee
+--------------------------------------------------
+askoniens
+Aliases: askoniens
+--------------------------------------------------
+encyclopedistes
+Aliases: encyclopedistes
+--------------------------------------------------
+wiscard
+Aliases: wiscard
 --------------------------------------------------
 jorane 
 sutt
 Aliases: jorane sutt, jorane 
 sutt
 --------------------------------------------------
-entuns
-Aliases: entuns
---------------------------------------------------
-licia
-Aliases: licia
---------------------------------------------------
-guee
-Aliases: guee
---------------------------------------------------
-maitre
-Aliases: maitre
---------------------------------------------------
-santanni
-Aliases: santanni
---------------------------------------------------
-gaal 
-dornick
-Aliases: gaal dornick, gaal 
-dornick, gaal
---------------------------------------------------
-ankor jael
-Aliases: ankor jael, jael
---------------------------------------------------
-jan smite
-Aliases: jan smite
---------------------------------------------------
-publis manlio
-Aliases: manlio, publis manlio
---------------------------------------------------
-bras
-Aliases: bras
---------------------------------------------------
-anselme
-Aliases: anselme
---------------------------------------------------
-limmar ponyets
-Aliases: limmar ponyets
---------------------------------------------------
-confot
-Aliases: confot
---------------------------------------------------
-askone
-Aliases: askone
---------------------------------------------------
-stannell
-Aliases: stannell
---------------------------------------------------
-evolutionnaie
-Aliases: evolutionnaie
---------------------------------------------------
 pirenne toussota
-Aliases: pirenne toussota, pirenne
+Aliases: pirenne, lewis pirenne, pirenne toussota
 --------------------------------------------------
-yohan lee
-Aliases: yohan lee, lee
+korellien
+Aliases: korellien
 --------------------------------------------------
-avakim
-Aliases: avakim
+alurin
+Aliases: alurin
 --------------------------------------------------
-pluema
-Aliases: pluema
+anac
+Aliases: anac
 --------------------------------------------------
-jerril
-Aliases: jerril
+figurez
+Aliases: figurez
 --------------------------------------------------
-eskel gorov
-Aliases: eskel gorov, gorov
---------------------------------------------------
-primo
-Aliases: primo
---------------------------------------------------
-lefkin
-Aliases: lefkin
+jord parma
+Aliases: parma, jord parma
 --------------------------------------------------
 muller 
 holk
 Aliases: muller 
 holk
 --------------------------------------------------
-lem
-Aliases: lem
+ononcer
+Aliases: ononcer
 --------------------------------------------------
-lucrece
-Aliases: lucrece
+jerril
+Aliases: jerril
 --------------------------------------------------
-lewis pirenne
-Aliases: lewis pirenne
+jan smite
+Aliases: jan smite
 --------------------------------------------------
-pherl
-Aliases: pherl
+santanni
+Aliases: santanni
 --------------------------------------------------
-sef sermak
-Aliases: sermak, sef sermak
---------------------------------------------------
-danacreon
-Aliases: anaceon, danacreon, anacreon
---------------------------------------------------
-lepold ier
-Aliases: lepold, lepold ier
---------------------------------------------------
-dorwin
-Aliases: dorwin
---------------------------------------------------
-jaim twer
-Aliases: twer, jaim twer
---------------------------------------------------
-hadin
-Aliases: hadin
---------------------------------------------------
-linge chen
-Aliases: linge chen, chen
---------------------------------------------------
-ponyets riposta
-Aliases: ponyets riposta
---------------------------------------------------
-jord parma
-Aliases: jord, jord parma
---------------------------------------------------
-wienis
-Aliases: wienis
---------------------------------------------------
-penaud
-Aliases: penaud
+ands acheologues
+Aliases: ands acheologues
 --------------------------------------------------
 lundin crast
 Aliases: lundin crast
 --------------------------------------------------
-siius
-Aliases: siius
+asper argo
+Aliases: asper argo
 --------------------------------------------------
-encyclopedistes
-Aliases: encyclopedistes
+ankor jael
+Aliases: ankor jael, jael
 --------------------------------------------------
-abhorrez
-Aliases: abhorrez
+publis manlio
+Aliases: publis manlio, manlio
 --------------------------------------------------
-grommela mallow
-Aliases: grommela mallow
+limmar ponyets
+Aliases: limmar ponyets, ponyets
 --------------------------------------------------
-accompagnant
-Aliases: accompagnant
+lefkin
+Aliases: lefkin
 --------------------------------------------------
-wiscard
-Aliases: wiscard
+allons
+Aliases: allons
 --------------------------------------------------
-bort
-Aliases: bort
+vont
+Aliases: vont
 --------------------------------------------------
-alurin
-Aliases: alurin
+docteu pienne
+Aliases: docteu pienne
 --------------------------------------------------
-ponyets doucement
-Aliases: ponyets doucement
+entuns
+Aliases: entuns
 --------------------------------------------------
-walto
-Aliases: walto
+suit
+Aliases: suit
 --------------------------------------------------
-theo aporat
-Aliases: theo aporat
+korell
+Aliases: korell
+--------------------------------------------------
+psychologicien
+Aliases: psychologicien
+--------------------------------------------------
+gorm
+Aliases: gorm
+--------------------------------------------------
+prohardin
+Aliases: prohardin
+--------------------------------------------------
+actionniste
+Aliases: actionniste
+--------------------------------------------------
+smyrnien
+Aliases: smyrnien
+--------------------------------------------------
+evolutionnaie
+Aliases: evolutionnaie
+--------------------------------------------------
+linge chen
+Aliases: chen, linge chen
+--------------------------------------------------
+regnerai
+Aliases: regnerai
+--------------------------------------------------
+coincez
+Aliases: coincez
 --------------------------------------------------
 tomas sutt
 Aliases: tomas sutt
 --------------------------------------------------
-moffririez
-Aliases: moffririez
+theo aporat
+Aliases: theo aporat
 --------------------------------------------------
-askoniens
-Aliases: askoniens
+eskel gorov
+Aliases: gorov, eskel gorov
 --------------------------------------------------
-haut rodric
-Aliases: haut rodric
+lumiere
+Aliases: lumiere
 --------------------------------------------------
-general pritcher
-Aliases: general pritcher, pritcher
+anselme
+Aliases: anselme
 --------------------------------------------------
-pelleas 
-anthor
-Aliases: pelleas, pelleas 
-anthor, pelleas anthor
+alpha
+Aliases: alpha
 --------------------------------------------------
-rigel
-Aliases: rigel
+gaal 
+dornick
+Aliases: gaal dornick, gaal 
+dornick
+--------------------------------------------------
+mettre anacreon
+Aliases: mettre anacreon
+--------------------------------------------------
+lucrece
+Aliases: lucrece
+--------------------------------------------------
+sef sermak
+Aliases: sermak, sef sermak
+--------------------------------------------------
+superessor
+Aliases: superessor
+--------------------------------------------------
+smyrno
+Aliases: smyrno
+--------------------------------------------------
+astroport
+Aliases: astroport
+--------------------------------------------------
+avakim
+Aliases: avakim
+--------------------------------------------------
+licia
+Aliases: licia
+--------------------------------------------------
+momeries
+Aliases: momeries
+--------------------------------------------------
+roi lepold
+Aliases: roi lepold
+--------------------------------------------------
+geen
+Aliases: geen
+--------------------------------------------------
+ponyets doucement
+Aliases: ponyets doucement
+--------------------------------------------------
+vok tazenda
+Aliases: vok tazenda, tazenda
+--------------------------------------------------
+rossem
+Aliases: rossem
+--------------------------------------------------
+extirper
+Aliases: extirper
+--------------------------------------------------
+souvenirs
+Aliases: souvenirs
 --------------------------------------------------
 homir 
 munn
-Aliases: homir munn, homir, munn, homir 
-munn
+Aliases: homir munn, homir 
+munn, munn, homir
 --------------------------------------------------
-encyclopedia galactica
-Aliases: encyclopedia galactica
+seigneur stettin
+Aliases: stettin, seigneur stettin
+--------------------------------------------------
+bail channis
+Aliases: bail channis, channis
 --------------------------------------------------
 charnus
 Aliases: charnus
 --------------------------------------------------
-carlin beat
-Aliases: carlin beat
+elvett semic
+Aliases: elvett semic, semic
 --------------------------------------------------
-dirige
-Aliases: dirige
+huxlani
+Aliases: huxlani
 --------------------------------------------------
-loffet
-Aliases: loffet
---------------------------------------------------
-feternuement
-Aliases: feternuement
---------------------------------------------------
-kleise
-Aliases: kleise
---------------------------------------------------
-han 
-pritcher
-Aliases: han 
-pritcher, han pritcher
---------------------------------------------------
-vok tazenda
-Aliases: tazenda, vok tazenda
---------------------------------------------------
-turbor
-Aliases: turbor
---------------------------------------------------
-dame 
-callia
-Aliases: dame callia, dame 
-callia, callia
---------------------------------------------------
-ronflaitil
-Aliases: ronflaitil
+ronflait
+Aliases: ronflait
 --------------------------------------------------
 justifieriez
 Aliases: justifieriez
@@ -390,122 +721,303 @@ Aliases: justifieriez
 amiral
 Aliases: amiral
 --------------------------------------------------
-anthor
-Aliases: anthor
---------------------------------------------------
-remarquez
-Aliases: remarquez
---------------------------------------------------
-elvett semic
-Aliases: elvett semic
---------------------------------------------------
-hari seldon
-Aliases: seldon, hari seldon
---------------------------------------------------
-lev meirus
-Aliases: meirus, lev meirus
---------------------------------------------------
-darell 
- 
-darell
-Aliases: arkady darell, darell, darell 
- 
-darell
---------------------------------------------------
-bail channis
-Aliases: bail channis, channis
---------------------------------------------------
-mallow
-Aliases: mallow
---------------------------------------------------
-ben
-Aliases: ben
+barbe
+grise
+Aliases: barbe
+grise
 --------------------------------------------------
 fariboles
 Aliases: fariboles
 --------------------------------------------------
-smushyk
-Aliases: smushyk
+hari seldon
+Aliases: hari seldon, seldon
 --------------------------------------------------
-rossem
-Aliases: rossem
+carlin beat
+Aliases: carlin beat
+--------------------------------------------------
+feternuement
+Aliases: feternuement
+--------------------------------------------------
+lev meirus
+Aliases: meirus, lev meirus
+--------------------------------------------------
+kleise
+Aliases: kleise
 --------------------------------------------------
 salvor hardin
 Aliases: salvor hardin
 --------------------------------------------------
-extirper
-Aliases: extirper
+manouvrer
+Aliases: manouvrer
 --------------------------------------------------
-survecut
-Aliases: survecut
---------------------------------------------------
-preem palver
-Aliases: palver, preem palver
---------------------------------------------------
-grommela darell
-Aliases: grommela darell
---------------------------------------------------
-huxlani
-Aliases: huxlani
---------------------------------------------------
-lavenirduplanseldon
-Aliases: lavenirduplanseldon
---------------------------------------------------
-thallos
-Aliases: thallos
+dixyl
+Aliases: dixyl
 --------------------------------------------------
 premier 
 citoyen
 Aliases: premier 
-citoyen
+citoyen, premier citoyen
 --------------------------------------------------
-seigneur stettin
-Aliases: seigneur, seigneur stettin
+fini
+Aliases: fini
 --------------------------------------------------
 calmez
 Aliases: calmez
 --------------------------------------------------
-barbe
-Aliases: barbe
+impasse
+Aliases: impasse
 --------------------------------------------------
-romanciere
-Aliases: romanciere
+ben
+Aliases: ben
 --------------------------------------------------
-oncle homir
-Aliases: oncle homir
+oubliez
+Aliases: oubliez
 --------------------------------------------------
-juanmanuel torres
-Aliases: torres, juanmanuel torres
+donnelesmoi
+Aliases: donnelesmoi
 --------------------------------------------------
-isaac  
-asimov
-Aliases: asimov, isaac  
-asimov
+monsieur anthor
+Aliases: monsieur anthor, anthor
 --------------------------------------------------
-pdftotext
-Aliases: pdftotext
+dame 
+callia
+Aliases: dame callia, callia, dame 
+callia
 --------------------------------------------------
-literarias
-Aliases: literarias
+pelleas 
+anthor
+Aliases: pelleas, pelleas anthor, pelleas 
+anthor
 --------------------------------------------------
-asimovpdf
-Aliases: asimovpdf
+prenons
+Aliases: prenons
 --------------------------------------------------
-torresmoreno
-Aliases: torresmoreno
+korilov
+Aliases: korilov
 --------------------------------------------------
-bibliographiques
-Aliases: bibliographiques
+farouchement
+Aliases: farouchement
 --------------------------------------------------
-lg
-Aliases: lg
+seigneur
+Aliases: seigneur
 --------------------------------------------------
-freeling
-Aliases: freeling
+thallos
+Aliases: thallos
 --------------------------------------------------
-generez
-Aliases: generez
+loffet
+Aliases: loffet
 --------------------------------------------------
-jm
-Aliases: jm
+yunker
+Aliases: yunker
+--------------------------------------------------
+chhhhhut
+Aliases: chhhhhut
+--------------------------------------------------
+metaphore
+Aliases: metaphore
+--------------------------------------------------
+anacreonien
+Aliases: anacreonien
+--------------------------------------------------
+zoranel
+Aliases: zoranel
+--------------------------------------------------
+turbor
+Aliases: turbor
+--------------------------------------------------
+kendray
+Aliases: kendray
+--------------------------------------------------
+communiquaient
+Aliases: communiquaient
+--------------------------------------------------
+hmmmm
+Aliases: hmmmm
+--------------------------------------------------
+trois lois
+Aliases: trois lois, lois
+--------------------------------------------------
+mitza lizalor
+Aliases: mitza lizalor, lizalor
+--------------------------------------------------
+reverait
+Aliases: reverait
+--------------------------------------------------
+alphanes
+Aliases: alphane, alphanes, alphans, alphan
+--------------------------------------------------
+chatie
+Aliases: chatie
+--------------------------------------------------
+vulgarisme
+Aliases: vulgarisme
+--------------------------------------------------
+joidilachi 
+carella
+Aliases: joidilachi 
+carella
+--------------------------------------------------
+piailla pelorat
+Aliases: piailla pelorat, pelorat
+--------------------------------------------------
+laisser fallom
+Aliases: fallom, maitre fallom, laisser fallom
+--------------------------------------------------
+comporellon
+Aliases: comporellon
+--------------------------------------------------
+gaia
+Aliases: gaia
+--------------------------------------------------
+trevize manouvra
+Aliases: trevize manouvra, trevize
+--------------------------------------------------
+degel
+Aliases: degel
+--------------------------------------------------
+errer
+Aliases: errer
+--------------------------------------------------
+solaria
+Aliases: solaria
+--------------------------------------------------
+hoquetant
+Aliases: hoquetant
+--------------------------------------------------
+trev
+Aliases: trev
+--------------------------------------------------
+yariff
+Aliases: yariff
+--------------------------------------------------
+vasil deniador
+Aliases: vasil deniador, deniador
+--------------------------------------------------
+maitre bander
+Aliases: bander, maitre bander, sarton bander
+--------------------------------------------------
+daneel 
+olivaw
+Aliases: daneel olivaw, daneel 
+olivaw, daneel
+--------------------------------------------------
+fallorn
+Aliases: fallorn
+--------------------------------------------------
+delaisserais pel
+Aliases: delaisserais pel, pel
+--------------------------------------------------
+tendrais
+Aliases: tendrais
+--------------------------------------------------
+tetu
+Aliases: tetu
+--------------------------------------------------
+salutations
+Aliases: salutations
+--------------------------------------------------
+jembly
+Aliases: jembly, jemby
+--------------------------------------------------
+isolats
+Aliases: isolats
+--------------------------------------------------
+pel chou
+Aliases: pel chou
+--------------------------------------------------
+pars
+Aliases: pars
+--------------------------------------------------
+peur
+Aliases: peur
+--------------------------------------------------
+ainee
+Aliases: ainee
+--------------------------------------------------
+sieur golan trevize
+Aliases: sieur golan trevize
+--------------------------------------------------
+fili
+Aliases: fili
+--------------------------------------------------
+nissage
+Aliases: nissage
+--------------------------------------------------
+verrons
+Aliases: verrons
+--------------------------------------------------
+touche
+Aliases: touche
+--------------------------------------------------
+elijah baley
+Aliases: baley, elijah baley
+--------------------------------------------------
+termi
+Aliases: termi
+--------------------------------------------------
+voux
+Aliases: voux
+--------------------------------------------------
+janov pelorat
+Aliases: janov, janov pelorat
+--------------------------------------------------
+bel riose
+Aliases: bel riose
+--------------------------------------------------
+humaine
+Aliases: humaine
+--------------------------------------------------
+aloccasio
+Aliases: aloccasio
+--------------------------------------------------
+ravi
+Aliases: ravi
+--------------------------------------------------
+redoutablement
+Aliases: redoutablement
+--------------------------------------------------
+balivernes
+Aliases: balivernes
+--------------------------------------------------
+commencait
+Aliases: commencait
+--------------------------------------------------
+gros
+Aliases: gros
+--------------------------------------------------
+isolatisme
+Aliases: isolatisme
+--------------------------------------------------
+reticence pelorat
+Aliases: reticence pelorat
+--------------------------------------------------
+terminiens
+Aliases: terminiens
+--------------------------------------------------
+melpomenia
+Aliases: melpomenia
+--------------------------------------------------
+negligemment
+Aliases: negligemment
+--------------------------------------------------
+guetter
+Aliases: guetter
+--------------------------------------------------
+hiroko
+Aliases: hiroko
+--------------------------------------------------
+aenms meti
+Aliases: aenms meti
+--------------------------------------------------
+betises
+Aliases: betises
+--------------------------------------------------
+hesiteriez
+Aliases: hesiteriez
+--------------------------------------------------
+beta
+Aliases: beta
+--------------------------------------------------
+erda
+Aliases: erda
 --------------------------------------------------
