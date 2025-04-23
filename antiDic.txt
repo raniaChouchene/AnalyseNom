@@ -250,6 +250,7 @@ guère
 gilmer
 gentdame
 gente dame
+generez
 #################################
 #                                #
 #        H                        #
@@ -302,6 +303,7 @@ joue
 jusqu
 jusque
 justement
+justifieriez
 k
 #################################
 #                                #
@@ -346,6 +348,7 @@ ma
 maintenant
 maint
 mainte
+maitre
 maintes
 marchand
 marchands
@@ -519,6 +522,7 @@ ronflait
 reverait
 redoutablement
 relativement
+remarquez
 respectivement
 #################################
 #                                #
