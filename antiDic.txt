@@ -55,6 +55,9 @@ anselme haut rodric
 auxquelles
 avec
 avant
+allez
+alpha
+alphanes
 #################################
 #                                #        
 #        B                        #
@@ -80,6 +83,7 @@ bars
 bravo
 bref
 brr
+baliverves
 #################################
 #                               #        
 #        C                      #
@@ -189,6 +193,7 @@ debarrassai de twer
 dudit
 durant
 duquel
+delaisserais
 #################################
 #                                #
 #        E                        #
@@ -233,6 +238,7 @@ finalement
 fois
 flamboya
 filia
+fili
 #################################
 #                                #
 #        G                        #
@@ -251,6 +257,8 @@ gilmer
 gentdame
 gente dame
 generez
+gaia
+gaïa
 #################################
 #                                #
 #        H                        #
@@ -272,6 +280,8 @@ hourrah
 hui
 hue
 hum
+hmmmm
+humaine
 #################################
 #                                #
 #        I                        #
@@ -304,7 +314,15 @@ jusqu
 jusque
 justement
 justifieriez
-k
+
+#################################
+#                                #
+#       k                       #
+#                                #
+#################################
+
+kalgan
+
 #################################
 #                                #
 #        L                        #
@@ -458,6 +476,7 @@ petits
 petite
 petites
 peu
+peur
 pif
 pis
 pire
@@ -524,6 +543,8 @@ redoutablement
 relativement
 remarquez
 respectivement
+ravi
+reticence
 #################################
 #                                #
 #        S                        #
@@ -563,6 +584,7 @@ soi
 sire
 son
 sage
+solaria
 son eminence
 soudain
 seigneuurs
@@ -606,6 +628,7 @@ techniste
 tinter
 tel
 te
+terminiens
 telle
 trantor
 tipellum
@@ -628,7 +651,9 @@ toujours
 tous
 tenez
 traitor
+trantor
 tout
+touche
 tournant
 tentez 
 tinter
@@ -676,6 +701,7 @@ vôtre
 vôtres
 versionOn
 vous
+voux
 vraiment
 vraisemblablement
 #################################
@@ -785,6 +811,7 @@ aurai
 auras
 aura
 aurons
+aurora
 aurez
 auront
 aurais
@@ -827,6 +854,7 @@ faille
 fara
 fallût
 faudrait
+fini
 #---------------------------
 #	DEVOIR
 #---------------------------
@@ -994,3 +1022,24 @@ fissions
 fit
 fîtes
 font
+#############
+
+prenons
+ridicule
+allonsy
+excellence
+seigneurs
+premier citoyen
+monsieur
+iss
+enfuyez
+visiblement
+vont
+suit
+figurez
+haut rodric
+allons
+actionniste
+lefkin
+doucement
+askone
