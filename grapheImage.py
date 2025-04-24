@@ -154,11 +154,10 @@ class CharacterInteractionAnalyzer:
         return unidecode(name.strip().replace("_", " ").lower())
 
     def advanced_name_matching(self, names: List[str]) -> Dict[str, List[str]]:
-        """Group similar character names with improved anti-dictionary filtering."""
-        # First normalize all names
+        """Group similar character names with improved matching algorithm."""
         normalized_names = [self.normalize_name(name) for name in names]
 
-        # Thorough anti-dictionary check: exclude any name that contains words from anti_dic
+        # Filter out invalid names
         valid_names = []
         for name in normalized_names:
             name_parts = name.split()
@@ -166,20 +165,45 @@ class CharacterInteractionAnalyzer:
                 valid_names.append(name)
 
         unique_names = list(set(valid_names))
-
         grouped = defaultdict(list)
         processed = set()
 
+        # First pass: find exact first name/last name matches
+        name_dict = {}
+        for name in unique_names:
+            parts = name.split()
+            if len(parts) >= 2:
+                # Store by first and last name combinations
+                first_name, last_name = parts[0], parts[-1]
+                key = (first_name, last_name)
+                if key not in name_dict:
+                    name_dict[key] = []
+                name_dict[key].append(name)
+
+        # Group exact matches first
+        for key, matches in name_dict.items():
+            if len(matches) > 1:
+                canonical = max(matches, key=len)
+                grouped[canonical] = matches
+                processed.update(matches)
+
+        # Second pass: use fuzzy matching for remaining names
         for name in unique_names:
             if name in processed:
                 continue
 
-            # Find similar names not yet processed
+            # Find similar names with improved matching
             similar = [n for n in unique_names
-                      if n not in processed
-                      and fuzz.token_set_ratio(name, n) > self.name_match_threshold]
+                       if n not in processed
+                       and (
+                               fuzz.token_set_ratio(name, n) > self.name_match_threshold or
+                               # Check if one name is contained within another
+                               (len(name) >= 4 and name in n) or
+                               (len(n) >= 4 and n in name)
+                       )]
 
             if similar:
+                # Choose the longest name as canonical
                 canonical = max(similar, key=len)
                 grouped[canonical] = similar
                 processed.update(similar)
@@ -227,10 +251,11 @@ class CharacterInteractionAnalyzer:
         return self.advanced_name_matching(filtered_characters)
 
     def detect_polarity(self, sentence: str) -> int:
-        """Detect relationship polarity in a sentence."""
+        """Detect relationship polarity in a sentence with enhanced contextual analysis."""
         doc = self.nlp(sentence)
         polarity = 0
 
+        # Basic polarity from verbs and adjectives
         for token in doc:
             lemma = token.lemma_.lower()
             if token.pos_ == "VERB":
@@ -244,63 +269,100 @@ class CharacterInteractionAnalyzer:
                 elif lemma in self.enmity_adjectives:
                     polarity -= 1
 
+        # Check for negations which can reverse polarity
+        for token in doc:
+            if token.dep_ == "neg" and token.head.pos_ == "VERB":
+                head_lemma = token.head.lemma_.lower()
+                if head_lemma in self.friendship_verbs:
+                    polarity -= 2  # Double negative effect for emphasis
+                elif head_lemma in self.enmity_verbs:
+                    polarity += 2  # Negating enmity is strong friendship signal
+
+        # Consider intensity modifiers
+        intensifiers = {"très", "fort", "extrêmement", "vraiment", "totalement"}
+        for token in doc:
+            if token.text.lower() in intensifiers and token.head.pos_ in ["VERB", "ADJ"]:
+                head_lemma = token.head.lemma_.lower()
+                if head_lemma in self.friendship_verbs or head_lemma in self.friendship_adjectives:
+                    polarity += 1
+                elif head_lemma in self.enmity_verbs or head_lemma in self.enmity_adjectives:
+                    polarity -= 1
+
+        # Cap at reasonable bounds
         return max(-3, min(3, polarity))
 
     def detect_interactions(self, text: str, characters: Dict[str, List[str]]) -> Tuple[nx.Graph, List[tuple]]:
-        """Detect character interactions with full anti-dictionary filtering."""
+        """Detect character interactions with improved contextual understanding."""
         G = nx.Graph()
         sentences = [s.strip() for s in re.split(r'[.!?]+', text) if s.strip()]
         relations = []
 
-        # Final anti-dictionary check before adding nodes
+        # Final anti-dictionary filtering
         filtered_characters = {}
         for canon, aliases in characters.items():
-            # Check canonical name against anti-dictionary
             canon_parts = unidecode(canon.lower()).split()
             if canon not in self.anti_dic and not any(part in self.anti_dic for part in canon_parts):
-                # Check all aliases against anti-dictionary
-                valid_aliases = []
-                for alias in aliases:
-                    alias_parts = unidecode(alias.lower()).split()
-                    if alias not in self.anti_dic and not any(part in self.anti_dic for part in alias_parts):
-                        valid_aliases.append(alias)
-
-                if valid_aliases:  # Only add if we have valid aliases
+                valid_aliases = [alias for alias in aliases if
+                                 alias not in self.anti_dic and
+                                 not any(part in self.anti_dic for part in unidecode(alias.lower()).split())]
+                if valid_aliases:
                     filtered_characters[canon] = valid_aliases
 
         # Add nodes
         for canon, aliases in filtered_characters.items():
             G.add_node(canon, aliases=", ".join(aliases), size=10)
 
-        # Analyze interactions
+        # Define contextual window for interactions - look at surrounding sentences
+        context_sentences = []
+        for i in range(len(sentences)):
+            window_start = max(0, i - self.context_window)
+            window_end = min(len(sentences), i + self.context_window + 1)
+            context = " ".join(sentences[window_start:window_end])
+            context_sentences.append((i, context))
+
+        # Analyze interactions with contextual window
         for src, src_aliases in filtered_characters.items():
             for tgt, tgt_aliases in filtered_characters.items():
                 if src != tgt:
                     interactions = []
 
-                    for sent in sentences:
-                        src_in = any(alias.lower() in sent.lower() for alias in src_aliases)
-                        tgt_in = any(alias.lower() in sent.lower() for alias in tgt_aliases)
+                    # Check both direct co-occurrence in sentences and proximity in context
+                    for i, sent in enumerate(sentences):
+                        src_in_sent = any(alias.lower() in sent.lower() for alias in src_aliases)
+                        tgt_in_sent = any(alias.lower() in sent.lower() for alias in tgt_aliases)
 
-                        if src_in and tgt_in:
+                        # Direct interaction in same sentence
+                        if src_in_sent and tgt_in_sent:
                             polarity = self.detect_polarity(sent)
-                            interactions.append((sent, polarity))
+                            interactions.append((sent, polarity, 1.0))  # Full weight for direct interaction
+
+                        # Contextual interaction (characters mentioned in neighboring sentences)
+                        elif src_in_sent or tgt_in_sent:
+                            _, context = context_sentences[i]
+                            src_in_context = any(alias.lower() in context.lower() for alias in src_aliases)
+                            tgt_in_context = any(alias.lower() in context.lower() for alias in tgt_aliases)
+
+                            if src_in_context and tgt_in_context:
+                                # Use a reduced weight for contextual mentions
+                                polarity = self.detect_polarity(context)
+                                interactions.append((context[:50] + "...", polarity, 0.5))  # Half weight for context
 
                     if interactions:
-                        total_weight = len(interactions)
-                        avg_polarity = sum(p for _, p in interactions) / total_weight
-                        rel_type = self._get_relation_type(avg_polarity)
+                        # Calculate weighted importance
+                        total_weight = sum(weight for _, _, weight in interactions)
+                        weighted_polarity = sum(pol * weight for _, pol, weight in interactions) / total_weight
+                        rel_type = self._get_relation_type(weighted_polarity)
 
                         G.add_edge(src, tgt,
-                                  weight=total_weight,
-                                  polarity=avg_polarity,
-                                  type=rel_type)
+                                   weight=total_weight,
+                                   polarity=weighted_polarity,
+                                   type=rel_type)
 
                         relations.append((
                             src, tgt,
                             total_weight,
                             rel_type,
-                            "; ".join(s[:50]+"..." for s, _ in interactions[:3])
+                            "; ".join(s[:50] + "..." for s, _, _ in interactions[:3])
                         ))
 
         return G, relations
