@@ -47,6 +47,8 @@ autrefois
 autrui
 accusez
 auxdits
+accompagnant
+
 auxdites
 a
 aux
@@ -119,6 +121,7 @@ ci
 chante
 clic
 clac
+calmez
 cocorico
 combien
 comme
@@ -210,7 +213,7 @@ encore
 enfin
 ensemble
 ensuite
-encyclopedia galectica
+encyclopedia galactica
 entre
 envers
 environ
@@ -251,11 +254,12 @@ grande
 grandes
 généralement
 grâce
+gentedame 
 gente dame
 guère
 gilmer
 gentdame
-gente dame
+
 generez
 gaia
 gaïa
@@ -293,6 +297,7 @@ indbur iii
 incessamment
 incessant
 incessante
+isaac asimov
 iasaac asimov
 iii
 il
@@ -343,6 +348,7 @@ lesdits
 lesdites
 lequel
 lavenirdulanseldon
+lavenirduplanseldon 
 lesquels
 lesquelles
 alvenirduplanseldon
@@ -444,6 +450,7 @@ ou
 où
 ouais
 oui
+oncle 
 or
 orateur
 outre
@@ -460,6 +467,7 @@ par
 papa
 parbleu
 parce
+patr
 parfaitement
 psychosonde
 particien
@@ -557,8 +565,10 @@ sa
 son
 sa seigneurie
 sa seigneur
+seigneur
 sauf
 se
+seigneur stettin
 sans
 siwenna
 siwennien
@@ -736,6 +746,7 @@ dire
 disait
 disons
 dit
+dirige
 #---------------------------
 #	ETRE
 #---------------------------
@@ -1029,6 +1040,7 @@ ridicule
 allonsy
 excellence
 seigneurs
+
 premier citoyen
 monsieur
 iss
