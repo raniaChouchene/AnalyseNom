@@ -124,7 +124,8 @@ class CharacterInteractionAnalyzer:
             "enlever", "enrager", "escroquer", "exclure", "exploiter", "exterminer",
             "harceler", "maltraiter", "marginaliser", "médire", "mentir",
             "molester", "moquer", "mortifier", "nuire", "offenser", "opprimer",
-            "persécuter", "ridiculiser", "saboter", "torturer", "tyranniser"
+            "persécuter", "ridiculiser", "saboter", "torturer", "tyranniser", "analyser", "calculer", "prédire", "projeter", "planifier", "théoriser",
+            "négocier", "converser", "transmettre", "communiquer", "voyager"
         }
         
         # Expanded neutral verbs
@@ -148,7 +149,8 @@ class CharacterInteractionAnalyzer:
             "indulgent", "juste", "pacifique", "patient", "protecteur", "rassurant",
             "reconnaissant", "respectueux", "sensible", "serviable", "sincère",
             "tendre", "tolérant", "vertueux", "agréable", "charmant", "plaisant",
-            "séduisant", "attrayant", "envoûtant", "fascinant", "irrésistible"
+            "séduisant", "attrayant", "envoûtant", "fascinant", "irrésistible","brillant", "intelligent", "sage", "savant", "visionnaire", "clairvoyant",
+            "logique", "rationnel", "pragmatique", "stratégique", "diplomate"
         }
         
         # Expanded enmity adjectives
@@ -161,7 +163,8 @@ class CharacterInteractionAnalyzer:
             "infâme", "injuste", "insolent", "insupportable", "jaloux", "machiavélique",
             "malhonnête", "mauvais", "menaçant", "mesquin", "monstrueux", "narcissique",
             "odieux", "offensant", "pathétique", "perfide", "pernicieux", "pervers",
-            "provocateur", "répugnant", "sournois", "tyrannique", "vengeur", "vicieux"
+            "provocateur", "répugnant", "sournois", "tyrannique", "vengeur", "vicieux","impérial", "dictatorial", "oppressif", "totalitaire", "manipulateur",
+            "psychopathe", "corrompu", "destructeur", "opportuniste", "subversif"
         }
 
 
@@ -175,7 +178,7 @@ class CharacterInteractionAnalyzer:
             return False
             
         # Exclude generic terms
-        generic_terms = {"monsieur", "madame", "docteur", "professeur", "capitaine", "s absolument", "s", "absolument" , "vii", "ii", "messieurs", "poli", "excellence"}
+        generic_terms = {"monsieur", "madame", "docteur", "professeur", "capitaine", "s absolument", "s", "absolument" , "vii", "ii", "messieurs", "poli","salvor", "excellence","gente dame","gentedame"}
         
         # Check if any word in the name appears in anti_dic
         name_words = name_lower.split()
@@ -412,12 +415,16 @@ class CharacterInteractionAnalyzer:
                 net.add_node(
                     node,
                     label=node,
-                    size=importance[node] * 30 + 10,
+                    size=importance[node] * 50 + 15,
                     title=f"""
                     Character: {node}
                     Aliases: {data.get('aliases', 'N/A')}
                     Importance: {importance[node]:.2f}
-                    """
+                    """,
+                    borderWidth=2, 
+                    borderWidthSelected=3,
+                    font={"size": 12}
+                    
                 )
             
             # Add edges
@@ -425,9 +432,11 @@ class CharacterInteractionAnalyzer:
                 color = ("green" if data.get('type', '').startswith('friend') else
                          "red" if data.get('type', '').startswith('enmity') else
                          "gray")
+                weight = data.get('weight', 1)
                 net.add_edge(
                     u, v,
-                    value=data.get('weight', 1),
+                    value=weight,
+                    width=max(1, min(weight, 10)),
                     color=color,
                     title=f"""
                     Relation: {data.get('type', 'unknown')}

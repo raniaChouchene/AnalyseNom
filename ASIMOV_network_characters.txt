@@ -1,300 +1,147 @@
 Character List
 ==================================================
 
-onum barr
-Aliases: onum barr, barr
+colonel pritcher
+Aliases: pritcher, colonel pritcher
 --------------------------------------------------
-fran
-Aliases: fran
+general bel 
+riose
+Aliases: general bel 
+riose, general riose, riose
 --------------------------------------------------
-inchney
-Aliases: inchney
+loris
+Aliases: loris
 --------------------------------------------------
-jord commason
-Aliases: jord commason, commason
---------------------------------------------------
-untel
-Aliases: untel
---------------------------------------------------
-newton
-Aliases: newton
+toran
+Aliases: toran
 --------------------------------------------------
 ducem 
 barr
-Aliases: ducem, ducem 
-barr, ducem barr
+Aliases: ducem 
+barr, barr, ducem, ducem barr
 --------------------------------------------------
 hober mallow
-Aliases: hober mallow, mallow
---------------------------------------------------
-indbur
-Aliases: indbur
---------------------------------------------------
-amell brodrig
-Aliases: brodrig, amell brodrig
---------------------------------------------------
-magnifiee giganticus
-Aliases: magnifiee, magnifiee giganticus
---------------------------------------------------
-colonel pritcher
-Aliases: pritcher, han pritcher, colonel pritcher
---------------------------------------------------
-pelotonnes
-Aliases: pelotonnes
---------------------------------------------------
-orum palley
-Aliases: orum palley
---------------------------------------------------
-patricien
-Aliases: patricien
---------------------------------------------------
-torie
-Aliases: torie
---------------------------------------------------
-hari 
-seldon
-Aliases: hari 
-seldon, seldon, hari seldon
---------------------------------------------------
-ricker
-Aliases: ricker
---------------------------------------------------
-bigre
-Aliases: bigre
---------------------------------------------------
-radolienne
-Aliases: radolienne
---------------------------------------------------
-renard
-Aliases: renard
---------------------------------------------------
-han
-Aliases: han
+Aliases: hober mallow
 --------------------------------------------------
 gente 
 dame
 Aliases: gente 
 dame
 --------------------------------------------------
-neotrantor
-Aliases: neotrantor
---------------------------------------------------
-general bel 
-riose
-Aliases: riose, general riose, general bel 
-riose
---------------------------------------------------
-anacreon
-Aliases: anacreon
---------------------------------------------------
-loris
-Aliases: loris
---------------------------------------------------
-assourdissez
-Aliases: assourdissez
---------------------------------------------------
-boucla
-Aliases: boucla
---------------------------------------------------
-lee senter
-Aliases: senter, lee senter
---------------------------------------------------
-folatre
-Aliases: folatre
---------------------------------------------------
-forell
-Aliases: forell
+hari 
+seldon
+Aliases: hari seldon, seldon, hari 
+seldon
 --------------------------------------------------
 sergent luk
 Aliases: sergent luk, luk
 --------------------------------------------------
-interessant
-Aliases: interessant
+torie
+Aliases: torie
 --------------------------------------------------
-salvor 
-hardin
-Aliases: hardin, salvor hardin, hadin, salvor 
-hardin
+patricien
+Aliases: patricien
 --------------------------------------------------
-toran
-Aliases: toran
+jord commason
+Aliases: jord commason, commason
 --------------------------------------------------
-yume
-Aliases: yume
+onum barr
+Aliases: barr, onum barr
 --------------------------------------------------
-ovall gri
-Aliases: ovall gri
+fran
+Aliases: fran
+--------------------------------------------------
+amell brodrig
+Aliases: brodrig, amell brodrig
+--------------------------------------------------
+indbur
+Aliases: indbur
 --------------------------------------------------
 daluden iv
 Aliases: daluden iv
 --------------------------------------------------
-dagobert x
-Aliases: dagobert x
+hardin
+Aliases: hardin, hadin
 --------------------------------------------------
-horleggor
-Aliases: horleggor
---------------------------------------------------
-lepold ier
-Aliases: lepold ier, lepold
---------------------------------------------------
-pirenne toussota
-Aliases: pirenne toussota, pirenne
---------------------------------------------------
-ankor jael
-Aliases: jael, ankor jael
---------------------------------------------------
-wienis
-Aliases: wienis
---------------------------------------------------
-santanni
-Aliases: santanni
---------------------------------------------------
-gaal 
-dornick
-Aliases: gaal 
-dornick, gaal dornick, gaal
---------------------------------------------------
-lundin crast
-Aliases: lundin crast
---------------------------------------------------
-lucrece
-Aliases: lucrece
---------------------------------------------------
-confot
-Aliases: confot
---------------------------------------------------
-grommela mallow
-Aliases: grommela mallow
---------------------------------------------------
-linge chen
-Aliases: linge chen, chen
---------------------------------------------------
-danacreon
-Aliases: anaceon, danacreon, anacreon
---------------------------------------------------
-lem
-Aliases: lem
---------------------------------------------------
-siius
-Aliases: siius
+jaim twer
+Aliases: twer, jaim twer
 --------------------------------------------------
 tomas sutt
 Aliases: tomas sutt
 --------------------------------------------------
-pherl
-Aliases: pherl
+grommela mallow
+Aliases: grommela mallow, mallow
 --------------------------------------------------
-eskel gorov
-Aliases: eskel gorov, gorov
+lundin crast
+Aliases: lundin crast
 --------------------------------------------------
-stannell
-Aliases: stannell
+dorwin
+Aliases: dorwin
+--------------------------------------------------
+pirenne toussota
+Aliases: pirenne toussota, pirenne
 --------------------------------------------------
 lewis pirenne
 Aliases: lewis pirenne
 --------------------------------------------------
-evolutionnaie
-Aliases: evolutionnaie
---------------------------------------------------
-guee
-Aliases: guee
---------------------------------------------------
-jaim twer
-Aliases: jaim twer, twer
---------------------------------------------------
-salvor
-Aliases: salvor
---------------------------------------------------
-yohan lee
-Aliases: lee, yohan lee
---------------------------------------------------
-ponyets riposta
-Aliases: ponyets riposta
+lepold ier
+Aliases: lepold ier, lepold
 --------------------------------------------------
 avakim
 Aliases: avakim
 --------------------------------------------------
-licia
-Aliases: licia
+wienis
+Aliases: wienis
 --------------------------------------------------
-jord parma
-Aliases: jord, jord parma
---------------------------------------------------
-primo
-Aliases: primo
---------------------------------------------------
-limmar ponyets
-Aliases: limmar ponyets
---------------------------------------------------
-theo aporat
-Aliases: theo aporat
---------------------------------------------------
-alurin
-Aliases: alurin
+ankor jael
+Aliases: jael, ankor jael
 --------------------------------------------------
 sef sermak
 Aliases: sef sermak, sermak
 --------------------------------------------------
-anselme
-Aliases: anselme
---------------------------------------------------
-bras
-Aliases: bras
---------------------------------------------------
 publis manlio
 Aliases: publis manlio, manlio
 --------------------------------------------------
-wiscard
-Aliases: wiscard
+gaal 
+dornick
+Aliases: gaal, gaal dornick, gaal 
+dornick
 --------------------------------------------------
-entuns
-Aliases: entuns
+eskel gorov
+Aliases: gorov, eskel gorov
 --------------------------------------------------
-moffririez
-Aliases: moffririez
+jord parma
+Aliases: jord parma, jord
 --------------------------------------------------
-jorane 
-sutt
-Aliases: jorane 
-sutt, jorane sutt
---------------------------------------------------
-jerril
-Aliases: jerril
+linge chen
+Aliases: linge chen, chen
 --------------------------------------------------
 muller 
 holk
 Aliases: muller 
 holk
 --------------------------------------------------
-jan smite
-Aliases: jan smite
+yohan lee
+Aliases: yohan lee, lee
 --------------------------------------------------
-encyclopedistes
-Aliases: encyclopedistes
+stannell
+Aliases: stannell
 --------------------------------------------------
-pluema
-Aliases: pluema
+jorane 
+sutt
+Aliases: jorane 
+sutt, jorane sutt
 --------------------------------------------------
-dorwin
-Aliases: dorwin
+limmar ponyets
+Aliases: limmar ponyets
 --------------------------------------------------
-askoniens
-Aliases: askoniens
+general pritcher
+Aliases: pritcher, general pritcher
 --------------------------------------------------
-penaud
-Aliases: penaud
---------------------------------------------------
-walto
-Aliases: walto
---------------------------------------------------
-bort
-Aliases: bort
---------------------------------------------------
-abhorrez
-Aliases: abhorrez
---------------------------------------------------
-rossem
-Aliases: rossem
+homir 
+munn
+Aliases: homir 
+munn, homir, munn, homir munn
 --------------------------------------------------
 darell 
  
@@ -303,112 +150,48 @@ Aliases: darell
  
 darell, grommela darell, darell, arkady darell
 --------------------------------------------------
-vok tazenda
-Aliases: tazenda, vok tazenda
---------------------------------------------------
-survecut
-Aliases: survecut
---------------------------------------------------
-han 
-pritcher
-Aliases: han 
-pritcher, pritcher, han pritcher
---------------------------------------------------
-elvett semic
-Aliases: elvett semic
---------------------------------------------------
-preem palver
-Aliases: palver, preem palver
---------------------------------------------------
-bail channis
-Aliases: channis, bail channis
---------------------------------------------------
-dame 
-callia
-Aliases: dame callia, dame 
-callia, callia
---------------------------------------------------
-fariboles
-Aliases: fariboles
---------------------------------------------------
-hari seldon
-Aliases: hari seldon, seldon
---------------------------------------------------
-romanciere
-Aliases: romanciere
---------------------------------------------------
-pelleas 
-anthor
-Aliases: pelleas 
-anthor, pelleas anthor, anthor, pelleas
---------------------------------------------------
-thallos
-Aliases: thallos
---------------------------------------------------
-general pritcher
-Aliases: general pritcher
---------------------------------------------------
-huxlani
-Aliases: huxlani
---------------------------------------------------
-carlin beat
-Aliases: carlin beat
---------------------------------------------------
-ben
-Aliases: ben
---------------------------------------------------
-barbe
-Aliases: barbe
---------------------------------------------------
 kleise
 Aliases: kleise
 --------------------------------------------------
+dame 
+callia
+Aliases: callia, dame 
+callia
+--------------------------------------------------
 lev meirus
-Aliases: lev meirus, meirus
+Aliases: meirus, lev meirus
 --------------------------------------------------
-smushyk
-Aliases: smushyk
+vok tazenda
+Aliases: tazenda, vok tazenda
 --------------------------------------------------
-mallow
-Aliases: mallow
---------------------------------------------------
-rigel
-Aliases: rigel
---------------------------------------------------
-homir 
-munn
-Aliases: munn, homir 
-munn, homir munn
---------------------------------------------------
-amiral
-Aliases: amiral
---------------------------------------------------
-loffet
-Aliases: loffet
---------------------------------------------------
-feternuement
-Aliases: feternuement
+preem palver
+Aliases: preem palver, palver
 --------------------------------------------------
 premier 
 citoyen
 Aliases: premier 
 citoyen
 --------------------------------------------------
-charnus
-Aliases: charnus
+mallow
+Aliases: mallow
 --------------------------------------------------
-salvor hardin
-Aliases: salvor hardin
---------------------------------------------------
-extirper
-Aliases: extirper
---------------------------------------------------
-ronflaitil
-Aliases: ronflaitil
+hari seldon
+Aliases: hari seldon, seldon
 --------------------------------------------------
 turbor
 Aliases: turbor
 --------------------------------------------------
-homir
-Aliases: homir
+pelleas 
+anthor
+Aliases: pelleas anthor, pelleas 
+anthor, pelleas, anthor
+--------------------------------------------------
+rossem
+Aliases: rossem
+--------------------------------------------------
+bail channis
+Aliases: channis, bail channis
+--------------------------------------------------
+elvett semic
+Aliases: elvett semic
 --------------------------------------------------

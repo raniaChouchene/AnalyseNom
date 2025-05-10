@@ -41,9 +41,11 @@ autour
 autre
 altesse le souverain
 absolument
+anselme
 autrement
 autres
 autrefois
+askoniens
 autrui
 accusez
 auxdits
@@ -79,6 +81,7 @@ bon
 bayta
 bons
 bonnes
+bras
 bonne
 boum
 bars
@@ -256,6 +259,7 @@ généralement
 grâce
 gentedame 
 gente dame
+gente dame
 guère
 gilmer
 gentdame
@@ -340,9 +344,11 @@ ladite
 laquelle
 le
 le manchot
+licia
 le mulet
 le seigneur
 ledit
+lem
 les
 lesdits
 lesdites
@@ -358,10 +364,88 @@ loin
 le roi
 lameth
 longtemps
+interessant
+theo aporat 
+alurin
+jan smite
+anacreon 
+siius
+pelotonnes
+yume
+elcett semic
+neotantor
+ben 
+romanciere
+confot
+folatre
+encyclopedistes
+wiscard
+survecut
+renard
+ovall gri
+ponyets riposta
+horlrggor
+primo
+amiral
+loffet
+entuns
+newton
+muller holk
+smushyk
+bigre
+alu
+radolienne
+orum palley
+premier citoyen
+carlin beat 
+untel
+dame callia
+boucla
+abhorrez
+evolutionnaie
+moffririez
 lors
+santanni
+ronflaitil
 lorsqu
 lorsque
+dagobert x
 lui
+thallos
+inchney
+lucrece
+barbe 
+rigel
+assourdissez
+fariboles
+penaud
+danacreon
+extirper
+feternuement
+alurin
+interessant
+jan smite
+teo aporat
+anacreon
+folatre
+jerril
+
+horleggor
+guee 
+premier citoyen 
+charnus
+anaceon 
+neotrantor
+nicker
+evett semic
+bort
+muller holk 
+dame callia 
+huxlani
+magnifiee giganticus
+lee senter
+magnifiee
+
 #################################
 #                                #
 #        M                        #
@@ -508,7 +592,8 @@ premier ministre
 priori
 probablement
 pst
-
+pherl
+pluema
 puis
 puisqu
 puisque
@@ -567,6 +652,7 @@ sa seigneurie
 sa seigneur
 seigneur
 sauf
+salvor
 se
 seigneur stettin
 sans
@@ -708,6 +794,7 @@ iii
 votres
 vos
 vôtre
+walto
 vôtres
 versionOn
 vous
@@ -1055,3 +1142,9 @@ actionniste
 lefkin
 doucement
 askone
+senter
+dame callia
+ricker
+han
+muller holk
+forell
