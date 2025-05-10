@@ -164,7 +164,7 @@ class CharacterInteractionAnalyzer:
             "malhonnête", "mauvais", "menaçant", "mesquin", "monstrueux", "narcissique",
             "odieux", "offensant", "pathétique", "perfide", "pernicieux", "pervers",
             "provocateur", "répugnant", "sournois", "tyrannique", "vengeur", "vicieux","impérial", "dictatorial", "oppressif", "totalitaire", "manipulateur",
-            "psychopathe", "corrompu", "destructeur", "opportuniste", "subversif"
+            "psychopathe", "corrompu", "destructeur", "opportuniste", "subversif", "renégat", "infidèle", "usurpateur", "calculateur", "toxique","intrigant", "dominant", "abusif", "diviseur", "séparatiste","faux", "dissimulé", "instable", "imprévisible", "autoritaire"
         }
 
 
