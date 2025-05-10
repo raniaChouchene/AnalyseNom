@@ -70,7 +70,7 @@ alphanes
 b
 bah
 bay
-bayta
+
 bang
 beaucoup
 bien
@@ -78,7 +78,7 @@ bientôt
 bis
 bof
 bon
-bayta
+
 bons
 bonnes
 bras
@@ -480,7 +480,6 @@ monsieurs
 mon cher monsieur
 mon cher hardin
 meilleure
-mulet
 meilleures
 meilleur
 meilleurs
@@ -659,7 +658,7 @@ seigneur
 sauf
 salvor
 se
-seigneur stettin
+
 sans
 siwenna
 siwennien
@@ -673,7 +672,11 @@ siens
 sienne
 siennes
 simple
-seigneurstettin
+indbur
+premier 
+citoyen
+dame
+callia
 stanell
 grand_maitre
 simplement

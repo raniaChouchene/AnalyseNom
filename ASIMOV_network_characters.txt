@@ -1,184 +1,169 @@
 Character List
 ==================================================
 
-onum barr
-Aliases: onum barr, barr
---------------------------------------------------
 hari 
 seldon
-Aliases: hari seldon, hari 
-seldon, seldon
+Aliases: seldon, hari 
+seldon, hari seldon
 --------------------------------------------------
-amell brodrig
-Aliases: amell brodrig, brodrig
+sergent luk
+Aliases: luk, sergent luk
 --------------------------------------------------
-colonel pritcher
-Aliases: pritcher, colonel pritcher
---------------------------------------------------
-ducem 
-barr
-Aliases: ducem 
-barr, ducem barr, ducem
---------------------------------------------------
-patricien
-Aliases: patricien
---------------------------------------------------
-gente 
-dame
-Aliases: gente 
-dame
---------------------------------------------------
-hober mallow
-Aliases: hober mallow, mallow
---------------------------------------------------
-loris
-Aliases: loris
---------------------------------------------------
-general bel 
-riose
-Aliases: general bel 
-riose, general riose, riose
+jord commason
+Aliases: jord commason, commason
 --------------------------------------------------
 torie
 Aliases: torie
 --------------------------------------------------
-hardin
-Aliases: hadin, hardin
+ducem 
+barr
+Aliases: barr, ducem barr, ducem 
+barr, onum barr
+--------------------------------------------------
+amell brodrig
+Aliases: amell brodrig, brodrig
+--------------------------------------------------
+hober mallow
+Aliases: hober mallow, mallow
+--------------------------------------------------
+patricien
+Aliases: patricien
+--------------------------------------------------
+general bel 
+riose
+Aliases: general bel 
+riose, riose, general riose
+--------------------------------------------------
+colonel pritcher
+Aliases: pritcher, colonel pritcher
 --------------------------------------------------
 fran
 Aliases: fran
 --------------------------------------------------
-sergent luk
-Aliases: sergent luk, luk
+hardin
+Aliases: hadin, hardin
+--------------------------------------------------
+bayta
+Aliases: bayta
 --------------------------------------------------
 toran
 Aliases: toran
 --------------------------------------------------
-jord commason
-Aliases: commason, jord commason
---------------------------------------------------
 daluden iv
 Aliases: daluden iv
 --------------------------------------------------
-indbur
-Aliases: indbur
+loris
+Aliases: loris
 --------------------------------------------------
-publis manlio
-Aliases: publis manlio, manlio
+mulet
+Aliases: mulet
 --------------------------------------------------
-stannell
-Aliases: stannell
+ducem
+Aliases: ducem
+--------------------------------------------------
+gaal 
+dornick
+Aliases: gaal, gaal dornick, gaal 
+dornick
+--------------------------------------------------
+linge chen
+Aliases: linge chen, chen
 --------------------------------------------------
 eskel gorov
 Aliases: gorov, eskel gorov
---------------------------------------------------
-jord parma
-Aliases: jord parma, jord
---------------------------------------------------
-sef sermak
-Aliases: sef sermak, sermak
---------------------------------------------------
-ankor jael
-Aliases: ankor jael, jael
---------------------------------------------------
-lepold ier
-Aliases: lepold, lepold ier
---------------------------------------------------
-jorane 
-sutt
-Aliases: jorane sutt, jorane 
-sutt
---------------------------------------------------
-jaim twer
-Aliases: twer, jaim twer
---------------------------------------------------
-avakim
-Aliases: avakim
 --------------------------------------------------
 muller 
 holk
 Aliases: muller 
 holk
 --------------------------------------------------
-lundin crast
-Aliases: lundin crast
+jaim twer
+Aliases: jaim twer, twer
 --------------------------------------------------
-limmar ponyets
-Aliases: limmar ponyets
+onum barr
+Aliases: barr, onum barr
 --------------------------------------------------
-gaal 
-dornick
-Aliases: gaal dornick, gaal 
-dornick, gaal
+publis manlio
+Aliases: publis manlio, manlio
 --------------------------------------------------
-linge chen
-Aliases: chen, linge chen
---------------------------------------------------
-grommela mallow
-Aliases: grommela mallow
---------------------------------------------------
-wienis
-Aliases: wienis
---------------------------------------------------
-tomas sutt
-Aliases: tomas sutt
---------------------------------------------------
-yohan lee
-Aliases: lee, yohan lee
---------------------------------------------------
-lewis pirenne
-Aliases: lewis pirenne, pirenne
+lepold ier
+Aliases: lepold, lepold ier
 --------------------------------------------------
 dorwin
 Aliases: dorwin
 --------------------------------------------------
-darell 
- 
-darell
-Aliases: grommela darell, darell 
- 
-darell, darell
+sef sermak
+Aliases: sef sermak, sermak
+--------------------------------------------------
+lewis pirenne
+Aliases: lewis pirenne, pirenne
+--------------------------------------------------
+ankor jael
+Aliases: ankor jael, jael
+--------------------------------------------------
+jorane 
+sutt
+Aliases: jorane 
+sutt, jorane sutt
+--------------------------------------------------
+jord parma
+Aliases: jord, jord parma
+--------------------------------------------------
+wienis
+Aliases: wienis
+--------------------------------------------------
+yohan lee
+Aliases: yohan lee, lee
+--------------------------------------------------
+grommela mallow
+Aliases: grommela mallow
+--------------------------------------------------
+limmar ponyets
+Aliases: limmar ponyets
+--------------------------------------------------
+avakim
+Aliases: avakim
+--------------------------------------------------
+stannell
+Aliases: stannell
+--------------------------------------------------
+lundin crast
+Aliases: lundin crast
+--------------------------------------------------
+tomas sutt
+Aliases: tomas sutt
 --------------------------------------------------
 hari seldon
-Aliases: hari seldon, seldon
+Aliases: seldon, hari seldon
 --------------------------------------------------
-general pritcher
-Aliases: pritcher, general pritcher
+bail channis
+Aliases: bail channis, channis
 --------------------------------------------------
 pelleas 
 anthor
-Aliases: pelleas anthor, pelleas, anthor, pelleas 
-anthor
+Aliases: pelleas 
+anthor, pelleas anthor, pelleas, anthor
 --------------------------------------------------
 homir 
 munn
-Aliases: homir munn, homir, homir 
-munn, munn
+Aliases: homir, homir munn, homir 
+munn
+--------------------------------------------------
+preem palver
+Aliases: preem palver, palver
 --------------------------------------------------
 lev meirus
 Aliases: meirus, lev meirus
 --------------------------------------------------
-premier 
-citoyen
-Aliases: premier 
-citoyen
+darell 
+ 
+darell
+Aliases: arkady darell, darell, darell 
+ 
+darell
 --------------------------------------------------
-bail channis
-Aliases: channis, bail channis
---------------------------------------------------
-dame 
-callia
-Aliases: dame 
-callia, callia
---------------------------------------------------
-turbor
-Aliases: turbor
---------------------------------------------------
-elvett semic
-Aliases: elvett semic
---------------------------------------------------
-preem palver
-Aliases: preem palver, palver
+general pritcher
+Aliases: pritcher, general pritcher
 --------------------------------------------------
 kleise
 Aliases: kleise
@@ -186,6 +171,20 @@ Aliases: kleise
 mallow
 Aliases: mallow
 --------------------------------------------------
-arkady darell
-Aliases: arkady darell
+turbor
+Aliases: turbor
+--------------------------------------------------
+bayta 
+darell
+Aliases: bayta darell, bayta, bayta 
+darell
+--------------------------------------------------
+munn
+Aliases: munn
+--------------------------------------------------
+grommela darell
+Aliases: grommela darell
+--------------------------------------------------
+elvett semic
+Aliases: elvett semic
 --------------------------------------------------

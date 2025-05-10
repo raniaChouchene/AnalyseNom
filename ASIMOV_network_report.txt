@@ -1,9 +1,18 @@
 Character Relationship Report
 ==================================================
 
-Total relationships found: 130
+Total relationships found: 168
 
-onum barr → ducem 
+ducem 
+barr → ducem
+Type: neutral
+Interaction count: 18
+Examples:
+Si vous êtes Ducem Barr, je sollicite 
+la faveur d...; " 
+Ducem Barr s'écarta et, à l'intérieur de la mai...; " Ce que je sais, commença Ducem Barr, est le résu...
+--------------------------------------------------
+ducem → ducem 
 barr
 Type: neutral
 Interaction count: 18
@@ -12,22 +21,37 @@ Si vous êtes Ducem Barr, je sollicite
 la faveur d...; " 
 Ducem Barr s'écarta et, à l'intérieur de la mai...; " Ce que je sais, commença Ducem Barr, est le résu...
 --------------------------------------------------
-ducem 
-barr → onum barr
+bayta → toran
 Type: neutral
-Interaction count: 18
+Interaction count: 14
 Examples:
-Si vous êtes Ducem Barr, je sollicite 
-la faveur d...; " 
-Ducem Barr s'écarta et, à l'intérieur de la mai...; " Ce que je sais, commença Ducem Barr, est le résu...
+Toran et Bayta ne se mêlèrent pas à ce vaste flot...; " Drôle de type ", dit Bayta avec amusement, et To...; " 
+Il y eut pour seule réponse la terreur du malhe...
 --------------------------------------------------
-hardin → lewis pirenne
+toran → bayta
 Type: neutral
-Interaction count: 9
+Interaction count: 14
 Examples:
-� 42 � L'après-midi et la soirée furent mortelleme...; " 
-Hardin observa Pirenne : celui-ci ne trouva rie...; Le 
-vaillant guerrier acheva de brosser un tableau...
+Toran et Bayta ne se mêlèrent pas à ce vaste flot...; " Drôle de type ", dit Bayta avec amusement, et To...; " 
+Il y eut pour seule réponse la terreur du malhe...
+--------------------------------------------------
+homir 
+munn → munn
+Type: neutral
+Interaction count: 12
+Examples:
+Homir 
+Munn, bibliothécaire, efflanqué et terrible...; Elle 
+sait où se dirige Homir Munn et dans quel bu...; Elle préféra donc demeurer dans l'obscurité, ainsi...
+--------------------------------------------------
+munn → homir 
+munn
+Type: neutral
+Interaction count: 12
+Examples:
+Homir 
+Munn, bibliothécaire, efflanqué et terrible...; Elle 
+sait où se dirige Homir Munn et dans quel bu...; Elle préféra donc demeurer dans l'obscurité, ainsi...
 --------------------------------------------------
 lewis pirenne → hardin
 Type: neutral
@@ -37,14 +61,13 @@ Examples:
 Hardin observa Pirenne : celui-ci ne trouva rie...; Le 
 vaillant guerrier acheva de brosser un tableau...
 --------------------------------------------------
-darell 
- 
-darell → pelleas 
-anthor
+hardin → lewis pirenne
 Type: neutral
-Interaction count: 8
+Interaction count: 9
 Examples:
-- Monsieur Anthor, dit le docteur Darell, je vous ...; - Merci, dit Anthor, si vous voulez nous conduire ...; Pelleas Anthor n'émit aucun commentaire lorsque Da...
+� 42 � L'après-midi et la soirée furent mortelleme...; " 
+Hardin observa Pirenne : celui-ci ne trouva rie...; Le 
+vaillant guerrier acheva de brosser un tableau...
 --------------------------------------------------
 pelleas 
 anthor → darell 
@@ -55,13 +78,14 @@ Interaction count: 8
 Examples:
 - Monsieur Anthor, dit le docteur Darell, je vous ...; - Merci, dit Anthor, si vous voulez nous conduire ...; Pelleas Anthor n'émit aucun commentaire lorsque Da...
 --------------------------------------------------
-hari 
-seldon → gaal 
-dornick
+darell 
+ 
+darell → pelleas 
+anthor
 Type: neutral
-Interaction count: 7
+Interaction count: 8
 Examples:
-Et, après cela, il ne reste que l'appareil où Gaal...; " Je suis Hari Seldon ", dit-il, et Gaal reconnut ...; Gaal n'interrompit Seldon qu'une fois : " Je ne vo...
+- Monsieur Anthor, dit le docteur Darell, je vous ...; - Merci, dit Anthor, si vous voulez nous conduire ...; Pelleas Anthor n'émit aucun commentaire lorsque Da...
 --------------------------------------------------
 gaal 
 dornick → hari 
@@ -71,26 +95,43 @@ Interaction count: 7
 Examples:
 Et, après cela, il ne reste que l'appareil où Gaal...; " Je suis Hari Seldon ", dit-il, et Gaal reconnut ...; Gaal n'interrompit Seldon qu'une fois : " Je ne vo...
 --------------------------------------------------
-ankor jael → hober mallow
+hari 
+seldon → gaal 
+dornick
 Type: neutral
-Interaction count: 4
+Interaction count: 7
 Examples:
-" 
-Ankor Jael fixait le visage défait de Mallow...; - Nous n'aurons pas trop de temps " Mallow se leva...; - Pas du tout, dit Jael d'un ton sec, mais vous êt...
+Et, après cela, il ne reste que l'appareil où Gaal...; " Je suis Hari Seldon ", dit-il, et Gaal reconnut ...; Gaal n'interrompit Seldon qu'une fois : " Je ne vo...
 --------------------------------------------------
-hober mallow → ankor jael
+bayta → mulet
 Type: neutral
-Interaction count: 4
+Interaction count: 5
 Examples:
-" 
-Ankor Jael fixait le visage défait de Mallow...; - Nous n'aurons pas trop de temps " Mallow se leva...; - Pas du tout, dit Jael d'un ton sec, mais vous êt...
+Bayta, vous vous souvenez 
+de ce bulletin d'inform...; - Et vous, ajouta Bayta d'un ton amer, vous trahis...; - Vous voulez dire, demanda Bayta, crispée, que le...
 --------------------------------------------------
-hober mallow → jaim twer
+mulet → bayta
+Type: neutral
+Interaction count: 5
+Examples:
+Bayta, vous vous souvenez 
+de ce bulletin d'inform...; - Et vous, ajouta Bayta d'un ton amer, vous trahis...; - Vous voulez dire, demanda Bayta, crispée, que le...
+--------------------------------------------------
+hari 
+seldon → mulet
 Type: neutral
 Interaction count: 4
 Examples:
-- Attendez,  attendez, Mallow, fit Twer avec un ge...; - Je vous entends, vous, Twer, fit Mallow d'une vo...; " 
-Twer sentit sa main disparaître dans la grande ...
+Peut-être Seldon n'a-t-il 
+pas prévu le Mulet...; - Vous voulez dire, demanda Bayta, crispée, que le...; - Mais s'ils se conforment au Plan de Seldon, alor...
+--------------------------------------------------
+mulet → hari 
+seldon
+Type: neutral
+Interaction count: 4
+Examples:
+Peut-être Seldon n'a-t-il 
+pas prévu le Mulet...; - Vous voulez dire, demanda Bayta, crispée, que le...; - Mais s'ils se conforment au Plan de Seldon, alor...
 --------------------------------------------------
 jaim twer → hober mallow
 Type: neutral
@@ -99,7 +140,65 @@ Examples:
 - Attendez,  attendez, Mallow, fit Twer avec un ge...; - Je vous entends, vous, Twer, fit Mallow d'une vo...; " 
 Twer sentit sa main disparaître dans la grande ...
 --------------------------------------------------
-onum barr → patricien
+hober mallow → jaim twer
+Type: neutral
+Interaction count: 4
+Examples:
+- Attendez,  attendez, Mallow, fit Twer avec un ge...; - Je vous entends, vous, Twer, fit Mallow d'une vo...; " 
+Twer sentit sa main disparaître dans la grande ...
+--------------------------------------------------
+hober mallow → ankor jael
+Type: neutral
+Interaction count: 4
+Examples:
+" 
+Ankor Jael fixait le visage défait de Mallow...; - Nous n'aurons pas trop de temps " Mallow se leva...; - Pas du tout, dit Jael d'un ton sec, mais vous êt...
+--------------------------------------------------
+ankor jael → hober mallow
+Type: neutral
+Interaction count: 4
+Examples:
+" 
+Ankor Jael fixait le visage défait de Mallow...; - Nous n'aurons pas trop de temps " Mallow se leva...; - Pas du tout, dit Jael d'un ton sec, mais vous êt...
+--------------------------------------------------
+bail channis → mulet
+Type: neutral
+Interaction count: 4
+Examples:
+Immédiatement en deçà des frontières de la conscie...; Channis sentait cette confiance émerger en terrain...; " 
+Le Mulet sourit avec un plaisir réel, puis, dan...
+--------------------------------------------------
+darell 
+ 
+darell → bayta 
+darell
+Type: neutral
+Interaction count: 4
+Examples:
+Bien qu'elle ait écrit de nombreux romans, 
+Arkady...; Sur les instances formelles de son père, il lui 
+é...; Le docteur Darell, bien qu'il ne fût plus en activ...
+--------------------------------------------------
+bayta 
+darell → darell 
+ 
+darell
+Type: neutral
+Interaction count: 4
+Examples:
+Bien qu'elle ait écrit de nombreux romans, 
+Arkady...; Sur les instances formelles de son père, il lui 
+é...; Le docteur Darell, bien qu'il ne fût plus en activ...
+--------------------------------------------------
+mulet → bail channis
+Type: neutral
+Interaction count: 4
+Examples:
+Immédiatement en deçà des frontières de la conscie...; Channis sentait cette confiance émerger en terrain...; " 
+Le Mulet sourit avec un plaisir réel, puis, dan...
+--------------------------------------------------
+ducem 
+barr → patricien
 Type: neutral
 Interaction count: 3
 Examples:
@@ -118,7 +217,8 @@ Examples:
 un geste de l'empereur, se releva ...; Et 
 pourtant, je commence à me souvenir de ce Rios...; " Recherchés pour arrestation : Riose et Brodrig "...
 --------------------------------------------------
-patricien → onum barr
+patricien → ducem 
+barr
 Type: neutral
 Interaction count: 3
 Examples:
@@ -137,6 +237,15 @@ Examples:
 un geste de l'empereur, se releva ...; Et 
 pourtant, je commence à me souvenir de ce Rios...; " Recherchés pour arrestation : Riose et Brodrig "...
 --------------------------------------------------
+dorwin → hardin
+Type: friendship
+Interaction count: 3
+Examples:
+Hardin écouta dans un demi-sommeil les formalités ...; " 
+� 54 � l'ornementation chargée et, quand Hardin...; V 
+ 
+C'était la seconde séance du Conseil auquel a...
+--------------------------------------------------
 sef sermak → hardin
 Type: neutral
 Interaction count: 3
@@ -144,14 +253,7 @@ Examples:
 " 
 Hardin fixait avec un intérêt extraordinaire la...; Hardin avait presque perdu l'habitude de rire, mai...; - Les explications de Hardin, lui rappela Sermak, ...
 --------------------------------------------------
-hardin → sef sermak
-Type: neutral
-Interaction count: 3
-Examples:
-" 
-Hardin fixait avec un intérêt extraordinaire la...; Hardin avait presque perdu l'habitude de rire, mai...; - Les explications de Hardin, lui rappela Sermak, ...
---------------------------------------------------
-hardin → wienis
+wienis → hardin
 Type: neutral
 Interaction count: 3
 Examples:
@@ -166,48 +268,26 @@ Hardin écouta dans un demi-sommeil les formalités ...; "
  
 C'était la seconde séance du Conseil auquel a...
 --------------------------------------------------
-wienis → hardin
+hardin → sef sermak
+Type: neutral
+Interaction count: 3
+Examples:
+" 
+Hardin fixait avec un intérêt extraordinaire la...; Hardin avait presque perdu l'habitude de rire, mai...; - Les explications de Hardin, lui rappela Sermak, ...
+--------------------------------------------------
+hardin → wienis
 Type: neutral
 Interaction count: 3
 Examples:
 - D'ailleurs, dit Wienis d'un ton sarcastique, nou...; " Hardin, fit Wienis d'une voix rauque, vous jouez...; Wienis poussa un juron et s'avança en titubant ver...
 --------------------------------------------------
-dorwin → hardin
-Type: friendship
-Interaction count: 3
-Examples:
-Hardin écouta dans un demi-sommeil les formalités ...; " 
-� 54 � l'ornementation chargée et, quand Hardin...; V 
- 
-C'était la seconde séance du Conseil auquel a...
---------------------------------------------------
-darell 
- 
-darell → homir 
-munn
+hari seldon → mulet
 Type: neutral
 Interaction count: 3
 Examples:
-- Je vous en prie, Homir, répondit Darell, mais po...; - Soit, essayons, Munn, dit Darell d'une voix pens...; ", s'écria Munn, mais Darell lui imposa silence 
-d...
---------------------------------------------------
-general pritcher → bail channis
-Type: neutral
-Interaction count: 3
-Examples:
-" 
-Pritcher saisit l'occasion d'un moment fortuit ...; " Donc, dit Channis, jetez ce pistolet, reprenons ...; Bail Channis qui, bien que 
-jeune et brave, vous e...
---------------------------------------------------
-homir 
-munn → darell 
- 
-darell
-Type: neutral
-Interaction count: 3
-Examples:
-- Je vous en prie, Homir, répondit Darell, mais po...; - Soit, essayons, Munn, dit Darell d'une voix pens...; ", s'écria Munn, mais Darell lui imposa silence 
-d...
+" Depuis cet événement - pour ceux qui désirent co...; Ce sont des "Seldon", 
+ce sont des "Mulet", et ils...; " Une idée passa soudain par l'esprit de 
+- 152 --...
 --------------------------------------------------
 bail channis → general pritcher
 Type: neutral
@@ -217,7 +297,38 @@ Examples:
 Pritcher saisit l'occasion d'un moment fortuit ...; " Donc, dit Channis, jetez ce pistolet, reprenons ...; Bail Channis qui, bien que 
 jeune et brave, vous e...
 --------------------------------------------------
-onum barr → general bel 
+general pritcher → bail channis
+Type: neutral
+Interaction count: 3
+Examples:
+" 
+Pritcher saisit l'occasion d'un moment fortuit ...; " Donc, dit Channis, jetez ce pistolet, reprenons ...; Bail Channis qui, bien que 
+jeune et brave, vous e...
+--------------------------------------------------
+general pritcher → mulet
+Type: neutral
+Interaction count: 3
+Examples:
+Lorsque la Fondation était tombée sans coup férir ...; " Votre rapport final m'est parvenu hier, dit le M...; Ce 
+sont là tous les renseignements dont disposaie...
+--------------------------------------------------
+mulet → hari seldon
+Type: neutral
+Interaction count: 3
+Examples:
+" Depuis cet événement - pour ceux qui désirent co...; Ce sont des "Seldon", 
+ce sont des "Mulet", et ils...; " Une idée passa soudain par l'esprit de 
+- 152 --...
+--------------------------------------------------
+mulet → general pritcher
+Type: neutral
+Interaction count: 3
+Examples:
+Lorsque la Fondation était tombée sans coup férir ...; " Votre rapport final m'est parvenu hier, dit le M...; Ce 
+sont là tous les renseignements dont disposaie...
+--------------------------------------------------
+ducem 
+barr → general bel 
 riose
 Type: neutral
 Interaction count: 2
@@ -227,13 +338,49 @@ Barr haussa les épaules avec indifférence, et R...; "
 Riose fit un petit signe de tête à Barr et le S...
 --------------------------------------------------
 general bel 
-riose → onum barr
+riose → ducem 
+barr
 Type: neutral
 Interaction count: 2
 Examples:
 " 
 Barr haussa les épaules avec indifférence, et R...; " 
 Riose fit un petit signe de tête à Barr et le S...
+--------------------------------------------------
+colonel pritcher → bayta
+Type: neutral
+Interaction count: 2
+Examples:
+- Le capitaine Pritcher est venu, dit Bayta...; - C'est le capitaine Pritcher, Ebling, dit Bayta...
+--------------------------------------------------
+bayta → colonel pritcher
+Type: neutral
+Interaction count: 2
+Examples:
+- Le capitaine Pritcher est venu, dit Bayta...; - C'est le capitaine Pritcher, Ebling, dit Bayta...
+--------------------------------------------------
+toran → mulet
+Type: neutral
+Interaction count: 2
+Examples:
+Je ne pense pas qu'il y ait une seule 
+personne su...; Enfin, Toran réussit à articuler d'une voix 
+mécon...
+--------------------------------------------------
+mulet → toran
+Type: neutral
+Interaction count: 2
+Examples:
+Je ne pense pas qu'il y ait une seule 
+personne su...; Enfin, Toran réussit à articuler d'une voix 
+mécon...
+--------------------------------------------------
+onum barr → hardin
+Type: neutral
+Interaction count: 2
+Examples:
+" L'envoyé marqua un temps, puis 
+ajouta d'un ton ...; S'étant débarrassé du dernier pair, il parvint aup...
 --------------------------------------------------
 publis manlio → jorane 
 sutt
@@ -242,13 +389,6 @@ Interaction count: 2
 Examples:
 Jorane Sutt et Publis Manlio 
 auraient-ils voulu m...; - Vous allez arrêter Publis Manlio et Jorane Sutt...
---------------------------------------------------
-onum barr → hardin
-Type: neutral
-Interaction count: 2
-Examples:
-" L'envoyé marqua un temps, puis 
-ajouta d'un ton ...; S'étant débarrassé du dernier pair, il parvint aup...
 --------------------------------------------------
 lepold ier → wienis
 Type: neutral
@@ -266,13 +406,6 @@ Examples:
 Jorane Sutt et Publis Manlio 
 auraient-ils voulu m...; - Vous allez arrêter Publis Manlio et Jorane Sutt...
 --------------------------------------------------
-hardin → onum barr
-Type: neutral
-Interaction count: 2
-Examples:
-" L'envoyé marqua un temps, puis 
-ajouta d'un ton ...; S'étant débarrassé du dernier pair, il parvint aup...
---------------------------------------------------
 wienis → lepold ier
 Type: neutral
 Interaction count: 2
@@ -280,6 +413,29 @@ Examples:
 Mais Wienis reprit bientôt une 
 expression sérieus...; Wienis se 
 précipita vers le trône toujours planté...
+--------------------------------------------------
+hardin → onum barr
+Type: neutral
+Interaction count: 2
+Examples:
+" L'envoyé marqua un temps, puis 
+ajouta d'un ton ...; S'étant débarrassé du dernier pair, il parvint aup...
+--------------------------------------------------
+pelleas 
+anthor → kleise
+Type: neutral
+Interaction count: 2
+Examples:
+Et maintenant, Kleise était ressuscité dans la per...; Il sentait la colère monter en lui - contre le déf...
+--------------------------------------------------
+pelleas 
+anthor → munn
+Type: neutral
+Interaction count: 2
+Examples:
+" Ne recevant aucune réponse 
+immédiate, Anthor po...; " 
+Mais Anthor ouvrit soudainement les yeux et les...
 --------------------------------------------------
 darell 
  
@@ -292,55 +448,19 @@ l'autre, pu...; Vous étiez particulièrement à soupçonner, docteur ...
 --------------------------------------------------
 darell 
  
-darell → arkady darell
+darell → munn
 Type: neutral
 Interaction count: 2
 Examples:
-Bien qu'elle ait écrit de nombreux romans, 
-Arkady...; Arkady Darell...
+- Soit, essayons, Munn, dit Darell d'une voix pens...; ", s'écria Munn, mais Darell lui imposa silence 
+d...
 --------------------------------------------------
-pelleas 
-anthor → homir 
-munn
-Type: neutral
-Interaction count: 2
-Examples:
-" Ne recevant aucune réponse 
-immédiate, Anthor po...; " 
-Mais Anthor ouvrit soudainement les yeux et les...
---------------------------------------------------
-pelleas 
-anthor → kleise
-Type: neutral
-Interaction count: 2
-Examples:
-Et maintenant, Kleise était ressuscité dans la per...; Il sentait la colère monter en lui - contre le déf...
---------------------------------------------------
-homir 
-munn → pelleas 
+kleise → pelleas 
 anthor
 Type: neutral
 Interaction count: 2
 Examples:
-" Ne recevant aucune réponse 
-immédiate, Anthor po...; " 
-Mais Anthor ouvrit soudainement les yeux et les...
---------------------------------------------------
-homir 
-munn → turbor
-Type: neutral
-Interaction count: 2
-Examples:
-Ce fut Joie Turbor, un oil fixé sur les profondeur...; Turbor grinçait des dents, tandis que 
-Munn cligna...
---------------------------------------------------
-turbor → homir 
-munn
-Type: neutral
-Interaction count: 2
-Examples:
-Ce fut Joie Turbor, un oil fixé sur les profondeur...; Turbor grinçait des dents, tandis que 
-Munn cligna...
+Et maintenant, Kleise était ressuscité dans la per...; Il sentait la colère monter en lui - contre le déf...
 --------------------------------------------------
 kleise → darell 
  
@@ -351,41 +471,37 @@ Examples:
 Darell regarda ses invités l'un après 
 l'autre, pu...; Vous étiez particulièrement à soupçonner, docteur ...
 --------------------------------------------------
-kleise → pelleas 
+munn → pelleas 
 anthor
 Type: neutral
 Interaction count: 2
 Examples:
-Et maintenant, Kleise était ressuscité dans la per...; Il sentait la colère monter en lui - contre le déf...
+" Ne recevant aucune réponse 
+immédiate, Anthor po...; " 
+Mais Anthor ouvrit soudainement les yeux et les...
 --------------------------------------------------
-arkady darell → darell 
+munn → darell 
  
 darell
 Type: neutral
 Interaction count: 2
 Examples:
-Bien qu'elle ait écrit de nombreux romans, 
-Arkady...; Arkady Darell...
+- Soit, essayons, Munn, dit Darell d'une voix pens...; ", s'écria Munn, mais Darell lui imposa silence 
+d...
 --------------------------------------------------
-onum barr → amell brodrig
+munn → mulet
 Type: neutral
-Interaction count: 1
+Interaction count: 2
 Examples:
-- Ça dépend de Brodrig, dit Barr, n'est-ce pas...
+Elle a prétendu que monsieur 
+Munn était un très g...; C'était Munn, par exemple, qui avait démontré que,...
 --------------------------------------------------
-onum barr → torie
-Type: friendship
-Interaction count: 1
-Examples:
-" 
-Barr, pour la première fois, intervint d'une vo...
---------------------------------------------------
-onum barr → sergent luk
+mulet → munn
 Type: neutral
-Interaction count: 1
+Interaction count: 2
 Examples:
-"
-Devers s'avança pour ouvrir le sas à air, et Bar...
+Elle a prétendu que monsieur 
+Munn était un très g...; C'était Munn, par exemple, qui avait démontré que,...
 --------------------------------------------------
 hari 
 seldon → general bel 
@@ -396,47 +512,76 @@ Examples:
 " J'ai dit un jour à Riose que toute la force de l...
 --------------------------------------------------
 hari 
+seldon → bayta
+Type: neutral
+Interaction count: 1
+Examples:
+- Vous voulez dire, demanda Bayta, crispée, que le...
+--------------------------------------------------
+hari 
 seldon → daluden iv
 Type: friendship
 Interaction count: 1
 Examples:
 - Hari Seldon était un savant du règne de l'empere...
 --------------------------------------------------
-amell brodrig → onum barr
+sergent luk → ducem 
+barr
+Type: neutral
+Interaction count: 1
+Examples:
+"
+Devers s'avança pour ouvrir le sas à air, et Bar...
+--------------------------------------------------
+jord commason → toran
+Type: neutral
+Interaction count: 1
+Examples:
+Toran se précipita et, d'une poigne énergique, sai...
+--------------------------------------------------
+torie → ducem 
+barr
+Type: friendship
+Interaction count: 1
+Examples:
+" 
+Barr, pour la première fois, intervint d'une vo...
+--------------------------------------------------
+torie → bayta
+Type: neutral
+Interaction count: 1
+Examples:
+- Ne sois pas entêté, Torie, fit Bayta...
+--------------------------------------------------
+ducem 
+barr → sergent luk
+Type: neutral
+Interaction count: 1
+Examples:
+"
+Devers s'avança pour ouvrir le sas à air, et Bar...
+--------------------------------------------------
+ducem 
+barr → torie
+Type: friendship
+Interaction count: 1
+Examples:
+" 
+Barr, pour la première fois, intervint d'une vo...
+--------------------------------------------------
+ducem 
+barr → amell brodrig
 Type: neutral
 Interaction count: 1
 Examples:
 - Ça dépend de Brodrig, dit Barr, n'est-ce pas...
 --------------------------------------------------
-colonel pritcher → toran
-Type: neutral
-Interaction count: 1
-Examples:
-" Pritcher, s'écria Toran...
---------------------------------------------------
-ducem 
-barr → patricien
-Type: neutral
-Interaction count: 1
-Examples:
-" Ce monsieur est 
-Ducem Barr, patricien de l'Empi...
---------------------------------------------------
-patricien → ducem 
+amell brodrig → ducem 
 barr
 Type: neutral
 Interaction count: 1
 Examples:
-" Ce monsieur est 
-Ducem Barr, patricien de l'Empi...
---------------------------------------------------
-gente 
-dame → toran
-Type: neutral
-Interaction count: 1
-Examples:
-Gente 
-dame, reprit-il, s'adressant exclusivement ...
+- Ça dépend de Brodrig, dit Barr, n'est-ce pas...
 --------------------------------------------------
 hober mallow → hardin
 Type: neutral
@@ -444,13 +589,12 @@ Interaction count: 1
 Examples:
 Mais, lors des deux premières, nous avions Salvor ...
 --------------------------------------------------
-loris → general bel 
-riose
+patricien → ducem
 Type: neutral
 Interaction count: 1
 Examples:
-marmonna Riose, citez-moi donc une planète en 
-ple...
+" Ce monsieur est 
+Ducem Barr, patricien de l'Empi...
 --------------------------------------------------
 general bel 
 riose → hari 
@@ -468,18 +612,18 @@ Examples:
 marmonna Riose, citez-moi donc une planète en 
 ple...
 --------------------------------------------------
-torie → onum barr
-Type: friendship
-Interaction count: 1
-Examples:
-" 
-Barr, pour la première fois, intervint d'une vo...
---------------------------------------------------
-hardin → hober mallow
+colonel pritcher → toran
 Type: neutral
 Interaction count: 1
 Examples:
-Mais, lors des deux premières, nous avions Salvor ...
+" Pritcher, s'écria Toran...
+--------------------------------------------------
+colonel pritcher → mulet
+Type: neutral
+Interaction count: 1
+Examples:
+Et puis Pritcher nous a parlé du 
+Mulet et de sa m...
 --------------------------------------------------
 fran → toran
 Type: neutral
@@ -487,32 +631,24 @@ Interaction count: 1
 Examples:
 Quand Ebling Mis entra, vêtu d'un peignoir et les ...
 --------------------------------------------------
-sergent luk → onum barr
+hardin → hober mallow
 Type: neutral
 Interaction count: 1
 Examples:
-"
-Devers s'avança pour ouvrir le sas à air, et Bar...
+Mais, lors des deux premières, nous avions Salvor ...
 --------------------------------------------------
-toran → colonel pritcher
+bayta → hari 
+seldon
 Type: neutral
 Interaction count: 1
 Examples:
-" Pritcher, s'écria Toran...
+- Vous voulez dire, demanda Bayta, crispée, que le...
 --------------------------------------------------
-toran → gente 
-dame
+bayta → torie
 Type: neutral
 Interaction count: 1
 Examples:
-Gente 
-dame, reprit-il, s'adressant exclusivement ...
---------------------------------------------------
-toran → fran
-Type: neutral
-Interaction count: 1
-Examples:
-Quand Ebling Mis entra, vêtu d'un peignoir et les ...
+- Ne sois pas entêté, Torie, fit Bayta...
 --------------------------------------------------
 toran → jord commason
 Type: neutral
@@ -520,11 +656,17 @@ Interaction count: 1
 Examples:
 Toran se précipita et, d'une poigne énergique, sai...
 --------------------------------------------------
-jord commason → toran
+toran → colonel pritcher
 Type: neutral
 Interaction count: 1
 Examples:
-Toran se précipita et, d'une poigne énergique, sai...
+" Pritcher, s'écria Toran...
+--------------------------------------------------
+toran → fran
+Type: neutral
+Interaction count: 1
+Examples:
+Quand Ebling Mis entra, vêtu d'un peignoir et les ...
 --------------------------------------------------
 daluden iv → hari 
 seldon
@@ -533,19 +675,41 @@ Interaction count: 1
 Examples:
 - Hari Seldon était un savant du règne de l'empere...
 --------------------------------------------------
-stannell → onum barr
-Type: friendship
+loris → general bel 
+riose
+Type: neutral
 Interaction count: 1
 Examples:
-Cela a été une époque 
-maudite pour les provinces,...
+marmonna Riose, citez-moi donc une planète en 
+ple...
 --------------------------------------------------
-stannell → hober mallow
-Type: friendship
+mulet → colonel pritcher
+Type: neutral
 Interaction count: 1
 Examples:
-Cela a été une époque 
-maudite pour les provinces,...
+Et puis Pritcher nous a parlé du 
+Mulet et de sa m...
+--------------------------------------------------
+ducem → patricien
+Type: neutral
+Interaction count: 1
+Examples:
+" Ce monsieur est 
+Ducem Barr, patricien de l'Empi...
+--------------------------------------------------
+gaal 
+dornick → avakim
+Type: neutral
+Interaction count: 1
+Examples:
+Nullement ému par la sortie de Gaal, Avakim leva l...
+--------------------------------------------------
+hari 
+seldon → linge chen
+Type: enmity
+Interaction count: 1
+Examples:
+" Docteur Seldon, commença Chen, vous troublez la ...
 --------------------------------------------------
 hari 
 seldon → sef sermak
@@ -556,46 +720,31 @@ Examples:
 II toisa Sermak de la tête aux pieds et reprit ...
 --------------------------------------------------
 hari 
-seldon → hardin
-Type: neutral
-Interaction count: 1
-Examples:
-En fait, comme l'avait dit Hari Seldon, et comme l...
---------------------------------------------------
-hari 
-seldon → linge chen
-Type: enmity
-Interaction count: 1
-Examples:
-" Docteur Seldon, commença Chen, vous troublez la ...
---------------------------------------------------
-hari 
 seldon → yohan lee
 Type: neutral
 Interaction count: 1
 Examples:
 - Parce que cela fait maintenant six personnes - v...
 --------------------------------------------------
-onum barr → stannell
-Type: friendship
-Interaction count: 1
-Examples:
-Cela a été une époque 
-maudite pour les provinces,...
---------------------------------------------------
-onum barr → hober mallow
-Type: friendship
-Interaction count: 1
-Examples:
-Cela a été une époque 
-maudite pour les provinces,...
---------------------------------------------------
-onum barr → jaim twer
+hari 
+seldon → hardin
 Type: neutral
 Interaction count: 1
 Examples:
-Je me débarrassai de 
-Twer pour cinq minutes en l'...
+En fait, comme l'avait dit Hari Seldon, et comme l...
+--------------------------------------------------
+linge chen → hari 
+seldon
+Type: enmity
+Interaction count: 1
+Examples:
+" Docteur Seldon, commença Chen, vous troublez la ...
+--------------------------------------------------
+linge chen → hardin
+Type: friendship
+Interaction count: 1
+Examples:
+Des légendes innombrables circulent sur le compte ...
 --------------------------------------------------
 eskel gorov → limmar ponyets
 Type: neutral
@@ -608,46 +757,35 @@ III
  
 Eskel Gorov remua sur sa couchette e...
 --------------------------------------------------
-jord parma → lundin crast
+jaim twer → onum barr
 Type: neutral
 Interaction count: 1
 Examples:
-A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+Je me débarrassai de 
+Twer pour cinq minutes en l'...
 --------------------------------------------------
-jord parma → tomas sutt
+jaim twer → jorane 
+sutt
 Type: neutral
 Interaction count: 1
 Examples:
-A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+" Je commencerai au même point que l'a fait l'accu...
 --------------------------------------------------
-jord parma → lewis pirenne
+onum barr → jaim twer
 Type: neutral
 Interaction count: 1
 Examples:
-A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+Je me débarrassai de 
+Twer pour cinq minutes en l'...
 --------------------------------------------------
-sef sermak → hari 
-seldon
-Type: neutral
-Interaction count: 1
-Examples:
-" 
-II toisa Sermak de la tête aux pieds et reprit ...
---------------------------------------------------
-sef sermak → loris
-Type: neutral
-Interaction count: 1
-Examples:
-Sans doute votre grand-père était-il 
-baron du tem...
---------------------------------------------------
-sef sermak → wienis
+onum barr → hober mallow
 Type: friendship
 Interaction count: 1
 Examples:
-- Oui, fit Sermak, railleur, un diable à ressort q...
+Cela a été une époque 
+maudite pour les provinces,...
 --------------------------------------------------
-hober mallow → stannell
+onum barr → stannell
 Type: friendship
 Interaction count: 1
 Examples:
@@ -667,163 +805,51 @@ Interaction count: 1
 Examples:
 - Nous aurions dû faire mieux, grommela Mallow...
 --------------------------------------------------
+hober mallow → stannell
+Type: friendship
+Interaction count: 1
+Examples:
+Cela a été une époque 
+maudite pour les provinces,...
+--------------------------------------------------
 lepold ier → hardin
 Type: neutral
 Interaction count: 1
 Examples:
 Hardin écoutait, tandis que le roi Lepold demeurai...
 --------------------------------------------------
-loris → sef sermak
+dorwin → lewis pirenne
+Type: neutral
+Interaction count: 1
+Examples:
+Hardin écouta dans un demi-sommeil les formalités ...
+--------------------------------------------------
+sef sermak → hari 
+seldon
+Type: neutral
+Interaction count: 1
+Examples:
+" 
+II toisa Sermak de la tête aux pieds et reprit ...
+--------------------------------------------------
+sef sermak → wienis
+Type: friendship
+Interaction count: 1
+Examples:
+- Oui, fit Sermak, railleur, un diable à ressort q...
+--------------------------------------------------
+sef sermak → loris
 Type: neutral
 Interaction count: 1
 Examples:
 Sans doute votre grand-père était-il 
 baron du tem...
 --------------------------------------------------
-jorane 
-sutt → jaim twer
+lewis pirenne → dorwin
 Type: neutral
 Interaction count: 1
 Examples:
-" Je commencerai au même point que l'a fait l'accu...
---------------------------------------------------
-jaim twer → onum barr
-Type: neutral
-Interaction count: 1
-Examples:
-Je me débarrassai de 
-Twer pour cinq minutes en l'...
---------------------------------------------------
-jaim twer → jorane 
-sutt
-Type: neutral
-Interaction count: 1
-Examples:
-" Je commencerai au même point que l'a fait l'accu...
---------------------------------------------------
-hardin → hari 
-seldon
-Type: neutral
-Interaction count: 1
-Examples:
-En fait, comme l'avait dit Hari Seldon, et comme l...
---------------------------------------------------
-hardin → lepold ier
-Type: neutral
-Interaction count: 1
-Examples:
-Hardin écoutait, tandis que le roi Lepold demeurai...
---------------------------------------------------
-hardin → linge chen
-Type: friendship
-Interaction count: 1
-Examples:
-Des légendes innombrables circulent sur le compte ...
---------------------------------------------------
-hardin → yohan lee
-Type: neutral
-Interaction count: 1
-Examples:
-Lee était près de la fenêtre et sa voix vint inter...
---------------------------------------------------
-avakim → gaal 
-dornick
-Type: neutral
-Interaction count: 1
-Examples:
-Nullement ému par la sortie de Gaal, Avakim leva l...
---------------------------------------------------
-lundin crast → jord parma
-Type: neutral
-Interaction count: 1
-Examples:
-A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
---------------------------------------------------
-lundin crast → tomas sutt
-Type: neutral
-Interaction count: 1
-Examples:
-A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
---------------------------------------------------
-lundin crast → lewis pirenne
-Type: neutral
-Interaction count: 1
-Examples:
-A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
---------------------------------------------------
-limmar ponyets → eskel gorov
-Type: neutral
-Interaction count: 1
-Examples:
-" 
- 
- 
-III 
- 
-Eskel Gorov remua sur sa couchette e...
---------------------------------------------------
-gaal 
-dornick → avakim
-Type: neutral
-Interaction count: 1
-Examples:
-Nullement ému par la sortie de Gaal, Avakim leva l...
---------------------------------------------------
-linge chen → hari 
-seldon
-Type: enmity
-Interaction count: 1
-Examples:
-" Docteur Seldon, commença Chen, vous troublez la ...
---------------------------------------------------
-linge chen → hardin
-Type: friendship
-Interaction count: 1
-Examples:
-Des légendes innombrables circulent sur le compte ...
---------------------------------------------------
-grommela mallow → hober mallow
-Type: neutral
-Interaction count: 1
-Examples:
-- Nous aurions dû faire mieux, grommela Mallow...
---------------------------------------------------
-wienis → sef sermak
-Type: friendship
-Interaction count: 1
-Examples:
-- Oui, fit Sermak, railleur, un diable à ressort q...
---------------------------------------------------
-tomas sutt → jord parma
-Type: neutral
-Interaction count: 1
-Examples:
-A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
---------------------------------------------------
-tomas sutt → lundin crast
-Type: neutral
-Interaction count: 1
-Examples:
-A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
---------------------------------------------------
-tomas sutt → lewis pirenne
-Type: neutral
-Interaction count: 1
-Examples:
-A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
---------------------------------------------------
-yohan lee → hari 
-seldon
-Type: neutral
-Interaction count: 1
-Examples:
-- Parce que cela fait maintenant six personnes - v...
---------------------------------------------------
-yohan lee → hardin
-Type: neutral
-Interaction count: 1
-Examples:
-Lee était près de la fenêtre et sa voix vint inter...
+Hardin écouta dans un demi-sommeil les formalités ...
 --------------------------------------------------
 lewis pirenne → jord parma
 Type: neutral
@@ -843,31 +869,155 @@ Interaction count: 1
 Examples:
 A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
 --------------------------------------------------
-lewis pirenne → dorwin
+jorane 
+sutt → jaim twer
 Type: neutral
 Interaction count: 1
 Examples:
-Hardin écouta dans un demi-sommeil les formalités ...
+" Je commencerai au même point que l'a fait l'accu...
 --------------------------------------------------
-dorwin → lewis pirenne
+jord parma → lewis pirenne
 Type: neutral
 Interaction count: 1
 Examples:
-Hardin écouta dans un demi-sommeil les formalités ...
+A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
 --------------------------------------------------
-darell 
+jord parma → lundin crast
+Type: neutral
+Interaction count: 1
+Examples:
+A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+--------------------------------------------------
+jord parma → tomas sutt
+Type: neutral
+Interaction count: 1
+Examples:
+A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+--------------------------------------------------
+wienis → sef sermak
+Type: friendship
+Interaction count: 1
+Examples:
+- Oui, fit Sermak, railleur, un diable à ressort q...
+--------------------------------------------------
+yohan lee → hari 
+seldon
+Type: neutral
+Interaction count: 1
+Examples:
+- Parce que cela fait maintenant six personnes - v...
+--------------------------------------------------
+yohan lee → hardin
+Type: neutral
+Interaction count: 1
+Examples:
+Lee était près de la fenêtre et sa voix vint inter...
+--------------------------------------------------
+hardin → hari 
+seldon
+Type: neutral
+Interaction count: 1
+Examples:
+En fait, comme l'avait dit Hari Seldon, et comme l...
+--------------------------------------------------
+hardin → linge chen
+Type: friendship
+Interaction count: 1
+Examples:
+Des légendes innombrables circulent sur le compte ...
+--------------------------------------------------
+hardin → lepold ier
+Type: neutral
+Interaction count: 1
+Examples:
+Hardin écoutait, tandis que le roi Lepold demeurai...
+--------------------------------------------------
+hardin → yohan lee
+Type: neutral
+Interaction count: 1
+Examples:
+Lee était près de la fenêtre et sa voix vint inter...
+--------------------------------------------------
+grommela mallow → hober mallow
+Type: neutral
+Interaction count: 1
+Examples:
+- Nous aurions dû faire mieux, grommela Mallow...
+--------------------------------------------------
+limmar ponyets → eskel gorov
+Type: neutral
+Interaction count: 1
+Examples:
+" 
  
-darell → preem palver
-Type: neutral
-Interaction count: 1
-Examples:
-- Arcadia Darell, souffla Palver...
+ 
+III 
+ 
+Eskel Gorov remua sur sa couchette e...
 --------------------------------------------------
-hari seldon → general pritcher
+avakim → gaal 
+dornick
 Type: neutral
 Interaction count: 1
 Examples:
-" II se peut que Mis ait été le plus grand psychol...
+Nullement ému par la sortie de Gaal, Avakim leva l...
+--------------------------------------------------
+stannell → onum barr
+Type: friendship
+Interaction count: 1
+Examples:
+Cela a été une époque 
+maudite pour les provinces,...
+--------------------------------------------------
+stannell → hober mallow
+Type: friendship
+Interaction count: 1
+Examples:
+Cela a été une époque 
+maudite pour les provinces,...
+--------------------------------------------------
+lundin crast → lewis pirenne
+Type: neutral
+Interaction count: 1
+Examples:
+A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+--------------------------------------------------
+lundin crast → jord parma
+Type: neutral
+Interaction count: 1
+Examples:
+A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+--------------------------------------------------
+lundin crast → tomas sutt
+Type: neutral
+Interaction count: 1
+Examples:
+A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+--------------------------------------------------
+tomas sutt → lewis pirenne
+Type: neutral
+Interaction count: 1
+Examples:
+A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+--------------------------------------------------
+tomas sutt → jord parma
+Type: neutral
+Interaction count: 1
+Examples:
+A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+--------------------------------------------------
+tomas sutt → lundin crast
+Type: neutral
+Interaction count: 1
+Examples:
+A sa gauche, siégeaient Tomas Sutt et Jord Fara ; ...
+--------------------------------------------------
+loris → sef sermak
+Type: neutral
+Interaction count: 1
+Examples:
+Sans doute votre grand-père était-il 
+baron du tem...
 --------------------------------------------------
 hari seldon → homir 
 munn
@@ -876,6 +1026,12 @@ Interaction count: 1
 Examples:
 " Homir Munn disait il y a un instant que Hari Sel...
 --------------------------------------------------
+hari seldon → general pritcher
+Type: neutral
+Interaction count: 1
+Examples:
+" II se peut que Mis ait été le plus grand psychol...
+--------------------------------------------------
 hari seldon → mallow
 Type: neutral
 Interaction count: 1
@@ -883,11 +1039,11 @@ Examples:
 Elle continua : 
 " J'ai lu des tas de livres sur l...
 --------------------------------------------------
-general pritcher → hari seldon
+hari seldon → munn
 Type: neutral
 Interaction count: 1
 Examples:
-" II se peut que Mis ait été le plus grand psychol...
+" Homir Munn disait il y a un instant que Hari Sel...
 --------------------------------------------------
 pelleas 
 anthor → turbor
@@ -910,25 +1066,29 @@ Interaction count: 1
 Examples:
 Lev Meirus était le mandataire de Kalgan, et Homir...
 --------------------------------------------------
-lev meirus → homir 
-munn
-Type: neutral
+homir 
+munn → darell 
+ 
+darell
+Type: enmity
 Interaction count: 1
 Examples:
-Lev Meirus était le mandataire de Kalgan, et Homir...
+- Je vous en prie, Homir, répondit Darell, mais po...
 --------------------------------------------------
-turbor → pelleas 
-anthor
+homir 
+munn → turbor
 Type: neutral
 Interaction count: 1
 Examples:
-- J'ai été sur Kalgan, Anthor, interrompit Turbor...
+Ce fut Joie Turbor, un oil fixé sur les profondeur...
 --------------------------------------------------
-turbor → preem palver
+homir 
+munn → mulet
 Type: neutral
 Interaction count: 1
 Examples:
-Demeuré en tête à tête avec le prisonnier, Turbor ...
+Oncle Homir 
+le pense, mais il lui faudrait consul...
 --------------------------------------------------
 preem palver → darell 
  
@@ -944,10 +1104,130 @@ Interaction count: 1
 Examples:
 Demeuré en tête à tête avec le prisonnier, Turbor ...
 --------------------------------------------------
+lev meirus → homir 
+munn
+Type: neutral
+Interaction count: 1
+Examples:
+Lev Meirus était le mandataire de Kalgan, et Homir...
+--------------------------------------------------
+lev meirus → mulet
+Type: neutral
+Interaction count: 1
+Examples:
+" Mais le Mulet, mon cher Meirus, a changé tout ce...
+--------------------------------------------------
+darell 
+ 
+darell → homir 
+munn
+Type: enmity
+Interaction count: 1
+Examples:
+- Je vous en prie, Homir, répondit Darell, mais po...
+--------------------------------------------------
+darell 
+ 
+darell → preem palver
+Type: neutral
+Interaction count: 1
+Examples:
+- Arcadia Darell, souffla Palver...
+--------------------------------------------------
+darell 
+ 
+darell → grommela darell
+Type: neutral
+Interaction count: 1
+Examples:
+- C'est facile, grommela Darell...
+--------------------------------------------------
+general pritcher → hari seldon
+Type: neutral
+Interaction count: 1
+Examples:
+" II se peut que Mis ait été le plus grand psychol...
+--------------------------------------------------
 mallow → hari seldon
 Type: neutral
 Interaction count: 1
 Examples:
 Elle continua : 
 " J'ai lu des tas de livres sur l...
+--------------------------------------------------
+turbor → pelleas 
+anthor
+Type: neutral
+Interaction count: 1
+Examples:
+- J'ai été sur Kalgan, Anthor, interrompit Turbor...
+--------------------------------------------------
+turbor → homir 
+munn
+Type: neutral
+Interaction count: 1
+Examples:
+Ce fut Joie Turbor, un oil fixé sur les profondeur...
+--------------------------------------------------
+turbor → preem palver
+Type: neutral
+Interaction count: 1
+Examples:
+Demeuré en tête à tête avec le prisonnier, Turbor ...
+--------------------------------------------------
+turbor → munn
+Type: neutral
+Interaction count: 1
+Examples:
+Turbor grinçait des dents, tandis que 
+Munn cligna...
+--------------------------------------------------
+bayta 
+darell → mulet
+Type: neutral
+Interaction count: 1
+Examples:
+Tout le monde le savait, et Bayta était sans doute...
+--------------------------------------------------
+munn → hari seldon
+Type: neutral
+Interaction count: 1
+Examples:
+" Homir Munn disait il y a un instant que Hari Sel...
+--------------------------------------------------
+munn → turbor
+Type: neutral
+Interaction count: 1
+Examples:
+Turbor grinçait des dents, tandis que 
+Munn cligna...
+--------------------------------------------------
+grommela darell → darell 
+ 
+darell
+Type: neutral
+Interaction count: 1
+Examples:
+- C'est facile, grommela Darell...
+--------------------------------------------------
+mulet → homir 
+munn
+Type: neutral
+Interaction count: 1
+Examples:
+Oncle Homir 
+le pense, mais il lui faudrait consul...
+--------------------------------------------------
+mulet → lev meirus
+Type: neutral
+Interaction count: 1
+Examples:
+" Mais le Mulet, mon cher Meirus, a changé tout ce...
+--------------------------------------------------
+mulet → bayta 
+darell
+Type: neutral
+Interaction count: 1
+Examples:
+Tout le monde le savait, et Bayta était sans doute...
 --------------------------------------------------
